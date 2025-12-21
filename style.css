@@ -2660,14 +2660,17 @@ textarea.w-select,
 
 .hero-title {
   position: absolute;
-  top: 110px; /* ispod navbara */
-  right: 40px;
+  top: 90px; /*110  ispod navbara */
+  /*right: 40px;*/
+  left: 50px;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 90%;
 
   font-family: "EB Garamond", serif;
   font-size: 28px;
   font-weight: 500;
   letter-spacing: 0.5px;
-
   color: #fff;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 
@@ -2677,26 +2680,20 @@ textarea.w-select,
    animation: heroTitleFade 1.5s ease forwards 0.5s; */
   opacity: 0;
   animation: heroTitleFade 18s infinite;
-  animation-delay: 0.3s;
-  animation-fill-mode: both; /* ⬅️ KLJUČNO zbog animacije naslova*/
+  /*  animation-delay: 0.3s;
+  animation-fill-mode: both; */ /* ⬅️ KLJUČNO zbog animacije naslova*/
 }
 
 @keyframes heroTitleFade {
-  0% {
-    opacity: 0;
-    transform: translateY(-8px);
-  }
-  10% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0%,
   30% {
+    opacity: 0;
+  }
+  35%,
+  65% {
     opacity: 1;
   }
-  40% {
-    opacity: 0;
-    transform: translateY(-8px);
-  }
+  70%,
   100% {
     opacity: 0;
   }
