@@ -814,6 +814,10 @@ textarea.w-select,
     font-size: 20px;
     text-align: center;
     width: 90%;
+
+    /* OVO dodaje animaciju naslova  */
+    opacity: 0;
+    animation: heroTitleFade 18s infinite;
   }
 }
 
