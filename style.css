@@ -819,6 +819,19 @@ textarea.w-select,
     opacity: 0;
     animation: heroTitleFade 18s infinite;
   }
+
+  .title1 {
+    color: #ffffff;
+    animation-delay: 0s;
+  }
+  .title2 {
+    color: #81bf5b;
+    animation-delay: 6s;
+  }
+  .title3 {
+    color: #3d5e29;
+    animation-delay: 12s;
+  }
 }
 
 @media screen and (max-width: 767px) {
