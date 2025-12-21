@@ -209,22 +209,6 @@ th {
   content: "\e601";
 }
 
-/*
-.w-icon-slider1-right:before {
-  content: '\e600';
-}
-.w-icon-slider1-left:before {
-  content: '\e601';
-}
-
-*/
-/* .video-container {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; 
-  overflow: hidden;
-} */
-
 .gallery-video {
   position: absolute;
   top: 0;
@@ -233,18 +217,6 @@ th {
   height: 100%;
   object-fit: contain; /* ili cover + object-position:center za isečen ali centriran video */
 }
-
-/* .play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  background: url("images/play-icon.png") center/contain no-repeat;
-  cursor: pointer;
-  z-index: 5;
-} */
 
 .w-icon-nav-menu:before {
   content: "\e602";
@@ -1316,153 +1288,6 @@ textarea.w-select,
   display: block !important;
 }
 
-/*
-
-.w-slider1 {
-  position: relative;
-  height: 200px; 
-  text-align: center;
-  background: #dddddd;
-  clear: both;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-.w-slider1-mask {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  height: 100%;
-  white-space: nowrap;
-}
-
-.w-slider1-nav {
-  position: absolute;
-  z-index: 2;
-  top: auto;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  padding-top: 10px;
-  height: 40px;
-  text-align: center;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-.w-slider1-nav.w-round > div {
-  border-radius: 100%;
-}
-.w-slider1-nav.w-num > div {
-  width: auto;
-  height: auto;
-  padding: 0.2em 0.5em;
-  font-size: inherit;
-  line-height: inherit;
-}
-.w-slider1-nav.w-shadow > div {
-  box-shadow: 0 0 3px rgba(51, 51, 51, 0.4);
-}
-.w-slider1-nav-invert {
-  color: #fff;
-}
-.w-slider1-nav-invert > div {
-  background-color: rgba(34, 34, 34, 0.4);
-}
-.w-slider1-nav-invert > div.w-active {
-  background-color: #222;
-}
-
-.w-slider1-dot {
-  position: relative;
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  background-color: rgba(255, 255, 255, 0.4);
-  cursor: pointer;
-  margin: 0 3px 0.5em;
-  transition: background-color 100ms, color 100ms;
-}
-.w-slider1-dot.w-active {
-  background-color: #fff;
-}
-.w-slider1-dot:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #fff;
-}
-.w-slider1-dot:focus.w-active {
-  box-shadow: none;
-}
-.w-slider1-arrow-left,
-.w-slider1-arrow-right {
-  position: absolute;
-  width: 80px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  cursor: pointer;
-  overflow: hidden;
-  color: white;
-  font-size: 40px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.w-slider1-arrow-left [class^='w-icon-'],
-.w-slider1-arrow-right [class^='w-icon-'],
-.w-slider1-arrow-left [class*=' w-icon-'],
-.w-slider1-arrow-right [class*=' w-icon-'] {
-  position: absolute;
-}
-.w-slider1-arrow-left:focus,
-.w-slider1-arrow-right:focus {
-  outline: 0;
-}
-.w-slider1-arrow-left {
-  z-index: 3;
-  right: auto;
-}
-.w-slider1-arrow-right {
-  z-index: 4;
-  left: auto;
-}
-.w-icon-slider-left,
-.w-icon-slider-right {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 1em;
-  height: 1em;
-}
-.w-slider1-aria-label {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-.w-slider1-force-show {
-  display: block !important;
-}
-
-
-
-*/
-
 .w-dropdown {
   display: inline-block;
   position: relative;
@@ -1937,7 +1762,7 @@ textarea.w-select,
   text-decoration: none;
   /*color: #333333;
   color:  #3d5e29;*/
-  color: #9ff768;
+  color: #2f7405;
   border-color: #81bf5b;
 }
 
@@ -2151,6 +1976,46 @@ textarea.w-select,
 /* ==========================================================================
       Start of custom Webflow CSS
       ========================================================================== */
+
+/* fade – vrlo suptilno */
+@keyframes heroFade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bg-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: heroFade 18s infinite;
+}
+
+.bg-slide:first-child {
+  opacity: 1;
+}
+
 .page-section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -2162,21 +2027,24 @@ textarea.w-select,
 }
 
 .page-section.hero-section {
-  height: 70vh;
-  position: relative;
-  background-size: cover;
-  background-image: url("images/SandalijaCover2.jpg");
-  background-position: 50% 50%;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
 }
-/*
-.page-section.pig-image {
+
+.hero-section {
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: url('images/SanDa.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
-}*/
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden; /* OVO JE KLJUČ */
+}
+
+.hero-section > .container {
+  position: relative;
+  z-index: 2;
+}
 
 .page-section.gallery-section {
   padding-top: 30px;
@@ -2206,23 +2074,22 @@ textarea.w-select,
 }
 
 .hero-overlay {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  padding-top: 220px;
-  padding-bottom: 220px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
+  position: relative;
+  z-index: 2;
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
   align-items: center;
-  background-color: rgba(32, 28, 8, 0.65);
+  justify-content: center;
+
+  background-color: rgba(32, 28, 8, 0.55);
+}
+
+.hero-overlay .container {
+  text-align: center;
+  padding-top: 120px;
 }
 
 .heading {
@@ -2335,18 +2202,18 @@ textarea.w-select,
   color: #81bf5b;
 }
 .navbar {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  background-color: hsla(0, 0%, 86.7%, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  margin: 0;
+  padding: 10px 0;
+
+  background-color: rgba(0, 0%, 100%, 0.15);
+  backdrop-filter: blur(8px);
+
+  z-index: 1000;
 }
 
 .brand {
@@ -2734,6 +2601,53 @@ textarea.w-select,
   transition: transform 0.5s; /*Smooth transition effect*/
 }
 
+.hero-title {
+  position: absolute;
+  top: 110px; /* ispod navbara */
+  right: 40px;
+
+  font-family: "EB Garamond", serif;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+
+  z-index: 3;
+  /* animation: heroTitleFade 1.5s ease forwards; */
+  opacity: 0;
+  animation: heroTitleFade 1.5s ease forwards 0.5s;
+}
+@keyframes heroTitleFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroSlider {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .container {
     -webkit-box-align: center;
@@ -2935,6 +2849,33 @@ textarea.w-select,
   }
 }
 
+/* slike */
+.slide1 {
+  background-image: url("images/SandalijaCover2.jpg");
+  animation-delay: 0s;
+}
+
+.slide2 {
+  background-image: url("images/Coco1.jpeg");
+  animation-delay: 6s;
+}
+
+.slide3 {
+  background-image: url("images/Libre1.jpeg");
+  animation-delay: 12s;
+}
+
+.hero-cta {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+
+  display: flex;
+  gap: 15px;
+
+  z-index: 3;
+}
+
 @media screen and (max-width: 479px) {
   .page-section {
     padding-top: 40px;
@@ -3086,20 +3027,6 @@ textarea.w-select,
     padding-top: 56.25%; /* 16:9 aspect ratio */
     overflow: hidden;
 
-    /* display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    
-
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center; */
     align-items: center;
   }
 
@@ -3175,27 +3102,6 @@ textarea.w-select,
   .fontColor {
     color: #0082f3; /* #000;-*/
   }
-
-  /*
-  .aNazad:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  .aNazad:visited {
-    color: pink;
-    background-color: transparent;
-    text-decoration: none;
-    
-  }
-  
-  .aNazad:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  */
 }
 
 /* Stil za slike u sekciji #actual */
