@@ -807,6 +807,12 @@ textarea.w-select,
 /* za telefone */
 /* naslov na telefonu ne ide desno */
 @media screen and (max-width: 767px) {
+  .hero-section {
+    height: 180vh; /* duplo viša za mobilni da obuhvati sliku i dugmiće */
+    justify-content: flex-start; /* da sadržaj krene od vrha */
+    padding-top: 40px; /* razmak od vrha ekrana */
+  }
+
   .hero-title {
     left: 50%;
     transform: translateX(-50%);
@@ -848,6 +854,7 @@ textarea.w-select,
     gap: 8px; /* razmak između dugmića */
     position: absolute; /* ako već nije absolute */
     margin-top: 10px; /* malo odmakne od prethodnog elementa */
+    flex-wrap: wrap; /* ako je ekran jako uzak, prelazak u novi red */
   }
 
   .hero-cta a {
@@ -861,6 +868,10 @@ textarea.w-select,
   .hero-cta a.main-btn {
     background-color: #e42c6d; /* primer boje prvog */
     color: #fff;
+
+    min-width: 100px;
+    padding: 8px 16px;
+    font-size: 14px;
   }
 
   .hero-cta a.transparent-btn {
