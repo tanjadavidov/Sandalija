@@ -805,36 +805,6 @@ textarea.w-select,
 }
 
 /* za telefone */
-/* naslov na telefonu ne ide desno */
-@media screen and (max-width: 767px) {
-  .hero-title {
-    right: 50%;
-    transform: translateX(50%);
-    top: 90px;
-    font-size: 20px;
-    text-align: center;
-    width: 90%;
-
-    /* OVO dodaje animaciju naslova  */
-    /* opacity: 0;
-    animation: heroTitleFade 18s infinite; */
-  }
-  /*
-  .title1 {
-    color: #ffffff;
-    animation-delay: 0s;
-  }
-  .title2 {
-    color: #81bf5b;
-    animation-delay: 6s;
-  }
-  .title3 {
-    color: #3d5e29;
-    animation-delay: 12s;
-  }
-    */
-}
-
 @media screen and (max-width: 767px) {
   .hero-cta {
     left: 50%;
@@ -2645,19 +2615,6 @@ textarea.w-select,
   transition: transform 0.5s; /*Smooth transition effect*/
 }
 
-/* ako je slika svetla   tanja*/
-/*
-.hero-title {
-  background: linear-gradient(
-    to left,
-    rgba(0,0,0,0.35),
-    rgba(0,0,0,0)
-  );
-  padding: 8px 16px;
-  border-radius: 4px;
-}
-*/
-
 .hero-title {
   position: absolute;
   top: 110px; /* ispod navbara */
@@ -2702,6 +2659,14 @@ textarea.w-select,
   }
 }
 
+@media (max-width: 768px) {
+  .hero-title {
+    top: 80px;
+    right: 20px;
+    font-size: 20px;
+  }
+}
+
 /* naslov statičan */
 /*
 @keyframes heroTitleFade {
@@ -2734,10 +2699,6 @@ textarea.w-select,
 }
 
 @media screen and (max-width: 991px) {
-  #home .heading {
-    display: none;
-  }
-
   .container {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -2956,39 +2917,21 @@ textarea.w-select,
 
 /* naslov na webs trani */
 /* 1. slide – bela / neutralna */
-
 .title1 {
   color: #ffffff;
   animation-delay: 0s;
 }
 /* 2. slide – boja OKVIRA dugmeta "Ekskluzivno" */
-
 .title2 {
-  color: #81bf5b;
+  color: #81bf5b; /* primer – ista kao border */
   animation-delay: 6s;
 }
 
 /* 3. slide – boja DUGMETA "Ekskluzivno" */
-
 .title3 {
-  color: #3d5e29;
+  color: #3d5e29; /* primer – puna boja dugmeta */
   animation-delay: 12s;
 }
-
-/*
-.title1 {
-  animation: heroTitleFade 6s linear infinite 0s;
-  color: white;
-}
-.title2 {
-  animation: heroTitleFade 6s linear infinite 6s;
-  color: lightgreen;
-}
-.title3 {
-  animation: heroTitleFade 6s linear infinite 12s;
-  color: #3d5e29;
-} 
-*/
 
 .hero-cta {
   position: absolute;
