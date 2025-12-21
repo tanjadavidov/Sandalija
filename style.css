@@ -808,18 +808,19 @@ textarea.w-select,
 /* naslov na telefonu ne ide desno */
 @media screen and (max-width: 767px) {
   .hero-title {
-    /*right: 50%;*/
-    transform: translateX(50%);
-    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
     font-size: 20px;
     text-align: center;
     width: 90%;
 
     /* OVO dodaje animaciju naslova  */
-    /* opacity: 0;
-    animation: heroTitleFade 18s infinite; */
+    opacity: 0;
+    animation: heroTitleFade 18s infinite;
+    animation-fill-mode: both;
   }
-  /*
+
   .title1 {
     color: #ffffff;
     animation-delay: 0s;
@@ -832,7 +833,6 @@ textarea.w-select,
     color: #3d5e29;
     animation-delay: 12s;
   }
-    */
 }
 
 @media screen and (max-width: 767px) {
