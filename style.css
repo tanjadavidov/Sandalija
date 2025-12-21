@@ -856,29 +856,6 @@ textarea.w-select,
     margin-top: 10px; /* malo odmakne od prethodnog elementa */
     flex-wrap: wrap; /* ako je ekran jako uzak, prelazak u novi red */
   }
-
-  .hero-cta a {
-    padding: 10px 20px; /* ravnomerna visina i širina */
-    font-size: 16px; /* prilagoditi veličinu teksta */
-    min-width: 120px; /* minimalna širina dugmeta */
-    text-align: center;
-    border-radius: 5px; /* blagi zaobljeni uglovi */
-  }
-
-  .hero-cta a.main-btn {
-    background-color: #e42c6d; /* primer boje prvog */
-    color: #fff;
-
-    min-width: 100px;
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-
-  .hero-cta a.transparent-btn {
-    background-color: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-  }
 }
 
 /* Za vrlo male ekrane (npr. < 400px) */
