@@ -808,19 +808,18 @@ textarea.w-select,
 /* naslov na telefonu ne ide desno */
 @media screen and (max-width: 767px) {
   .hero-title {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 80px;
+    right: 50%;
+    transform: translateX(50%);
+    top: 90px;
     font-size: 20px;
     text-align: center;
     width: 90%;
 
     /* OVO dodaje animaciju naslova  */
-    opacity: 0;
-    animation: heroTitleFade 18s infinite;
-    animation-fill-mode: both;
+    /* opacity: 0;
+    animation: heroTitleFade 18s infinite; */
   }
-
+  /*
   .title1 {
     color: #ffffff;
     animation-delay: 0s;
@@ -833,6 +832,7 @@ textarea.w-select,
     color: #3d5e29;
     animation-delay: 12s;
   }
+    */
 }
 
 @media screen and (max-width: 767px) {
@@ -2660,17 +2660,14 @@ textarea.w-select,
 
 .hero-title {
   position: absolute;
-  top: 70px; /*110  ispod navbara */
-  /*right: 40px;
-  left: 50%;*/
-  transform: translateX(-50%);
-  text-align: center;
-  width: 90%;
+  top: 110px; /* ispod navbara */
+  right: 40px;
 
   font-family: "EB Garamond", serif;
   font-size: 28px;
   font-weight: 500;
   letter-spacing: 0.5px;
+
   color: #fff;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 
@@ -2703,20 +2700,6 @@ textarea.w-select,
   100% {
     opacity: 0;
   }
-
-  /*
-  0%,
-  30% {
-    opacity: 0;
-  }
-  35%,
-  65% {
-    opacity: 1;
-  }
-  70%,
-  100% {
-    opacity: 0;
-  }*/
 }
 
 /* naslov statičan */
