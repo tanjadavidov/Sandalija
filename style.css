@@ -837,10 +837,24 @@ textarea.w-select,
 
 @media screen and (max-width: 767px) {
   .hero-cta {
+    display: flex; /* ⚡ obavezno */
+    flex-direction: row; /* vertikalno */
+    align-items: center; /* centriranje horizontalno */
+    justify-content: center; /* centriranje vertikalno ako je potrebno */
     left: 50%;
     transform: translateX(-50%);
     bottom: 30px;
-    flex-direction: column;
+    width: auto; /* opcionalno, zavisi kako hoćeš da se prostire */
+    gap: 8px; /* razmak između dugmića */
+    position: absolute; /* ako već nije absolute */
+  }
+}
+
+/* Za vrlo male ekrane (npr. < 400px) */
+@media screen and (max-width: 400px) {
+  .hero-cta {
+    flex-direction: column; /* dugmići jedan ispod drugog */
+    gap: 6px; /* još manji razmak */
   }
 }
 
