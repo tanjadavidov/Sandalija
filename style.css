@@ -816,10 +816,10 @@ textarea.w-select,
     width: 90%;
 
     /* OVO dodaje animaciju naslova  */
-    opacity: 0;
-    animation: heroTitleFade 18s infinite;
+    /* opacity: 0;
+    animation: heroTitleFade 18s infinite; */
   }
-
+  /*
   .title1 {
     color: #ffffff;
     animation-delay: 0s;
@@ -832,6 +832,7 @@ textarea.w-select,
     color: #3d5e29;
     animation-delay: 12s;
   }
+    */
 }
 
 @media screen and (max-width: 767px) {
