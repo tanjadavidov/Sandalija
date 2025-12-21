@@ -803,17 +803,6 @@ textarea.w-select,
 .w-hidden-main {
   display: none !important;
 }
-
-/* za telefone */
-@media screen and (max-width: 767px) {
-  .hero-cta {
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 30px;
-    flex-direction: column;
-  }
-}
-
 @media screen and (max-width: 991px) {
   .w-container {
     max-width: 728px;
@@ -866,7 +855,6 @@ textarea.w-select,
     right: auto;
   }
 }
-
 @media screen and (max-width: 767px) {
   .w-hidden-main {
     display: inherit !important;
@@ -924,7 +912,6 @@ textarea.w-select,
     width: 100%;
   }
 }
-
 @media screen and (max-width: 479px) {
   .w-container {
     max-width: none;
@@ -981,7 +968,6 @@ textarea.w-select,
     width: 100%;
   }
 }
-
 .w-widget {
   position: relative;
 }
