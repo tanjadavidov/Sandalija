@@ -2604,7 +2604,7 @@ textarea.w-select,
 .hero-title {
   position: absolute;
   top: 110px; /* ispod navbara */
-  right: 40px;
+  /*right: 40px;*/
 
   font-family: "EB Garamond", serif;
   font-size: 28px;
@@ -2647,8 +2647,8 @@ textarea.w-select,
 
 @media (max-width: 768px) {
   .hero-title {
-    top: 80px;
-    right: 20px;
+    top: 100px;
+    /* right: 20px;*/
     font-size: 20px;
   }
 }
