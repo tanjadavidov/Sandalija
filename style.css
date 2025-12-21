@@ -831,30 +831,16 @@ textarea.w-select,
   }
   .title3 {
     color: #3d5e29;
-    animation-delay: 4s !important;
+    animation-delay: 4s;
   }
 }
 
 @media screen and (max-width: 767px) {
   .hero-cta {
-    display: flex; /* ⚡ obavezno */
-    flex-direction: row; /* vertikalno */
-    align-items: center; /* centriranje horizontalno */
-    justify-content: center; /* centriranje vertikalno ako je potrebno */
     left: 50%;
     transform: translateX(-50%);
     bottom: 30px;
-    width: auto; /* opcionalno, zavisi kako hoćeš da se prostire */
-    gap: 8px; /* razmak između dugmića */
-    position: absolute; /* ako već nije absolute */
-  }
-}
-
-/* Za vrlo male ekrane (npr. < 400px) */
-@media screen and (max-width: 400px) {
-  .hero-cta {
-    flex-direction: column; /* dugmići jedan ispod drugog */
-    gap: 6px; /* još manji razmak */
+    flex-direction: column;
   }
 }
 
@@ -2682,7 +2668,7 @@ textarea.w-select,
   width: 90%;
 
   font-family: "EB Garamond", serif;
-  font-size: clamp(20px, 4vw, 36px);
+  font-size: 28px;
   font-weight: 500;
   letter-spacing: 0.5px;
   color: #fff;
