@@ -2733,6 +2733,10 @@ textarea.w-select,
 }
 
 @media screen and (max-width: 991px) {
+  #home .heading {
+    display: none;
+  }
+
   .container {
     -webkit-box-align: center;
     -webkit-align-items: center;
