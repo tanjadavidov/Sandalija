@@ -847,6 +847,26 @@ textarea.w-select,
     width: auto; /* opcionalno, zavisi kako hoćeš da se prostire */
     gap: 8px; /* razmak između dugmića */
     position: absolute; /* ako već nije absolute */
+    margin-top: 10px; /* malo odmakne od prethodnog elementa */
+  }
+
+  .hero-cta a {
+    padding: 10px 20px; /* ravnomerna visina i širina */
+    font-size: 16px; /* prilagoditi veličinu teksta */
+    min-width: 120px; /* minimalna širina dugmeta */
+    text-align: center;
+    border-radius: 5px; /* blagi zaobljeni uglovi */
+  }
+
+  .hero-cta a.main-btn {
+    background-color: #e42c6d; /* primer boje prvog */
+    color: #fff;
+  }
+
+  .hero-cta a.transparent-btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
   }
 }
 
@@ -2682,7 +2702,7 @@ textarea.w-select,
   width: 90%;
 
   font-family: "EB Garamond", serif;
-  font-size: 28px;
+  font-size: clamp(16px, 2.5vw, 28px);
   font-weight: 500;
   letter-spacing: 0.5px;
   color: #fff;
@@ -2840,8 +2860,11 @@ textarea.w-select,
 
 @media screen and (max-width: 767px) {
   .hero-overlay {
-    padding-top: 180px;
-    padding-bottom: 180px;
+    /* padding-top: 180px;
+    padding-bottom: 180px; */
+
+    height: auto; /* ili max-height: 100vh; */
+    padding-bottom: 20px; /* manje praznog prostora ispod */
   }
 
   .heading {
