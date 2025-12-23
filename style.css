@@ -803,171 +803,7 @@ textarea.w-select,
 .w-hidden-main {
   display: none !important;
 }
-@media screen and (max-width: 991px) {
-  .w-container {
-    max-width: 728px;
-  }
-  .w-hidden-main {
-    display: inherit !important;
-  }
-  .w-hidden-medium {
-    display: none !important;
-  }
-  .w-col-medium-1 {
-    width: 8.33333333%;
-  }
-  .w-col-medium-2 {
-    width: 16.66666667%;
-  }
-  .w-col-medium-3 {
-    width: 25%;
-  }
-  .w-col-medium-4 {
-    width: 33.33333333%;
-  }
-  .w-col-medium-5 {
-    width: 41.66666667%;
-  }
-  .w-col-medium-6 {
-    width: 50%;
-  }
-  .w-col-medium-7 {
-    width: 58.33333333%;
-  }
-  .w-col-medium-8 {
-    width: 66.66666667%;
-  }
-  .w-col-medium-9 {
-    width: 75%;
-  }
-  .w-col-medium-10 {
-    width: 83.33333333%;
-  }
-  .w-col-medium-11 {
-    width: 91.66666667%;
-  }
-  .w-col-medium-12 {
-    width: 100%;
-  }
-  .w-col-stack {
-    width: 100%;
-    left: auto;
-    right: auto;
-  }
-}
-@media screen and (max-width: 767px) {
-  .w-hidden-main {
-    display: inherit !important;
-  }
-  .w-hidden-medium {
-    display: inherit !important;
-  }
-  .w-hidden-small {
-    display: none !important;
-  }
-  .w-row,
-  .w-container .w-row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .w-col {
-    width: 100%;
-    left: auto;
-    right: auto;
-  }
-  .w-col-small-1 {
-    width: 8.33333333%;
-  }
-  .w-col-small-2 {
-    width: 16.66666667%;
-  }
-  .w-col-small-3 {
-    width: 25%;
-  }
-  .w-col-small-4 {
-    width: 33.33333333%;
-  }
-  .w-col-small-5 {
-    width: 41.66666667%;
-  }
-  .w-col-small-6 {
-    width: 50%;
-  }
-  .w-col-small-7 {
-    width: 58.33333333%;
-  }
-  .w-col-small-8 {
-    width: 66.66666667%;
-  }
-  .w-col-small-9 {
-    width: 75%;
-  }
-  .w-col-small-10 {
-    width: 83.33333333%;
-  }
-  .w-col-small-11 {
-    width: 91.66666667%;
-  }
-  .w-col-small-12 {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 479px) {
-  .w-container {
-    max-width: none;
-  }
-  .w-hidden-main {
-    display: inherit !important;
-  }
-  .w-hidden-medium {
-    display: inherit !important;
-  }
-  .w-hidden-small {
-    display: inherit !important;
-  }
-  .w-hidden-tiny {
-    display: none !important;
-  }
-  .w-col {
-    width: 100%;
-  }
-  .w-col-tiny-1 {
-    width: 8.33333333%;
-  }
-  .w-col-tiny-2 {
-    width: 16.66666667%;
-  }
-  .w-col-tiny-3 {
-    width: 25%;
-  }
-  .w-col-tiny-4 {
-    width: 33.33333333%;
-  }
-  .w-col-tiny-5 {
-    width: 41.66666667%;
-  }
-  .w-col-tiny-6 {
-    width: 50%;
-  }
-  .w-col-tiny-7 {
-    width: 58.33333333%;
-  }
-  .w-col-tiny-8 {
-    width: 66.66666667%;
-  }
-  .w-col-tiny-9 {
-    width: 75%;
-  }
-  .w-col-tiny-10 {
-    width: 83.33333333%;
-  }
-  .w-col-tiny-11 {
-    width: 91.66666667%;
-  }
-  .w-col-tiny-12 {
-    width: 100%;
-  }
-}
+
 .w-widget {
   position: relative;
 }
@@ -2624,6 +2460,75 @@ textarea.w-select,
   animation-fill-mode: both; /* ⬅️ KLJUČNO zbog animacije naslova*/
 }
 
+/* Stil za slike u sekciji #actual */
+#actual .image {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* slike */
+.slide1 {
+  background-image: url("images/SandalijaCover2.jpg");
+  animation-delay: 0s;
+}
+
+.slide2 {
+  background-image: url("images/Coco1.jpeg");
+  animation-delay: 6s;
+}
+
+.slide3 {
+  background-image: url("images/Libre1.jpeg");
+  animation-delay: 12s;
+}
+
+/* naslov na webs trani */
+/* 1. slide – bela / neutralna */
+.title1 {
+  color: #ffffff;
+  animation-delay: 0s;
+}
+/* 2. slide – boja OKVIRA dugmeta "Ekskluzivno" */
+.title2 {
+  color: #81bf5b; /* primer – ista kao border */
+  animation-delay: 6s;
+}
+
+/* 3. slide – boja DUGMETA "Ekskluzivno" */
+.title3 {
+  color: #d7cb48; /* primer – puna boja dugmeta */
+  animation-delay: 12s;
+}
+
+/* naslov statičan */
+/*
+@keyframes heroTitleFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+*/
+
+.hero-cta {
+  position: centered;
+  margin-top: 10px;
+  bottom: 40px;
+
+  display: flex;
+  gap: 2px;
+
+  z-index: 3;
+}
+
 @keyframes heroTitleFade {
   0% {
     opacity: 0;
@@ -2645,27 +2550,6 @@ textarea.w-select,
   }
 }
 
-@media (max-width: 768px) {
-  .hero-title {
-    top: 110px;
-    /* right: 20px;*/
-    font-size: 20px;
-  }
-}
-
-/* naslov statičan */
-/*
-@keyframes heroTitleFade {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-*/
 @keyframes heroSlider {
   0% {
     opacity: 0;
@@ -2685,72 +2569,13 @@ textarea.w-select,
 }
 
 @media screen and (max-width: 991px) {
-  .container {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
+}
 
-  .hero-overlay {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-
-  .heading {
-    font-size: 58px;
-  }
-
-  .text-block {
+@media (max-width: 768px) {
+  .hero-title {
+    top: 110px;
+    /* right: 20px;*/
     font-size: 20px;
-  }
-
-  .nav-menu {
-    background-color: #fff;
-  }
-
-  .menu-button.w--open {
-    background-color: hsla(0, 0%, 100%, 0);
-  }
-
-  .nav-link {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 0px;
-    color: #000;
-  }
-
-  .nav-link.w--current {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #000;
-  }
-
-  .image {
-    max-width: 100%;
-  }
-
-  /* .slide-item {
-    max-width: 50%;
-  }  */
-
-  .slide-item1 {
-    max-width: 50%;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-
-  .slider {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .icon {
-    color: #fff;
   }
 }
 
@@ -2883,51 +2708,6 @@ textarea.w-select,
     -ms-flex-align: center;
     align-items: center;
   }
-}
-
-/* slike */
-.slide1 {
-  background-image: url("images/SandalijaCover2.jpg");
-  animation-delay: 0s;
-}
-
-.slide2 {
-  background-image: url("images/Coco1.jpeg");
-  animation-delay: 6s;
-}
-
-.slide3 {
-  background-image: url("images/Libre1.jpeg");
-  animation-delay: 12s;
-}
-
-/* naslov na webs trani */
-/* 1. slide – bela / neutralna */
-.title1 {
-  color: #ffffff;
-  animation-delay: 0s;
-}
-/* 2. slide – boja OKVIRA dugmeta "Ekskluzivno" */
-.title2 {
-  color: #81bf5b; /* primer – ista kao border */
-  animation-delay: 6s;
-}
-
-/* 3. slide – boja DUGMETA "Ekskluzivno" */
-.title3 {
-  color: #d7cb48; /* primer – puna boja dugmeta */
-  animation-delay: 12s;
-}
-
-.hero-cta {
-  position: centered;
-  margin-top: 10px;
-  bottom: 40px;
-
-  display: flex;
-  gap: 2px;
-
-  z-index: 3;
 }
 
 @media screen and (max-width: 479px) {
@@ -3158,17 +2938,187 @@ textarea.w-select,
   }
 }
 
-/* Stil za slike u sekciji #actual */
-#actual .image {
-  display: block;
-  margin: 10px auto;
-  max-width: 100%;
-  height: auto;
-  border-radius: 6px;
-  object-fit: cover;
+/* Samo za telefone */
+
+@media screen and (max-width: 991px) {
+  .container {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .hero-overlay {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .heading {
+    font-size: 58px;
+  }
+
+  .text-block {
+    font-size: 20px;
+  }
+
+  .nav-menu {
+    background-color: #fff;
+  }
+
+  .menu-button.w--open {
+    background-color: hsla(0, 0%, 100%, 0);
+  }
+
+  .nav-link {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    color: #000;
+  }
+
+  .nav-link.w--current {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+
+  /* .slide-item {
+    max-width: 50%;
+  }  */
+
+  .slide-item1 {
+    max-width: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .slider {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .icon {
+    color: #fff;
+  }
+
+  .w-container {
+    max-width: 728px;
+  }
+  .w-hidden-main {
+    display: inherit !important;
+  }
+  .w-hidden-medium {
+    display: none !important;
+  }
+  .w-col-medium-1 {
+    width: 8.33333333%;
+  }
+  .w-col-medium-2 {
+    width: 16.66666667%;
+  }
+  .w-col-medium-3 {
+    width: 25%;
+  }
+  .w-col-medium-4 {
+    width: 33.33333333%;
+  }
+  .w-col-medium-5 {
+    width: 41.66666667%;
+  }
+  .w-col-medium-6 {
+    width: 50%;
+  }
+  .w-col-medium-7 {
+    width: 58.33333333%;
+  }
+  .w-col-medium-8 {
+    width: 66.66666667%;
+  }
+  .w-col-medium-9 {
+    width: 75%;
+  }
+  .w-col-medium-10 {
+    width: 83.33333333%;
+  }
+  .w-col-medium-11 {
+    width: 91.66666667%;
+  }
+  .w-col-medium-12 {
+    width: 100%;
+  }
+  .w-col-stack {
+    width: 100%;
+    left: auto;
+    right: auto;
+  }
 }
 
-/* Samo za telefone */
+@media screen and (max-width: 767px) {
+  .w-hidden-main {
+    display: inherit !important;
+  }
+  .w-hidden-medium {
+    display: inherit !important;
+  }
+  .w-hidden-small {
+    display: none !important;
+  }
+  .w-row,
+  .w-container .w-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .w-col {
+    width: 100%;
+    left: auto;
+    right: auto;
+  }
+  .w-col-small-1 {
+    width: 8.33333333%;
+  }
+  .w-col-small-2 {
+    width: 16.66666667%;
+  }
+  .w-col-small-3 {
+    width: 25%;
+  }
+  .w-col-small-4 {
+    width: 33.33333333%;
+  }
+  .w-col-small-5 {
+    width: 41.66666667%;
+  }
+  .w-col-small-6 {
+    width: 50%;
+  }
+  .w-col-small-7 {
+    width: 58.33333333%;
+  }
+  .w-col-small-8 {
+    width: 66.66666667%;
+  }
+  .w-col-small-9 {
+    width: 75%;
+  }
+  .w-col-small-10 {
+    width: 83.33333333%;
+  }
+  .w-col-small-11 {
+    width: 91.66666667%;
+  }
+  .w-col-small-12 {
+    width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
   #actual .w-row {
     display: flex;
@@ -3186,5 +3136,62 @@ textarea.w-select,
   #actual .text-block-2 {
     text-align: center;
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .w-container {
+    max-width: none;
+  }
+  .w-hidden-main {
+    display: inherit !important;
+  }
+  .w-hidden-medium {
+    display: inherit !important;
+  }
+  .w-hidden-small {
+    display: inherit !important;
+  }
+  .w-hidden-tiny {
+    display: none !important;
+  }
+  .w-col {
+    width: 100%;
+  }
+  .w-col-tiny-1 {
+    width: 8.33333333%;
+  }
+  .w-col-tiny-2 {
+    width: 16.66666667%;
+  }
+  .w-col-tiny-3 {
+    width: 25%;
+  }
+  .w-col-tiny-4 {
+    width: 33.33333333%;
+  }
+  .w-col-tiny-5 {
+    width: 41.66666667%;
+  }
+  .w-col-tiny-6 {
+    width: 50%;
+  }
+  .w-col-tiny-7 {
+    width: 58.33333333%;
+  }
+  .w-col-tiny-8 {
+    width: 66.66666667%;
+  }
+  .w-col-tiny-9 {
+    width: 75%;
+  }
+  .w-col-tiny-10 {
+    width: 83.33333333%;
+  }
+  .w-col-tiny-11 {
+    width: 91.66666667%;
+  }
+  .w-col-tiny-12 {
+    width: 100%;
   }
 }
