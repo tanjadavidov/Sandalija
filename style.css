@@ -1809,29 +1809,6 @@ textarea.w-select,
   display: none !important;
 }
 
-/* ==========================================================================
-      Start of custom Webflow CSS
-      ========================================================================== */
-
-/* fade – vrlo suptilno */
-@keyframes heroFade {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -2527,6 +2504,29 @@ textarea.w-select,
   gap: 2px;
 
   z-index: 3;
+}
+
+/* ==========================================================================
+      Start of custom Webflow CSS
+      ========================================================================== */
+
+/* fade – vrlo suptilno */
+@keyframes heroFade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes heroTitleFade {
