@@ -2923,6 +2923,12 @@ textarea.w-select,
 }
 
 @media screen and (max-width: 767px) {
+  .hero-title {
+    top: 110px;
+    /* right: 20px;*/
+    font-size: 10px;
+  }
+
   .hero-overlay {
     padding-top: 180px;
     padding-bottom: 180px;
