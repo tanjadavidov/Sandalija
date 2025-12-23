@@ -2568,17 +2568,6 @@ textarea.w-select,
   }
 }
 
-@media screen and (max-width: 991px) {
-}
-
-@media (max-width: 768px) {
-  .hero-title {
-    top: 110px;
-    /* right: 20px;*/
-    font-size: 20px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .hero-overlay {
     padding-top: 180px;
@@ -3116,6 +3105,14 @@ textarea.w-select,
   }
   .w-col-small-12 {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    top: 110px;
+    /* right: 20px;*/
+    font-size: 20px;
   }
 }
 
