@@ -2926,7 +2926,7 @@ textarea.w-select,
   .hero-title {
     top: 110px;
     /* right: 20px;*/
-    font-size: 20px;
+    font-size: 5px;
   }
 
   .hero-overlay {
@@ -3116,11 +3116,6 @@ textarea.w-select,
 }
 
 @media (max-width: 768px) {
-  .hero-title {
-    top: 110px;
-    /* right: 20px;*/
-    font-size: 5px;
-  }
 }
 
 @media (max-width: 767px) {
