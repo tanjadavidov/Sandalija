@@ -1919,6 +1919,19 @@ textarea.w-select,
   background-color: #81bf5b;
 }
 
+.main-btn,
+.main-btn.transparent-btn {
+  box-sizing: border-box;
+  min-width: 140px;
+  padding: 10px 22px;
+  text-align: center;
+}
+
+.transparent-btn {
+  border: 2px solid #fff; /* ili koja god boja */
+  padding: 10px 22px; /* isto kao main-btn */
+}
+
 .main-btn.transparent-btn {
   margin-left: 40px;
   border-width: 1px;
@@ -2474,21 +2487,17 @@ textarea.w-select,
   100% {
     opacity: 0;
   }
-}
 
-/* naslov statičan */
-/*
-@keyframes heroTitleFade {
-  from {
+  /* naslov statičan */
+  /*from {
     opacity: 0;
     transform: translateY(-10px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
-  }
+  }*/
 }
-*/
 
 @keyframes heroSlider {
   0% {
