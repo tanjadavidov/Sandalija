@@ -2664,11 +2664,12 @@ textarea.w-select,
   }
 
   .main-btn {
-    padding: 10px 18px;
+    padding: 8px 16px;
     font-size: 13px;
-    min-width: 100%;
+    min-width: 120px;
+    /*
     max-width: 220px;
-    margin: 0 auto;
+    margin: 0 auto;*/
   }
 
   .hero-title {
