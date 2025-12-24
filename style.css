@@ -2428,8 +2428,8 @@ textarea.w-select,
 
 .hero-cta {
   position: centered;
-  margin-top: 10px;
-  bottom: 40px;
+  margin-top: 95%;
+  /* bottom: 10px;*/
 
   display: flex;
   gap: 2px;
@@ -2671,6 +2671,7 @@ textarea.w-select,
     flex-direction: row; /*column     dugmad jedno ispod drugog */
     justify-content: center;
     gap: 10px;
+    margin-top: 90%;
   }
 
   .main-btn {
