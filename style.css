@@ -2667,9 +2667,9 @@ textarea.w-select,
     padding: 8px 16px;
     font-size: 13px;
     min-width: 120px;
-    /*
+
     max-width: 220px;
-    margin: 0 auto;*/
+    margin: 0 auto;
   }
 
   .hero-title {
