@@ -1865,7 +1865,7 @@ textarea.w-select,
   text-align: center;
   letter-spacing: 1px;
 
-  padding: 10px 24px; /* smanjuje visinu i širinu dugmeta */
+  padding: 10px 22px; /* smanjuje visinu i širinu dugmeta */
   font-size: 14px; /* manji tekst */
   border-radius: 6px;
   min-width: 140px; /* da ne budu preuska */
