@@ -2572,231 +2572,6 @@ textarea.w-select,
 }
 
 @media screen and (max-width: 479px) {
-  .page-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .page-section.pig-image {
-    padding-top: 180px;
-    padding-bottom: 180px;
-  }
-
-  .page-section.gallery-section {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .hero-overlay {
-    padding-top: 160px;
-    padding-bottom: 160px;
-  }
-
-  .heading {
-    max-width: 100%;
-    font-size: 38px;
-  }
-
-  .text-block {
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
-
-  .main-btn {
-    min-width: 150px;
-    padding-right: 20px;
-    padding-left: 20px;
-    width: 50px;
-  }
-
-  .main-btn-bigest {
-    min-width: 140px;
-  }
-
-  .main-btn.transparent-btn {
-    min-width: 150px;
-    margin-left: 20px;
-  }
-
-  .brand {
-    padding-left: 0px;
-  }
-
-  .section-heading {
-    margin-bottom: 15px;
-    font-size: 36px;
-    text-align: center;
-  }
-
-  .section-text-heading {
-    font-size: 16px;
-  }
-
-  .section-line-wrapper {
-    margin-bottom: 30px;
-  }
-
-  .div-block-2 {
-    padding: 30px 10px;
-  }
-
-  .text-block-2 {
-    font-size: 18px;
-  }
-
-  .paragraph {
-    margin-bottom: 20px;
-    font-size: 16px;
-  }
-
-  .text-block-3 {
-    font-size: 16px;
-  }
-
-  .text-span {
-    font-size: 16px;
-  }
-
-  .heading-2 {
-    font-size: 20px;
-  }
-
-  .heading-4 {
-    font-size: 16px;
-  }
-
-  .slide-item {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-
-  .left-arrow {
-    width: 40px;
-  }
-
-  .right-arrow {
-    width: 40px;
-  }
-
-  .text-block-4 {
-    font-size: 16px;
-    font-weight: 400;
-  }
-
-  .text-block-5 {
-    font-size: 16px;
-  }
-
-  .text-field,
-  .polje1 {
-    margin-bottom: 20px;
-  }
-
-  .text-field-2,
-  .polje2 {
-    margin-bottom: 20px;
-  }
-
-  .text-field-3,
-  .polje3 {
-    margin-bottom: 20px;
-  }
-
-  .textarea,
-  .tekstpolje {
-    margin-bottom: 20px;
-  }
-
-  .footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .image-4 {
-    width: 150px;
-  }
-
-  .slider-div-wrapper {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
-    overflow: hidden;
-
-    align-items: center;
-  }
-
-  /* Tooltip container */
-  .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  }
-
-  /* Tooltip text */
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-  }
-
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
-
-  .container1 {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-
-  /* Top left text */
-  .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
-
-  /* Top right text */
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }
-
-  /* Bottom left text */
-  .bottom-left {
-    position: absolute;
-    bottom: 0px;
-    left: 16px;
-  }
-
-  /* Bottom right text */
-  .bottom-right {
-    position: absolute;
-    bottom: 0px;
-    right: 16px;
-  }
-
-  /* Centered text */
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .fontColor {
-    color: #0082f3; /* #000;-*/
-  }
 }
 
 /* Samo za telefone */
@@ -3139,6 +2914,232 @@ textarea.w-select,
 }
 
 @media screen and (max-width: 479px) {
+  .page-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .page-section.pig-image {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+
+  .page-section.gallery-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .hero-overlay {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+  .heading {
+    max-width: 100%;
+    font-size: 38px;
+  }
+
+  .text-block {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .main-btn {
+    min-width: 150px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 50px;
+  }
+
+  .main-btn-bigest {
+    min-width: 140px;
+  }
+
+  .main-btn.transparent-btn {
+    min-width: 150px;
+    margin-left: 20px;
+  }
+
+  .brand {
+    padding-left: 0px;
+  }
+
+  .section-heading {
+    margin-bottom: 15px;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .section-text-heading {
+    font-size: 16px;
+  }
+
+  .section-line-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .div-block-2 {
+    padding: 30px 10px;
+  }
+
+  .text-block-2 {
+    font-size: 18px;
+  }
+
+  .paragraph {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .text-block-3 {
+    font-size: 16px;
+  }
+
+  .text-span {
+    font-size: 16px;
+  }
+
+  .heading-2 {
+    font-size: 20px;
+  }
+
+  .heading-4 {
+    font-size: 16px;
+  }
+
+  .slide-item {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .left-arrow {
+    width: 40px;
+  }
+
+  .right-arrow {
+    width: 40px;
+  }
+
+  .text-block-4 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .text-block-5 {
+    font-size: 16px;
+  }
+
+  .text-field,
+  .polje1 {
+    margin-bottom: 20px;
+  }
+
+  .text-field-2,
+  .polje2 {
+    margin-bottom: 20px;
+  }
+
+  .text-field-3,
+  .polje3 {
+    margin-bottom: 20px;
+  }
+
+  .textarea,
+  .tekstpolje {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .image-4 {
+    width: 150px;
+  }
+
+  .slider-div-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+
+    align-items: center;
+  }
+
+  /* Tooltip container */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 0px;
+    left: 16px;
+  }
+
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 0px;
+    right: 16px;
+  }
+
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fontColor {
+    color: #0082f3; /* #000;-*/
+  }
+
   .w-container {
     max-width: none;
   }
