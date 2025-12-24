@@ -2636,6 +2636,12 @@ textarea.w-select,
     left: auto;
     right: auto;
   }
+  .w-nav[data-collapse="medium"] .w-nav-menu {
+    display: none;
+  }
+  .w-nav[data-collapse="medium"] .w-nav-button {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2844,6 +2850,38 @@ textarea.w-select,
   .w-col-small-12 {
     width: 100%;
   }
+  .w-nav[data-collapse="small"] .w-nav-menu {
+    display: none;
+  }
+  .w-nav[data-collapse="small"] .w-nav-button {
+    display: block;
+  }
+  .w-nav-brand {
+    padding-left: 10px;
+  }
+  .w-nav-brand {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  #actual .w-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #actual .w-col {
+    width: 100% !important;
+    max-width: 90%;
+    margin: 0 auto 15px;
+  }
+
+  #actual .text-block-2 {
+    text-align: center;
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2878,26 +2916,6 @@ textarea.w-select,
   }
   .w-lightbox-control:hover {
     opacity: 1;
-  }
-}
-
-@media (max-width: 767px) {
-  #actual .w-row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  #actual .w-col {
-    width: 100% !important;
-    max-width: 90%;
-    margin: 0 auto 15px;
-  }
-
-  #actual .text-block-2 {
-    text-align: center;
-    font-size: 16px;
   }
 }
 
@@ -3187,45 +3205,13 @@ textarea.w-select,
   .w-col-tiny-12 {
     width: 100%;
   }
-}
-
-@media screen and (max-width: 479px) {
-  .w-tab-link {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .w-nav[data-collapse="medium"] .w-nav-menu {
-    display: none;
-  }
-  .w-nav[data-collapse="medium"] .w-nav-button {
-    display: block;
-  }
-}
-@media screen and (max-width: 767px) {
-  .w-nav[data-collapse="small"] .w-nav-menu {
-    display: none;
-  }
-  .w-nav[data-collapse="small"] .w-nav-button {
-    display: block;
-  }
-  .w-nav-brand {
-    padding-left: 10px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .w-nav-brand {
-    padding-left: 10px;
-  }
-}
-
-@media screen and (max-width: 479px) {
   .w-nav[data-collapse="tiny"] .w-nav-menu {
     display: none;
   }
   .w-nav[data-collapse="tiny"] .w-nav-button {
+    display: block;
+  }
+  .w-tab-link {
     display: block;
   }
 }
