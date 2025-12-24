@@ -2673,16 +2673,17 @@ textarea.w-select,
 }
 
 @media screen and (max-width: 767px) {
-  .main-btn {
-    /* padding-right: 10px;
-    padding-left: 24px; */
-    width: 50px;
+  .hero-cta {
+    flex-direction: column; /* dugmad jedno ispod drugog */
+    gap: 10px;
+  }
 
-    padding: 10px 24px; /* smanjuje visinu i širinu dugmeta */
-    font-size: 14px; /* manji tekst */
-    border-radius: 6px;
-    min-width: 140px; /* da ne budu preuska */
-    text-align: center;
+  .main-btn {
+    padding: 10px 18px;
+    font-size: 13px;
+    min-width: 100%;
+    max-width: 220px;
+    margin: 0 auto;
   }
 
   .hero-title {
