@@ -2668,7 +2668,7 @@ textarea.w-select,
 @media screen and (max-width: 767px) {
   .hero-cta {
     display: flex;
-    flex-direction: column; /*column     dugmad jedno ispod drugog */
+    flex-direction: row; /*column     dugmad jedno ispod drugog */
     justify-content: center;
     gap: 10px;
   }
