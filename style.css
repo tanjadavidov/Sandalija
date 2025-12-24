@@ -1929,7 +1929,7 @@ textarea.w-select,
 
 .transparent-btn {
   border: 2px solid #fff; /* ili koja god boja */
-  /* padding: 10px 22px; */ /* isto kao main-btn */
+  padding: 10px 22px; /* isto kao main-btn */
   background: transparent;
 }
 
