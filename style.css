@@ -2463,7 +2463,7 @@ textarea.w-select,
   animation-delay: 12s;
 }
 
-/* naslov na webs trani */
+/* naslov na webs strani */
 /* 1. slide – bela / neutralna */
 .title1 {
   color: #ffffff;
@@ -2566,12 +2566,6 @@ textarea.w-select,
   100% {
     opacity: 0;
   }
-}
-
-@media screen and (max-width: 767px) {
-}
-
-@media screen and (max-width: 479px) {
 }
 
 /* Samo za telefone */
@@ -2701,7 +2695,7 @@ textarea.w-select,
   .hero-title {
     top: 110px;
     /* right: 20px;*/
-    font-size: 20px;
+    font-size: 5px;
   }
 
   .hero-overlay {
@@ -2888,9 +2882,6 @@ textarea.w-select,
   .w-col-small-12 {
     width: 100%;
   }
-}
-
-@media (max-width: 768px) {
 }
 
 @media (max-width: 767px) {
