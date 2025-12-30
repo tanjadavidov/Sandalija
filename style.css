@@ -2427,12 +2427,12 @@ textarea.w-select,
 
 .slide2 {
   background-image: url("images/Coco1.jpeg");
-  animation-delay: 2s;
+  animation-delay: 6s;
 }
 
 .slide3 {
   background-image: url("images/Libre1.jpeg");
-  animation-delay: 4s;
+  animation-delay: 12s;
 }
 
 /* naslov na webs strani */
@@ -2444,13 +2444,13 @@ textarea.w-select,
 /* 2. slide – boja OKVIRA dugmeta "Ekskluzivno" */
 .title2 {
   color: #81bf5b; /* primer – ista kao border */
-  animation-delay: 2s;
+  animation-delay: 6s;
 }
 
 /* 3. slide – boja DUGMETA "Ekskluzivno" */
 .title3 {
   color: #d7cb48; /* primer – puna boja dugmeta */
-  animation-delay: 4s;
+  animation-delay: 12s;
 }
 
 .hero-cta {
