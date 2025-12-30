@@ -2103,8 +2103,8 @@ textarea.w-select,
   position: absolute;
   top: -10px;
   display: inline-block;
-   padding-right: 10px;
-  padding-left: 10px; 
+  padding-right: 10px;
+  padding-left: 10px;
   background-color: #fff;
   font-size: 20px;
 }
@@ -2393,9 +2393,9 @@ textarea.w-select,
 
   height: auto;
   width: 100%;
-  max-width: 40%;   /* ovde kontrolišeš koliko su velike */
+  max-width: 40%; /* ovde kontrolišeš koliko su velike */
   display: block;
-  margin: 0 auto;    /* savršeno centriranje */
+  margin: 0 auto; /* savršeno centriranje */
   border-radius: 10px;
   /* transition: transform 0.6s ease, opacity 0.6s ease; */
 
@@ -2427,12 +2427,12 @@ textarea.w-select,
 
 .slide2 {
   background-image: url("images/Coco1.jpeg");
-  animation-delay: 6s;
+  animation-delay: 2s;
 }
 
 .slide3 {
   background-image: url("images/Libre1.jpeg");
-  animation-delay: 12s;
+  animation-delay: 4s;
 }
 
 /* naslov na webs strani */
@@ -2444,13 +2444,13 @@ textarea.w-select,
 /* 2. slide – boja OKVIRA dugmeta "Ekskluzivno" */
 .title2 {
   color: #81bf5b; /* primer – ista kao border */
-  animation-delay: 6s;
+  animation-delay: 2s;
 }
 
 /* 3. slide – boja DUGMETA "Ekskluzivno" */
 .title3 {
   color: #d7cb48; /* primer – puna boja dugmeta */
-  animation-delay: 12s;
+  animation-delay: 4s;
 }
 
 .hero-cta {
@@ -2482,12 +2482,11 @@ textarea.w-select,
   font-size: 14px;
 }
 
-
 #actual .image {
   width: 100%;
-  max-width: 250px;   /* ovde kontrolišeš koliko su velike */
+  max-width: 250px; /* ovde kontrolišeš koliko su velike */
   display: block;
-  margin: 0 auto;    /* savršeno centriranje */
+  margin: 0 auto; /* savršeno centriranje */
   border-radius: 10px;
   transition: transform 0.6s ease, opacity 0.6s ease;
 }
@@ -2943,10 +2942,9 @@ textarea.w-select,
     font-size: 16px;
   }
 
-
-    /*za animaciju ulaska slike 1. leva, 2. srednja, 3. desna*/
+  /*za animaciju ulaska slike 1. leva, 2. srednja, 3. desna*/
   #actual .image {
-    max-width: 260px;        /* malo manje slike za telefon */
+    max-width: 260px; /* malo manje slike za telefon */
     transform: translateY(30px) scale(0.96);
   }
 
@@ -2962,9 +2960,6 @@ textarea.w-select,
   #actual .w-col:nth-child(3) .image {
     transition-delay: 0.4s;
   }
-
-
-
 }
 
 @media (min-width: 768px) {
