@@ -3014,6 +3014,18 @@ textarea.w-select,
 }
 
 @media (min-width: 768px) {
+  #actual .from-left {
+    transform: translateX(-40px);
+  }
+
+  #actual .from-right {
+    transform: translateX(40px);
+  }
+
+  #actual .from-top {
+    transform: translateY(-40px);
+  }
+
   .w-lightbox-content {
     height: 96vh;
     margin-top: 2vh;
