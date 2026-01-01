@@ -2753,6 +2753,18 @@ textarea.w-select,
 }
 
 @media screen and (max-width: 767px) {
+  #actual .from-left {
+    transform: translateX(-40px);
+  }
+
+  #actual .from-right {
+    transform: translateX(40px);
+  }
+
+  #actual .from-top {
+    transform: translateY(-40px);
+  }
+
   .hero-cta {
     display: flex;
     flex-direction: row; /*column     dugmad jedno ispod drugog */
@@ -3014,18 +3026,6 @@ textarea.w-select,
 }
 
 @media (min-width: 768px) {
-  #actual .from-left {
-    transform: translateX(-40px);
-  }
-
-  #actual .from-right {
-    transform: translateX(40px);
-  }
-
-  #actual .from-top {
-    transform: translateY(-40px);
-  }
-
   .w-lightbox-content {
     height: 96vh;
     margin-top: 2vh;
