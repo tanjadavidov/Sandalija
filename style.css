@@ -2419,6 +2419,28 @@ textarea.w-select,
   transition-delay: 0.5s;
 }
 
+/* ulaz slike leva gornja desna */
+/* leve slike */
+#actual .from-left {
+  transform: translateX(-80px);
+}
+
+/* desne slike */
+#actual .from-right {
+  transform: translateX(80px);
+}
+
+/* srednje (odozgo) */
+#actual .from-top {
+  transform: translateY(-80px);
+}
+
+/* kada JS doda .visible */
+#actual .image.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 /* slike */
 .slide1 {
   background-image: url("images/SandalijaCover2.jpg");
@@ -2488,7 +2510,36 @@ textarea.w-select,
   display: block;
   margin: 0 auto; /* savršeno centriranje */
   border-radius: 10px;
-  transition: transform 0.6s ease, opacity 0.6s ease;
+  /* transition: transform 0.6s ease, opacity 0.6s ease; */
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+/* početno stanje – skrivene slike */
+.from-left,
+.from-right,
+.from-top {
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+/* pozicije pre ulaska */
+.from-left {
+  transform: translateX(-80px);
+}
+
+.from-right {
+  transform: translateX(80px);
+}
+
+.from-top {
+  transform: translateY(-80px);
+}
+
+/* kada postanu vidljive */
+.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 /* ==========================================================================
