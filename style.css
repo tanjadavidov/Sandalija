@@ -2811,7 +2811,7 @@ textarea.w-select,
   }
 
   #offer .slider-div-wrapper {
-    height: 380px; /* 360–420 je idealno */
+    height: 340px; /* 360–420 je idealno */
   }
 
   #offer .slider-div-wrapper img {
@@ -2821,7 +2821,8 @@ textarea.w-select,
   }
 
   #offer .w-slide {
-    /* height: 380px;*/
+    height: 100%;
+    padding: 6px;
 
     width: 50% !important;
     box-sizing: border-box;
