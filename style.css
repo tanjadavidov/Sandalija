@@ -2545,7 +2545,7 @@ textarea.w-select,
 /* okvir svake slike u slideru */
 .slider-div-wrapper {
   width: 100%;
-  height: 300px; /* visina svih slika */
+  height: 350px; /* visina svih slika */
   display: flex;
   align-items: center;
   justify-content: center;
