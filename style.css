@@ -2545,7 +2545,7 @@ textarea.w-select,
 /* okvir svake slike u slideru */
 .slider-div-wrapper {
   width: 100%;
-  height: 350px; /* visina svih slika */
+  height: 300px; /* visina svih slika */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2794,6 +2794,22 @@ textarea.w-select,
 
   #actual .from-top {
     transform: translateY(-40px);
+  }
+
+  #offer .slider-div-wrapper {
+    height: 380px; /* 360–420 je idealno */
+  }
+
+  #offer .slider-div-wrapper img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+
+  /* za pravi web shop*/
+  #offer .slider-div-wrapper {
+    background: #f8f8f8;
+    border-radius: 12px;
   }
 
   .hero-cta {
