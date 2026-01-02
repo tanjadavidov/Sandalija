@@ -2821,7 +2821,14 @@ textarea.w-select,
   }
 
   #offer .w-slide {
-    height: 380px;
+    /* height: 380px;*/
+
+    width: 50% !important;
+    box-sizing: border-box;
+  }
+
+  #offer .w-slider-mask {
+    display: flex;
   }
 
   .hero-cta {
