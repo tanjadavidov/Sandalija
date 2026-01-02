@@ -2811,13 +2811,18 @@ textarea.w-select,
   }
 
   #offer .slider-div-wrapper {
-    height: 340px; /* 360–420 je idealno */
+    width: 100%;
+    height: 420px; /* po želji */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
 
   #offer .slider-div-wrapper img {
-    max-height: 100%;
-    width: auto;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 🔥 puni ceo slajd */
   }
 
   /* Jedan slajd zauzima pola ekrana */
