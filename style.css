@@ -2560,15 +2560,23 @@ textarea.w-select,
 
 /* za pravi web shop*/
 #offer .slider-div-wrapper {
-  position: relative;
+  /*position: relative;
   width: 100%;
-  height: 100%; /* 420px;  desktop */
+  height: 100%; 
   overflow: hidden;
 
-  display: flex;
-  flex-direction: column; /* ⬅️ KLJUČ */
+  display: flex;/
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
+*/
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 /* šifra preko slike */
@@ -2858,16 +2866,17 @@ textarea.w-select,
   }
 
   #offer .slider-div-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* 🔥 puni ceo slajd */
-    object-position: center;
+    /* object-fit: cover;  🔥 puni ceo slajd 
+    object-position: center;*/
+    display: block;
 
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
     display: block;
   }
 
   /* 1️⃣ JEDAN SLAJD = CELO EKRAN */
-
   /* Jedan slajd zauzima pola ekrana */
   #offer .w-slide {
     width: 100% !important;
@@ -2886,6 +2895,7 @@ textarea.w-select,
     z-index: 5;
     font-size: 12px;
     color: #fff;
+    text-align: center;
   }
 
   /* 5️⃣ CENA – DOLE PREKO SLIKE */
@@ -2900,6 +2910,7 @@ textarea.w-select,
     font-size: 14px;
     font-weight: 600;
     z-index: 5;
+    text-align: center;
   }
 
   #offer .slider-div-wrapper::after {
@@ -2911,6 +2922,21 @@ textarea.w-select,
       rgba(0, 0, 0, 0.25),
       rgba(0, 0, 0, 0.6)
     );
+  }
+
+  #offer .w-slide {
+    width: 100%;
+  }
+
+  #offer .slider-div-wrapper img {
+    height: 160px;
+  }
+
+  #offer .product-desc {
+    display: none;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
   }
 
   .hero-cta {
