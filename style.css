@@ -2820,16 +2820,18 @@ textarea.w-select,
     object-fit: contain;
   }
 
+  /* Jedan slajd zauzima pola ekrana */
   #offer .w-slide {
-    height: 100%;
+    /* height: 50%;*/
     padding: 6px;
 
     width: 50% !important;
     box-sizing: border-box;
+    float: left;
   }
 
   #offer .w-slider-mask {
-    display: flex;
+    display: block;
   }
 
   .hero-cta {
