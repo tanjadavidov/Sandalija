@@ -2384,13 +2384,6 @@ textarea.w-select,
 
 /* Stil za slike u sekciji #actual */
 #actual .image {
-  /*display: block;
-  margin: 10px auto;
-  max-width: 100%;
-  
-  border-radius: 6px;
-  object-fit: cover;*/
-
   height: auto;
   width: 100%;
   max-width: 40%; /* ovde kontrolišeš koliko su velike */
@@ -2488,13 +2481,6 @@ textarea.w-select,
 }
 
 .main-btn {
-  /*
-  padding: 10px 24px; 
-  font-size: 14px; 
-  border-radius: 6px;
-  min-width: 140px; 
-  text-align: center;*/
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2574,40 +2560,16 @@ textarea.w-select,
 
 /* za pravi web shop*/
 #offer .slider-div-wrapper {
-  background: #f8f8f8;
-  border-radius: 14px;
   position: relative;
-  /* padding: 12px;
-  height: 100%;
-  box-sizing: border-box; */
+  width: 100%;
+  height: 100%; /* 420px;  desktop */
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column; /* ⬅️ KLJUČ */
+  align-items: center;
+  justify-content: center;
 }
-
-/* šifra preko slike */
-/*
-#offer .product-code {
-   position: absolute;
-  top: 12px;
-  left: 12px;
-
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-
-  font-size: 13px;
-  font-weight: 600;
-  padding: 6px 10px;
-
-  border-radius: 6px;
-  z-index: 5;
-
-  letter-spacing: 0.5px;
-  background: rgba(255, 255, 255, 0.85);
-  color: #333;
-
-  font-weight: 500;
-  font-size: 11px;
-  padding: 5px 8px;
-}
-*/
 
 /* šifra preko slike */
 #offer .product-code {
@@ -2627,11 +2589,30 @@ textarea.w-select,
   pointer-events: none;
 }
 
-/* 
-#offer .w-slide {
-  padding: 12px;
-  box-sizing: border-box;
-} */
+#offer .product-price {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #d7cb48; /* zlatna nijansa */
+  letter-spacing: 0.5px;
+
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+#offer .product-desc {
+  margin-top: 4px;
+  font-size: 12px; /* sitnija slova */
+  font-weight: 400;
+
+  text-align: center;
+  line-height: 1.3;
+
+  color: #777;
+  opacity: 0.9;
+}
 
 /* ==========================================================================
       Start of custom Webflow CSS
@@ -2880,13 +2861,6 @@ textarea.w-select,
 
   /* Jedan slajd zauzima pola ekrana */
   #offer .w-slide {
-    /*
-    padding: 6px;
-
-    width: 50% !important;
-    box-sizing: border-box;
-    float: left;
-*/
     width: 100% !important;
     float: none;
   }
@@ -3154,21 +3128,6 @@ textarea.w-select,
 }
 
 @media (min-width: 768px) {
-  /*
-  #offer .slider-div-wrapper {
-   
-  }
-
-  #offer .slider-div-wrapper img {
-    object-fit: cover; 
-    object-position: center;
-  }
-
-  #offer .product-code {
-    font-size: 11px;
-    padding: 5px 8px;
-  }*/
-
   .w-lightbox-content {
     height: 96vh;
     margin-top: 2vh;
