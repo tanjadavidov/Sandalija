@@ -2569,6 +2569,20 @@ textarea.w-select,
   transform: scale(1.05);
 }
 
+/* za pravi web shop*/
+#offer .slider-div-wrapper {
+  background: #f8f8f8;
+  border-radius: 14px;
+  padding: 12px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#offer .w-slide {
+  padding: 12px;
+  box-sizing: border-box;
+}
+
 /* ==========================================================================
       Start of custom Webflow CSS
       ========================================================================== */
@@ -2804,12 +2818,6 @@ textarea.w-select,
     max-height: 100%;
     width: auto;
     object-fit: contain;
-  }
-
-  /* za pravi web shop*/
-  #offer .slider-div-wrapper {
-    background: #f8f8f8;
-    border-radius: 12px;
   }
 
   .hero-cta {
