@@ -2598,6 +2598,7 @@ textarea.w-select,
 }
 
 #offer .product-desc {
+  /*
   position: relative;
  
   background: #fff;
@@ -2610,6 +2611,40 @@ textarea.w-select,
   font-size: 13px;
   line-height: 1.4;
   overflow: hidden;
+*/
+/*
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 3;
+*/
+
+
+ max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.35s ease;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+#offer .product-image:hover .product-desc {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* da Webflow ne seče karticu */
@@ -2683,6 +2718,12 @@ textarea.w-select,
   z-index: 2;
   text-align: center;
   pointer-events: none;
+}
+
+#offer .slide-item:hover .product-desc {
+  max-height: 160px;   /* kontrolišeš koliko može da se otvori */
+  opacity: 1;
+  overflow-y: auto;
 }
 /*
 #offer .slide-item {
@@ -2917,7 +2958,7 @@ textarea.w-select,
   #offer .slider-div-wrapper {
     width: 100%;
     /* height: 420px;  po želji */
-    height: 440px; /* manja visina za telefon */
+    height:100% ; /* 440px manja visina za telefon */
     display: flex;
     align-items: center;
     /* justify-content: center;*/
@@ -3006,6 +3047,13 @@ textarea.w-select,
     font-size: 12px;
     line-height: 1.4;
     text-align: center;
+
+    opacity: 1;
+    transform: none;
+   
+    background: rgba(0, 0, 0, 0.55);
+
+    
   }
 
   .hero-cta {
@@ -3042,7 +3090,7 @@ textarea.w-select,
   }
 
   .section-heading {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .section-text-heading {
