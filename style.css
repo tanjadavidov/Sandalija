@@ -2684,10 +2684,10 @@ textarea.w-select,
 }
 
 #offer .product-image img {
+ 
   width: 100%;
-  height: auto;
-  /*object-fit: contain;    nikad se ne seče */
-  object-fit: contain;      /* slika popunjava box */
+  height: auto; 
+  object-fit: contain;     
   object-position: center;
   display: block;
 
@@ -2921,14 +2921,7 @@ textarea.w-select,
 }
 
 @media (max-width: 767px) {
-#offer .w-slider,
-#offer .w-slider-mask,
-#offer .w-slide {
-  height: auto !important;
-}
-
-
-
+ 
   .slider-div-wrapper {
     height: 260px;
   }
@@ -2945,31 +2938,52 @@ textarea.w-select,
     transform: translateY(-40px);
   }
 
+
+  #offer {
+    padding: 0;
+  }
+
+  #offer .w-slider,
+  #offer .w-slider-mask,
+  #offer .w-slide {
+    min-height: 100vh;
+  }
+
   #offer .slider-div-wrapper {
-    width: 100%;
-    /* height: 420px;  po želji */
-    height:100% ; /* 440px manja visina za telefon */
-    display: flex;
-    align-items: center;
-    /* justify-content: center;*/
-    overflow: hidden;
-
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-
     position: relative; /* ⬅️ KLJUČ */
+
+     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   #offer .slider-div-wrapper img {
-    /* object-fit: cover;  🔥 puni ceo slajd 
-    object-position: center;*/
     display: block;
 
     width: 100%;
-    height: 180px;
+   
     object-fit: contain;
     display: block;
+  }
+
+#offer .product-image {
+    flex: 0 0 auto;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+   #offer .product-image img {
+   /* max-height: 100%;
+    width: auto;
+     object-fit: contain;
+*/
+
+      width: 100%;
+  height: 100%;
+  object-fit: cover;
   }
 
   /* 1️⃣ JEDAN SLAJD = CELO EKRAN */
@@ -2978,6 +2992,7 @@ textarea.w-select,
     height: auto !important;
     width: 100% !important;
     float: none;
+    min-height: 75vh;
   }
 
   #offer .w-slider-mask {
@@ -3036,21 +3051,26 @@ textarea.w-select,
   }
 
   #offer .product-desc {
-   /*
-    display: none;
-    font-size: 12px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.85);
+    color: white;
+    padding: 15px;
+    font-size: 14px;
     line-height: 1.4;
-    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    max-height: 70%;
+    overflow-y: auto;
 
-    opacity: 1;
-    transform: none;
-   
-    background: rgba(0, 0, 0, 0.55);
-*/
-     max-height: none;
-     opacity: 1;
-    overflow: visible;
-    margin-top: 10px;
+    max-height: 45vh;
+  }
+
+    #offer .slider-div-wrapper.active .product-desc {
+    transform: translateY(0);
   }
 
   .hero-cta {
