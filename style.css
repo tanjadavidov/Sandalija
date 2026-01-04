@@ -2038,6 +2038,7 @@ textarea.w-select,
   color: #81bf5b;
   font-size: 20px;
   text-align: left;
+  margin-bottom: 15px;
 }
 
 .section-text-heading.white-color {
@@ -2532,13 +2533,15 @@ textarea.w-select,
 
 .slider-div-wrapper {
   width: 100%;
-  height: 300px; 
+  height: 100%; 
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   background: #f8f8f8; 
   border-radius: 12px;
+
+  
 }
 
 
@@ -2554,10 +2557,10 @@ textarea.w-select,
   height: 100%;
 }
 
-
 .slider-div-wrapper:hover img {
   transform: scale(1.05);
 }
+
 
 
 
@@ -2595,31 +2598,29 @@ textarea.w-select,
 }
 
 #offer .product-desc {
- /* margin-top: 4px;
-  font-size: 12px; 
-  font-weight: 400;
+  position: relative;
+ 
+  background: #fff;
+  padding: 12px 10px;
+  margin-top: 12px;
 
-  text-align: center;
-  line-height: 1.3;
-
-  color: #777;
-  opacity: 0.9;*/
-  flex: 3;
+   flex: 3;
   padding: 10px;
   text-align: center;
   font-size: 13px;
   line-height: 1.4;
   overflow: hidden;
-
 }
 
 /* da Webflow ne seče karticu */
 #offer .w-slider-mask {
-  overflow: hidden;
+  height: auto !important;
+  
 }
 
 #offer .w-slide {
   height: 100%;
+  height: auto !important;
 }
 
 /* za pravi web shop*/
@@ -2631,16 +2632,20 @@ textarea.w-select,
   flex-direction: column;
   justify-content: space-between;
   /*height: 440px;*/
-
+  flex-shrink: 0;
   position: relative;
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
+  gap: 12px;
 }
 
 /* Slika zauzima sav gornji deo */
 #offer .slider-div-wrapper img {
-  width: 100%;
-  flex: 1;
+  
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
   object-fit: contain;
 }
 
@@ -2653,8 +2658,11 @@ textarea.w-select,
 /* Slika uvek pokriva slajd */
 #offer .product-image {
   position: relative;
- /* inset: 0;*/
-  flex: 7;
+ /* inset: 0;
+  flex: 7;*/
+   width: 100%;
+  height: 300px;
+  overflow: hidden;
 }
 
 #offer .product-image img {
@@ -2672,10 +2680,17 @@ textarea.w-select,
   padding: 20px 12px;
   background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
   color: white;
-  /*z-index: 2;*/
+  z-index: 2;
   text-align: center;
+  pointer-events: none;
 }
-
+/*
+#offer .slide-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+*/
 /* ==========================================================================
       Start of custom Webflow CSS
       ========================================================================== */
@@ -2935,6 +2950,7 @@ textarea.w-select,
 
   #offer .w-slider-mask {
     display: block;
+    height: auto !important;
   }
 
   /* 4️⃣ ŠIFRA – GORE PREKO SLIKE */
@@ -3026,7 +3042,7 @@ textarea.w-select,
   }
 
   .section-heading {
-    font-size: 42px;
+    font-size: 28px;
   }
 
   .section-text-heading {
@@ -3353,7 +3369,7 @@ textarea.w-select,
   }
 
   .section-line-wrapper {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 
   .div-block-2 {
