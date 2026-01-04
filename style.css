@@ -2022,7 +2022,7 @@ textarea.w-select,
   margin-top: 10px;
   margin-bottom: 20px;
   font-family: "EB Garamond", sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1;
   font-weight: 500;
   text-align: left;
@@ -3042,7 +3042,7 @@ textarea.w-select,
   }
 
   .section-heading {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .section-text-heading {
