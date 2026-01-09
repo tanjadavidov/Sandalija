@@ -12591,8 +12591,8 @@ const observer = new IntersectionObserver(
 
 animatedImages.forEach((img) => observer.observe(img));
 
-
-document.querySelectorAll("#offer .slider-div-wrapper").forEach(card => {
+/*  */
+document.querySelectorAll("#offer .slider-div-wrapper").forEach((card) => {
   card.addEventListener("click", () => {
     card.classList.toggle("active");
   });

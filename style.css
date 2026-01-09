@@ -2529,28 +2529,23 @@ textarea.w-select,
   transform: translate(0, 0);
 }
 
-
-
 .slider-div-wrapper {
   width: 100%;
-  height: 100%; 
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: #f8f8f8; 
+  background: #f8f8f8;
   border-radius: 12px;
-
-  
 }
-
 
 .slider-div-wrapper img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
-  object-fit: contain; 
+  object-fit: contain;
   transition: transform 0.6s ease;
 
   width: 100%;
@@ -2561,14 +2556,11 @@ textarea.w-select,
   transform: scale(1.05);
 }
 
-
-
 #offer .w-slider,
 #offer .w-slider-mask,
 #offer .w-slide {
   height: auto !important;
 }
-
 
 /* šifra preko slike */
 #offer .product-code {
@@ -2603,20 +2595,17 @@ textarea.w-select,
 }
 
 #offer .product-desc {
- 
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   transition: max-height 0.3s ease, opacity 0.3s ease;
   font-size: 14px;
   line-height: 1.4;
-
-
 }
 
 #offer .w-slider {
-  margin-top: 0px;   /* smanji razmak, po potrebi i 0 */
-  height: 420px;   /* povećaj jer imaš 3 kartice + tekst */
+  margin-top: 0px; /* smanji razmak, po potrebi i 0 */
+  height: 420px; /* povećaj jer imaš 3 kartice + tekst */
   overflow: visible;
 }
 
@@ -2628,8 +2617,6 @@ textarea.w-select,
 /* da Webflow ne seče karticu */
 #offer .w-slider-mask {
   height: auto !important;
-
-  
 }
 
 #offer .w-slide {
@@ -2637,11 +2624,8 @@ textarea.w-select,
 }
 
 /* za pravi web shop*/
-#offer .slider-div-wrapper {  
-
- 
+#offer .slider-div-wrapper {
   justify-content: flex-start;
-
 
   background: #f8f8f8;
   border-radius: 16px;
@@ -2655,12 +2639,10 @@ textarea.w-select,
   height: 100%;
   overflow: visible;
   gap: 12px;
-
 }
 
 /* Slika zauzima sav gornji deo */
 #offer .slider-div-wrapper img {
-  
   max-width: 100%;
   max-height: 100%;
   width: auto;
@@ -2677,20 +2659,18 @@ textarea.w-select,
 /* Slika uvek pokriva slajd */
 #offer .product-image {
   position: relative;
-   flex: 1;
-   width: 100%;
+  flex: 1;
+  width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
 #offer .product-image img {
- 
   width: 100%;
-  height: auto; 
-  object-fit: contain;     
+  height: auto;
+  object-fit: contain;
   object-position: center;
   display: block;
-
 }
 
 /* Tamni gradient za čitljivost */
@@ -2700,7 +2680,7 @@ textarea.w-select,
   left: 0;
   right: 0;
   padding: 20px 12px;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   color: white;
   z-index: 2;
   text-align: center;
@@ -2708,11 +2688,10 @@ textarea.w-select,
 }
 
 #offer .slide-item:hover .product-desc {
-  max-height: 80px;   /* kontrolišeš koliko može da se otvori */
+  max-height: 80px; /* kontrolišeš koliko može da se otvori */
   opacity: 1;
   /*overflow-y: auto;*/
 }
-
 
 /* ==========================================================================
       Start of custom Webflow CSS
@@ -2921,7 +2900,6 @@ textarea.w-select,
 }
 
 @media (max-width: 767px) {
- 
   .slider-div-wrapper {
     height: 260px;
   }
@@ -2938,7 +2916,6 @@ textarea.w-select,
     transform: translateY(-40px);
   }
 
-
   #offer {
     padding: 0;
   }
@@ -2950,9 +2927,9 @@ textarea.w-select,
   }
 
   #offer .slider-div-wrapper {
-    position: relative; /* ⬅️ KLJUČ */
+    position: relative;
 
-     height: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -2962,12 +2939,12 @@ textarea.w-select,
     display: block;
 
     width: 100%;
-   
+
     object-fit: contain;
     display: block;
   }
 
-#offer .product-image {
+  #offer .product-image {
     flex: 0 0 auto;
     height: 55vh;
     display: flex;
@@ -2975,15 +2952,10 @@ textarea.w-select,
     justify-content: center;
   }
 
-   #offer .product-image img {
-   /* max-height: 100%;
-    width: auto;
-     object-fit: contain;
-*/
-
-      width: 100%;
-  height: 100%;
-  object-fit: cover;
+  #offer .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   /* 1️⃣ JEDAN SLAJD = CELO EKRAN */
@@ -3000,14 +2972,12 @@ textarea.w-select,
     height: auto !important;
   }
 
-  
-
   /* 4️⃣ ŠIFRA – GORE PREKO SLIKE */
   #offer .product-code {
     position: absolute;
     top: 12px;
     left: 12px;
-    z-index: 5;    
+    z-index: 5;
     color: #fff;
     text-align: center;
 
@@ -3056,7 +3026,7 @@ textarea.w-select,
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,0,0,0.85);
+    background: rgba(0, 0, 0, 0.85);
     color: white;
     padding: 15px;
     font-size: 14px;
@@ -3069,13 +3039,13 @@ textarea.w-select,
     max-height: 45vh;
   }
 
-    #offer .slider-div-wrapper.active .product-desc {
+  #offer .slider-div-wrapper.active .product-desc {
     transform: translateY(0);
   }
 
   .hero-cta {
     display: flex;
-    flex-direction: row; /*column     dugmad jedno ispod drugog */
+    flex-direction: row;
     justify-content: center;
     gap: 10px;
     margin-top: 90%;
