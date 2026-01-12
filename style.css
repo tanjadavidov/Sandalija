@@ -2991,7 +2991,6 @@ textarea.w-select,
 
   #offer .slider-div-wrapper {
     position: relative;
-
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -3000,11 +2999,11 @@ textarea.w-select,
 
   #offer .slider-div-wrapper img {
     display: block;
-
     width: 100%;
-
-    object-fit: contain;
-    display: block;
+    /* object-fit: contain;*/
+    /* height: 100% !important;*/
+    height: 100%;
+    object-fit: cover; /* ⬅ ovo rešava */
   }
 
   /* okvir slike uzima ceo slajd */
@@ -3084,10 +3083,6 @@ textarea.w-select,
 
   #offer .w-slide {
     width: 100%;
-  }
-
-  #offer .slider-div-wrapper img {
-    height: 160px;
   }
 
   #offer .product-desc {
