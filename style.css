@@ -2582,16 +2582,18 @@ textarea.w-select,
 }
 
 #offer .product-price {
-  text-align: center;
-  margin-top: 4px;
-  font-size: 16px;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 15px;
   font-weight: 700;
-  color: #d7cb48; /* zlatna nijansa */
-  letter-spacing: 0.5px;
-
-  background: rgba(255, 255, 255, 0.9);
-  padding: 6px 14px;
-  border-radius: 6px;
+  z-index: 10;
+  text-align: center;
+  pointer-events: none;
 }
 
 #offer .product-desc {
@@ -2944,9 +2946,12 @@ textarea.w-select,
     display: block;
   }
 
+  /* okvir slike uzima ceo slajd */
   #offer .product-image {
-    flex: 0 0 auto;
-    height: 55vh;
+    flex: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2954,17 +2959,21 @@ textarea.w-select,
 
   #offer .product-image img {
     width: 100%;
-    height: 100%;
+    height: 100% !important;
+    max-width: none;
+    max-height: none;
     object-fit: cover;
   }
 
   /* 1️⃣ JEDAN SLAJD = CELO EKRAN */
-  /* Jedan slajd zauzima pola ekrana */
+  /* Jedan slajd zauzima ceo/pola ekrana */
   #offer .w-slide {
-    height: auto !important;
+    /* height: auto !important;*/
     width: 100% !important;
     float: none;
-    min-height: 75vh;
+    min-height: 65vh;
+
+    height: 65vh !important;
   }
 
   #offer .w-slider-mask {
