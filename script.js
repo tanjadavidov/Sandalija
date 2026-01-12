@@ -12597,3 +12597,12 @@ document.querySelectorAll("#offer .slider-div-wrapper").forEach((card) => {
     card.classList.toggle("active");
   });
 });
+
+/*video*/
+document.querySelectorAll("#sale video").forEach((video) => {
+  const frame = video.closest(".video-frame");
+  frame.style.setProperty(
+    "--video-bg",
+    `url('${video.querySelector("source").src}')`
+  );
+});

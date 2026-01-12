@@ -2695,6 +2695,63 @@ textarea.w-select,
   /*overflow-y: auto;*/
 }
 
+/* SALE video gallery layout */
+#sale .w-slider-mask {
+  display: flex;
+}
+
+#sale .w-slide {
+  flex: 0 0 33.333%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* video kartica */
+#sale .slider-div-wrapper {
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 9 / 16; /* TikTok / Reels format */
+  position: relative;
+}
+
+/* Video mora biti ceo vidljiv */
+#sale video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ⬅ KLJUČNO */
+  background: black;
+}
+
+#sale .video-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+}
+
+/* Blur pozadina */
+#sale .video-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--video-bg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px) brightness(0.6);
+  transform: scale(1.2);
+}
+
+/* pravi video */
+#sale .gallery-video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 2;
+}
+
 /* ==========================================================================
       Start of custom Webflow CSS
       ========================================================================== */
@@ -2899,6 +2956,10 @@ textarea.w-select,
   .w-nav[data-collapse="medium"] .w-nav-button {
     display: block;
   }
+
+  #sale .w-slide {
+    flex: 0 0 50%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3054,6 +3115,20 @@ textarea.w-select,
 
   #offer .slider-div-wrapper.active .product-desc {
     transform: translateY(0);
+  }
+
+  /*1 video po ekranu (fullscreen feel)*/
+  #sale .w-slide {
+    flex: 0 0 100%;
+  }
+
+  #sale .slider-div-wrapper {
+    aspect-ratio: 9 / 16;
+    height: 75vh;
+  }
+
+  #sale .slider-div-wrapper {
+    height: 80vh; /* umesto 75vh */
   }
 
   .hero-cta {
