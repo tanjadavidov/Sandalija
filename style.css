@@ -2435,6 +2435,17 @@ textarea.w-select,
   transform: translate(0, 0);
 }
 
+#actual .image {
+  width: 100%;
+  max-width: 250px; /* ovde kontrolišeš koliko su velike */
+  display: block;
+  margin: 0 auto; /* savršeno centriranje */
+  border-radius: 10px;
+  /* transition: transform 0.6s ease, opacity 0.6s ease; */
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
 /* slike */
 .slide1 {
   background-image: url("images/SandalijaCover2.jpg");
@@ -2489,17 +2500,6 @@ textarea.w-select,
   width: 160px; /* FIKSNA širina – oba ista */
   padding: 10px 0; /* horizontalni padding više ne utiče */
   font-size: 14px;
-}
-
-#actual .image {
-  width: 100%;
-  max-width: 250px; /* ovde kontrolišeš koliko su velike */
-  display: block;
-  margin: 0 auto; /* savršeno centriranje */
-  border-radius: 10px;
-  /* transition: transform 0.6s ease, opacity 0.6s ease; */
-  opacity: 0;
-  transition: all 1s ease-out;
 }
 
 /* početno stanje – skrivene slike */
@@ -3351,12 +3351,16 @@ textarea.w-select,
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    row-gap: 28px; /* razmak između redova */
   }
 
   #actual .w-col {
     width: 100% !important;
     max-width: 90%;
     margin: 0 auto 15px;
+
+    margin-bottom: 0 !important;
   }
 
   #actual .text-block-2 {
