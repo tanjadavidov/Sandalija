@@ -2448,17 +2448,17 @@ textarea.w-select,
 
 /* slike */
 .slide1 {
-  background-image: url("images/SandalijaCover2.jpg");
+  background-image: url("images/PolovnaGarderobaSandalijaNaslovna.jpg");
   animation-delay: 0s;
 }
 
 .slide2 {
-  background-image: url("images/Coco1.jpeg");
+  background-image: url("images/PolovnaGarderoba/Jakne/5. LjubičMantil/LjubicastiMantilPS.jpg");
   animation-delay: 6s;
 }
 
 .slide3 {
-  background-image: url("images/Libre1.jpeg");
+  background-image: url("images/PolovnaGarderoba/Jakne/4. BraonSiviSomotSako/BraonSomotSako.jpg");
   animation-delay: 12s;
 }
 
