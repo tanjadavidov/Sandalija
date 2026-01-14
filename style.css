@@ -2393,172 +2393,6 @@ textarea.w-select,
   animation-fill-mode: both; /* ⬅️ KLJUČNO zbog animacije naslova*/
 }
 
-/* Stil za slike u sekciji #actual */
-#actual .image {
-  height: auto;
-  width: 100%;
-  max-width: 40%; /* ovde kontrolišeš koliko su velike */
-  display: block;
-  margin: 0 auto; /* savršeno centriranje */
-  border-radius: 10px;
-  /* transition: transform 0.6s ease, opacity 0.6s ease; */
-
-  opacity: 0;
-  transform: translateY(40px) scale(0.95);
-}
-
-#actual .image.visible {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-/* ACTUAL – poravnanje kolona */
-#actual .w-col {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 24px; /* JEDNAK razmak dole */
-}
-
-/* zajednički wrapper za sve slike */
-#actual .image-link,
-#actual .category-card {
-  position: relative;
-  display: block;
-  width: 100%;
-  max-width: 260px; /* KONTROLIŠEŠ VELIČINU SVIH SLIKA */
-}
-
-/* neutrališemo razliku srednje slike */
-#actual .div-block-2 {
-  width: 100%;
-}
-
-/*ulaze slike jedna po jedna*/
-#actual .w-col:nth-child(1) .image {
-  transition-delay: 0s;
-}
-#actual .w-col:nth-child(2) .image {
-  transition-delay: 0.25s;
-}
-#actual .w-col:nth-child(3) .image {
-  transition-delay: 0.5s;
-}
-
-/* ulaz slike leva gornja desna */
-/* leve slike */
-#actual .from-left {
-  transform: translateX(-80px);
-}
-
-/* desne slike */
-#actual .from-right {
-  transform: translateX(80px);
-}
-
-/* srednje (odozgo) */
-#actual .from-top {
-  transform: translateY(-80px);
-}
-
-/* kada JS doda .visible */
-#actual .image.visible {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-#actual .image {
-  width: 100%;
-  max-width: 250px; /* ovde kontrolišeš koliko su velike */
-  display: block;
-  margin: 0 auto; /* savršeno centriranje */
-  border-radius: 10px;
-  /* transition: transform 0.6s ease, opacity 0.6s ease; */
-  opacity: 0;
-  transition: all 1s ease-out;
-}
-
-/* ACTUAL – overlay traka sa natpisom */
-#actual .image-overlay {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  height: 60px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.05));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  opacity: 0;
-  transform: translateY(12px);
-  transition: all 0.35s ease;
-
-  border-radius: 0 0 12px 12px;
-}
-
-/*sam NATPIS */
-#actual .image-caption {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-/*HOVER */
-#actual .image-link:hover .image-overlay,
-#actual .category-card:hover .image-overlay {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-#actual img.image {
-  transition: transform 0.4s ease;
-}
-
-#actual .image-link:hover img,
-#actual .category-card:hover img {
-  transform: scale(1.04);
-}
-
-#actual a:hover .image-overlay,
-#actual a:focus .image-overlay {
-  opacity: 1;
-}
-
-#actual a:hover .image-caption,
-#actual a:focus .image-caption {
-  transform: translateY(0);
-}
-
-/* ACTUAL – mali stalni natpis preko slike (pri učitavanju) */
-#actual .image-link::before,
-#actual .category-card::before {
-  content: attr(data-caption);
-
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  background: rgba(0, 0, 0, 0.55);
-  color: #fff;
-
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.4px;
-
-  padding: 5px 10px;
-  border-radius: 8px;
-
-  z-index: 3;
-  pointer-events: none;
-
-  opacity: 0;
-  animation: captionFadeIn 0.8s ease forwards;
-  animation-delay: 0.6s;
-}
-
 .hero-fashion {
   background-size: contain !important;
   background-position: center center !important;
@@ -2690,6 +2524,235 @@ textarea.w-select,
 .slider-div-wrapper:hover img {
   transform: scale(1.05);
 }
+
+/* Stil za slike u sekciji #actual */
+#actual .image {
+  height: auto;
+  width: 100%;
+  max-width: 40%; /* ovde kontrolišeš koliko su velike */
+  display: block;
+  margin: 0 auto; /* savršeno centriranje */
+  border-radius: 10px;
+  /* transition: transform 0.6s ease, opacity 0.6s ease; */
+
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+}
+
+#actual .image.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* ACTUAL – poravnanje kolona */
+#actual .w-col {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px; /* JEDNAK razmak dole */
+}
+
+/* zajednički wrapper za sve slike */
+#actual .image-link,
+#actual .category-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 260px; /* KONTROLIŠEŠ VELIČINU SVIH SLIKA */
+}
+
+/* neutrališemo razliku srednje slike */
+#actual .div-block-2 {
+  width: 100%;
+}
+
+/*ulaze slike jedna po jedna*/
+#actual .w-col:nth-child(1) .image {
+  transition-delay: 0s;
+}
+#actual .w-col:nth-child(2) .image {
+  transition-delay: 0.25s;
+}
+#actual .w-col:nth-child(3) .image {
+  transition-delay: 0.5s;
+}
+
+/* ulaz slike leva gornja desna */
+/* leve slike */
+#actual .from-left {
+  transform: translateX(-80px);
+}
+
+/* desne slike */
+#actual .from-right {
+  transform: translateX(80px);
+}
+
+/* srednje (odozgo) */
+#actual .from-top {
+  transform: translateY(-80px);
+}
+
+/* kada JS doda .visible */
+#actual .image.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#actual .image {
+  width: 100%;
+  max-width: 250px; /* ovde kontrolišeš koliko su velike */
+  display: block;
+  margin: 0 auto; /* savršeno centriranje */
+  border-radius: 10px;
+  /* transition: transform 0.6s ease, opacity 0.6s ease; */
+  opacity: 0;
+  transition: all 1s ease-out;
+
+  /* NOVO */
+  aspect-ratio: 2 / 3; /* ili 4 / 5 – probaj oba */
+  object-fit: cover;
+}
+
+/* ACTUAL – overlay traka sa natpisom */
+#actual .image-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 60px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.05));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all 0.35s ease;
+
+  border-radius: 0 0 12px 12px;
+}
+
+/*sam NATPIS */
+#actual .image-caption {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/*HOVER */
+#actual .image-link:hover .image-overlay,
+#actual .category-card:hover .image-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#actual img.image {
+  transition: transform 0.4s ease;
+}
+
+#actual .image-link:hover img,
+#actual .category-card:hover img {
+  transform: scale(1.04);
+}
+
+#actual a:hover .image-overlay,
+#actual a:focus .image-overlay {
+  opacity: 1;
+}
+
+#actual a:hover .image-caption,
+#actual a:focus .image-caption {
+  transform: translateY(0);
+}
+
+/* ACTUAL – mali stalni natpis preko slike (pri učitavanju) */
+#actual .image-link::before,
+#actual .category-card::before {
+  content: attr(data-caption);
+
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+
+  padding: 5px 10px;
+  border-radius: 8px;
+
+  z-index: 3;
+  pointer-events: none;
+
+  opacity: 0;
+  animation: captionFadeIn 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+
+/* ACTUAL – jedinstven okvir za sve slike */
+#actual .image-link,
+#actual .category-card,
+#actual .div-block-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#actual .div-block-2 {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* ACTUAL – osnovni wrapper */
+#actual .actual-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* ŠIFRA – gore levo */
+#actual .product-code {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 9px;
+
+  border-radius: 6px;
+  z-index: 3;
+}
+
+/* CENA – gore desno (lep shop stil) */
+#actual .product-price {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  background: #ffffff;
+  color: #000;
+
+  font-size: 13px;
+  font-weight: 700;
+  padding: 5px 10px;
+
+  border-radius: 20px;
+  z-index: 3;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* OFFER – prilagođeni slider stilovi */
 
 #offer .w-slider,
 #offer .w-slider-mask,
