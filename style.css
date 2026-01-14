@@ -1740,6 +1740,8 @@ textarea.w-select,
   inset: 0;
   overflow: hidden;
   z-index: 1;
+
+  top: 70px; /* pomera celu sliku nadole */
 }
 
 .bg-slide {
@@ -1755,11 +1757,12 @@ textarea.w-select,
   opacity: 1;
 }
 
-.bg-slide.pbg-slide {
-  background-size: contain !important;
+/* Hero garderoba – prikaži celu sliku */
+.pbg-slide {
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: #0b0b0b;
+  background-color: #0b0b0b; /* luksuzna crna pozadina */
 }
 
 .page-section {
@@ -1784,7 +1787,7 @@ textarea.w-select,
   position: relative;
   height: 100vh;
   min-height: 100vh;
-  overflow: hidden; /* OVO JE KLJUČ */
+  overflow: hidden;
 }
 
 .hero-section > .container {
@@ -2409,6 +2412,27 @@ textarea.w-select,
   transform: translateY(0) scale(1);
 }
 
+/* ACTUAL – poravnanje kolona */
+#actual .w-col {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px; /* JEDNAK razmak dole */
+}
+
+/* zajednički wrapper za sve slike */
+#actual .image-link,
+#actual .category-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 260px; /* KONTROLIŠEŠ VELIČINU SVIH SLIKA */
+}
+
+/* neutrališemo razliku srednje slike */
+#actual .div-block-2 {
+  width: 100%;
+}
+
 /*ulaze slike jedna po jedna*/
 #actual .w-col:nth-child(1) .image {
   transition-delay: 0s;
@@ -2453,6 +2477,96 @@ textarea.w-select,
   transition: all 1s ease-out;
 }
 
+/* ACTUAL – overlay traka sa natpisom */
+#actual .image-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 60px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.05));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all 0.35s ease;
+
+  border-radius: 0 0 12px 12px;
+}
+
+/*sam NATPIS */
+#actual .image-caption {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/*HOVER */
+#actual .image-link:hover .image-overlay,
+#actual .category-card:hover .image-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#actual img.image {
+  transition: transform 0.4s ease;
+}
+
+#actual .image-link:hover img,
+#actual .category-card:hover img {
+  transform: scale(1.04);
+}
+
+#actual a:hover .image-overlay,
+#actual a:focus .image-overlay {
+  opacity: 1;
+}
+
+#actual a:hover .image-caption,
+#actual a:focus .image-caption {
+  transform: translateY(0);
+}
+
+/* ACTUAL – mali stalni natpis preko slike (pri učitavanju) */
+#actual .image-link::before,
+#actual .category-card::before {
+  content: attr(data-caption);
+
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+
+  padding: 5px 10px;
+  border-radius: 8px;
+
+  z-index: 3;
+  pointer-events: none;
+
+  opacity: 0;
+  animation: captionFadeIn 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.hero-fashion {
+  background-size: contain !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-color: #0b0b0b;
+  background-size: auto 100% !important;
+}
+
 /* slike */
 .slide1 {
   background-image: url("images/SandalijaCover2.jpg");
@@ -2472,7 +2586,7 @@ textarea.w-select,
 /* polovna garderoba slike slajdova */
 
 .pslide1 {
-  background-image: url("images/PolovnaGarderobaSandalija.jpg");
+  background-image: url("images/PolovnaGarderobaSandalijaNaslovna.jpg");
   animation-delay: 0s;
 }
 
@@ -2506,12 +2620,9 @@ textarea.w-select,
 
 .hero-cta {
   position: centered;
-  margin-top: 95%;
-  /* bottom: 10px;*/
-
+  margin-top: 100%;
   display: flex;
   gap: 2px;
-
   z-index: 3;
   justify-content: center;
 }
@@ -2857,6 +2968,12 @@ textarea.w-select,
   }
 }
 
+@keyframes captionFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 /* Samo za telefone */
 
 @media screen and (max-width: 991px) {
@@ -2870,6 +2987,8 @@ textarea.w-select,
   .hero-overlay {
     padding-top: 200px;
     padding-bottom: 200px;
+
+    padding-top: 120px; /* pomera sadržaj nadole */
   }
 
   .heading {
@@ -2991,6 +3110,10 @@ textarea.w-select,
     height: 260px;
   }
 
+  .hero-fashion {
+    background-size: auto 95% !important;
+  }
+
   #actual .from-left {
     transform: translateX(-40px);
   }
@@ -3001,6 +3124,12 @@ textarea.w-select,
 
   #actual .from-top {
     transform: translateY(-40px);
+  }
+
+  #actual .image-link:active .image-overlay,
+  #actual .category-card:active .image-overlay {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   #offer {
@@ -3155,7 +3284,6 @@ textarea.w-select,
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    margin-top: 90%;
   }
 
   .main-btn {
