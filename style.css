@@ -1755,6 +1755,13 @@ textarea.w-select,
   opacity: 1;
 }
 
+.bg-slide.pbg-slide {
+  background-size: contain !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #0b0b0b;
+}
+
 .page-section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -2462,23 +2469,23 @@ textarea.w-select,
   animation-delay: 12s;
 }
 
-/* slike2 */
-/*
-.slide1 {
-  background-image: url("images/PolovnaGarderobaSandalijaNaslovna.jpg");
+/* polovna garderoba slike slajdova */
+
+.pslide1 {
+  background-image: url("images/PolovnaGarderobaSandalija.jpg");
   animation-delay: 0s;
 }
 
-.slide2 {
-  background-image: url("images/PolovnaGarderoba/Jakne/5. LjubičMantil/LjubicastiMantilPS.jpg");
+.pslide2 {
+  background-image: url("images/CrnaHaljinaBezRukavaSaCipkomGore.jpg");
   animation-delay: 6s;
 }
 
-.slide3 {
-  background-image: url("images/PolovnaGarderoba/Jakne/4. BraonSiviSomotSako/BraonSomotSako.jpg");
+.pslide3 {
+  background-image: url("images/LjubicastiMantilPS.jpg");
   animation-delay: 12s;
 }
-*/
+
 /* naslov na webs strani */
 /* 1. slide – bela / neutralna */
 .title1 {
