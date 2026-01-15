@@ -12606,3 +12606,183 @@ document.querySelectorAll("#sale video").forEach((video) => {
     `url('${video.querySelector("source").src}')`
   );
 });
+
+/*gallery modal*/
+document.addEventListener("DOMContentLoaded", () => {
+  const galleries = {
+    PJ001: [
+      "images/PolovnaGarderoba/Jakne/1. BelaPamucnaJakna/BelaPamucnaJakna.jpg",
+      "images/PolovnaGarderoba/Jakne/1. BelaPamucnaJakna/BelaPamucnaJakna1.jpg",
+      "images/PolovnaGarderoba/Jakne/1. BelaPamucnaJakna/BelaPamucnaJakna2.jpg",
+      "images/PolovnaGarderoba/Jakne/1. BelaPamucnaJakna/BelaPamucnaJakna3.jpg",
+    ],
+    PJ003: [
+      "images/PolovnaGarderoba/Jakne/3. BraonSakoFlanel/BraonSakoFlanel.jpg",
+      "images/PolovnaGarderoba/Jakne/3. BraonSakoFlanel/BraonSakoFlanel1.jpg",
+      "images/PolovnaGarderoba/Jakne/3. BraonSakoFlanel/BraonSakoFlanel2.jpg",
+      "images/PolovnaGarderoba/Jakne/3. BraonSakoFlanel/BraonSakoFlanel3.jpg",
+      "images/PolovnaGarderoba/Jakne/3. BraonSakoFlanel/BraonSakoFlanel4.jpg",
+      "images/PolovnaGarderoba/Jakne/3. BraonSakoFlanel/BraonSakoFlanel5.jpg",
+      "images/PolovnaGarderoba/Jakne/3. BraonSakoFlanel/BraonSakoFlanel6.jpg",
+    ],
+
+    PJ004: [
+      "images/PolovnaGarderoba/Jakne/4. BraonSiviSomotSako/BraonSomotSako.jpg",
+      "images/PolovnaGarderoba/Jakne/4. BraonSiviSomotSako/BraonSomotSako1.jpg",
+      "images/PolovnaGarderoba/Jakne/4. BraonSiviSomotSako/BraonSomotSako2.jpg",
+      "images/PolovnaGarderoba/Jakne/4. BraonSiviSomotSako/BraonSomotSako3.jpg",
+      "images/PolovnaGarderoba/Jakne/4. BraonSiviSomotSako/BraonSomotSako4.jpg",
+      "images/PolovnaGarderoba/Jakne/4. BraonSiviSomotSako/BraonSomotSako5.jpg",
+      "images/PolovnaGarderoba/Jakne/4. BraonSiviSomotSako/BraonSomotSako6.jpg",
+    ],
+
+    PJ005: [
+      "images/PolovnaGarderoba/Jakne/5. LjubicMantil/LjubicastiMantilPS.jpg",
+      "images/PolovnaGarderoba/Jakne/5. LjubicMantil/LjubicastiMantilPS1.jpg",
+      "images/PolovnaGarderoba/Jakne/5. LjubicMantil/LjubicastiMantilPS2.jpg",
+      "images/PolovnaGarderoba/Jakne/5. LjubicMantil/LjubicastiMantilPS3.jpg",
+      "images/PolovnaGarderoba/Jakne/5. LjubicMantil/LjubicastiMantilPS4.jpg",
+      "images/PolovnaGarderoba/Jakne/5. LjubicMantil/LjubicastiMantilPS5.jpg",
+      "images/PolovnaGarderoba/Jakne/5. LjubicMantil/LjubicastiMantilPS6.jpg",
+      "images/PolovnaGarderoba/Jakne/5. LjubicMantil/LjubicastiMantilPS7.jpg",
+      "images/PolovnaGarderoba/Jakne/5. LjubicMantil/LjubicastiMantilPS8.jpg",
+      "images/PolovnaGarderoba/Jakne/5. LjubicMantil/LjubicastiMantilPS9.jpg",
+    ],
+
+    PJ006: [
+      "images/PolovnaGarderoba/Jakne/6. ZelenaJakna/ZelenaJakna.jpg",
+      "images/PolovnaGarderoba/Jakne/6. ZelenaJakna/ZelenaJakna1.jpg",
+      "images/PolovnaGarderoba/Jakne/6. ZelenaJakna/ZelenaJakna2.jpg",
+      "images/PolovnaGarderoba/Jakne/6. ZelenaJakna/ZelenaJakna3.jpg",
+      "images/PolovnaGarderoba/Jakne/6. ZelenaJakna/ZelenaJakna4.jpg",
+    ],
+    PH001: [
+      "images/PolovnaGarderoba/Haljine/1. BordoDebelaHaljina/BordoHaljinaBezRukava.jpg",
+      "images/PolovnaGarderoba/Haljine/1. BordoDebelaHaljina/BordoHaljinaBezRukava1.jpg",
+      "images/PolovnaGarderoba/Haljine/1. BordoDebelaHaljina/BordoHaljinaBezRukava2.jpg",
+      "images/PolovnaGarderoba/Haljine/1. BordoDebelaHaljina/BordoHaljinaBezRukava3.jpg",
+      "images/PolovnaGarderoba/Haljine/1. BordoDebelaHaljina/BordoHaljinaBezRukava4.jpg",
+    ],
+    PH002: [
+      "images/PolovnaGarderoba/Haljine/2. CrnaHaljinaBezRukavaLegend/CrnaHaljinaLegend.jpg",
+      "images/PolovnaGarderoba/Haljine/2. CrnaHaljinaBezRukavaLegend/CrnaHaljinaLegend1.jpg",
+      "images/PolovnaGarderoba/Haljine/2. CrnaHaljinaBezRukavaLegend/CrnaHaljinaLegend2.jpg",
+      "images/PolovnaGarderoba/Haljine/2. CrnaHaljinaBezRukavaLegend/CrnaHaljinaLegend3.jpg",
+    ],
+    PH003: [
+      "images/PolovnaGarderoba/Haljine/3. CrnaHaljinaSaCipkomGore/CrnaHaljinaBezRukavaSaCipkomGore.jpg",
+      "images/PolovnaGarderoba/Haljine/3. CrnaHaljinaSaCipkomGore/CrnaHaljinaBezRukavaSaCipkomGore1.jpg",
+      "images/PolovnaGarderoba/Haljine/3. CrnaHaljinaSaCipkomGore/CrnaHaljinaBezRukavaSaCipkomGore2.jpg",
+      "images/PolovnaGarderoba/Haljine/3. CrnaHaljinaSaCipkomGore/CrnaHaljinaBezRukavaSaCipkomGore3.jpg",
+      "images/PolovnaGarderoba/Haljine/3. CrnaHaljinaSaCipkomGore/CrnaHaljinaBezRukavaSaCipkomGore4.jpg",
+      "images/PolovnaGarderoba/Haljine/3. CrnaHaljinaSaCipkomGore/CrnaHaljinaBezRukavaSaCipkomGore5.jpg",
+      "images/PolovnaGarderoba/Haljine/3. CrnaHaljinaSaCipkomGore/CrnaHaljinaBezRukavaSaCipkomGore6.jpg",
+      "images/PolovnaGarderoba/Haljine/3. CrnaHaljinaSaCipkomGore/CrnaHaljinaBezRukavaSaCipkomGore7.jpg",
+      "images/PolovnaGarderoba/Haljine/3. CrnaHaljinaSaCipkomGore/CrnaHaljinaBezRukavaSaCipkomGore8.jpg",
+    ],
+    PH004: [
+      "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava.jpg",
+      "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava1.jpg",
+      "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava2.jpg",
+      "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava3.jpg",
+      "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava4.jpg",
+      "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava5.jpg",
+      "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava6.jpg",
+      "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava7.jpg",
+      "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava8.jpg",
+      "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava9.jpg",
+      "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava10.jpg",
+    ],
+
+    PP001: [
+      "images/PolovnaGarderoba/Pantalone/1. FarmerkeIscepanePlave/FarmerkeIscepanePlave.jpg",
+      "images/PolovnaGarderoba/Pantalone/1. FarmerkeIscepanePlave/FarmerkeIscepanePlave1.jpg",
+      "images/PolovnaGarderoba/Pantalone/1. FarmerkeIscepanePlave/FarmerkeIscepanePlave2.jpg",
+      "images/PolovnaGarderoba/Pantalone/1. FarmerkeIscepanePlave/FarmerkeIscepanePlave3.jpg",
+      "images/PolovnaGarderoba/Pantalone/1. FarmerkeIscepanePlave/FarmerkeIscepanePlave4.jpg",
+      "images/PolovnaGarderoba/Pantalone/1. FarmerkeIscepanePlave/FarmerkeIscepanePlave5.jpg",
+    ],
+    PP002: [
+      "images/PolovnaGarderoba/Pantalone/2. CrnePantaloneSaUckurom/CrnePantaloneSaUckurom.jpg",
+      "images/PolovnaGarderoba/Pantalone/2. CrnePantaloneSaUckurom/CrnePantaloneSaUckurom1.jpg",
+      "images/PolovnaGarderoba/Pantalone/2. CrnePantaloneSaUckurom/CrnePantaloneSaUckurom2.jpg",
+    ],
+    PP003: [
+      "images/PolovnaGarderoba/Pantalone/3. FarmerkeIscepaneTeget/IscepaneFarmerkeTeget.jpg",
+      "images/PolovnaGarderoba/Pantalone/3. FarmerkeIscepaneTeget/IscepaneFarmerkeTeget1.jpg",
+      "images/PolovnaGarderoba/Pantalone/3. FarmerkeIscepaneTeget/IscepaneFarmerkeTeget2.jpg",
+    ],
+    PP004: [
+      "images/PolovnaGarderoba/Pantalone/4. CrnePantaloneTegljiveZersejSirokeDole/CrnePantaloneTegljiveZersejSirokeDole.jpg",
+      "images/PolovnaGarderoba/Pantalone/4. CrnePantaloneTegljiveZersejSirokeDole/CrnePantaloneTegljiveZersejSirokeDole1.jpg",
+      "images/PolovnaGarderoba/Pantalone/4. CrnePantaloneTegljiveZersejSirokeDole/CrnePantaloneTegljiveZersejSirokeDole2.jpg",
+      "images/PolovnaGarderoba/Pantalone/4. CrnePantaloneTegljiveZersejSirokeDole/CrnePantaloneTegljiveZersejSirokeDole3.jpg",
+    ],
+    PP005: [
+      "images/PolovnaGarderoba/Pantalone/5. CrneZersejPantaloneSaDzepovimaNazadIDugmicima/CrneZersejPantaloneSaDzepovimaNazadIDugmicima.jpg",
+      "images/PolovnaGarderoba/Pantalone/5. CrneZersejPantaloneSaDzepovimaNazadIDugmicima/CrneZersejPantaloneSaDzepovimaNazadIDugmicima1.jpg",
+      "images/PolovnaGarderoba/Pantalone/5. CrneZersejPantaloneSaDzepovimaNazadIDugmicima/CrneZersejPantaloneSaDzepovimaNazadIDugmicima2.jpg",
+      "images/PolovnaGarderoba/Pantalone/5. CrneZersejPantaloneSaDzepovimaNazadIDugmicima/CrneZersejPantaloneSaDzepovimaNazadIDugmicima3.jpg",
+    ],
+    PP006: [
+      "images/PolovnaGarderoba/Pantalone/6. FarmerkeNaGumu/FarmerkeNaGumu.jpg",
+      "images/PolovnaGarderoba/Pantalone/6. FarmerkeNaGumu/FarmerkeNaGumu1.jpg",
+      "images/PolovnaGarderoba/Pantalone/6. FarmerkeNaGumu/FarmerkeNaGumu2.jpg",
+      "images/PolovnaGarderoba/Pantalone/6. FarmerkeNaGumu/FarmerkeNaGumu3.jpg",
+    ],
+
+    PP007: [
+      "images/PolovnaGarderoba/Pantalone/7. BraonZersejTankePantaloneSirokeDole/BraonZersejTankePantaloneSirokeDole.jpg",
+      "images/PolovnaGarderoba/Pantalone/7. BraonZersejTankePantaloneSirokeDole/BraonZersejTankePantaloneSirokeDole1.jpg",
+      "images/PolovnaGarderoba/Pantalone/7. BraonZersejTankePantaloneSirokeDole/BraonZersejTankePantaloneSirokeDole2.jpg",
+      "images/PolovnaGarderoba/Pantalone/7. BraonZersejTankePantaloneSirokeDole/BraonZersejTankePantaloneSirokeDole3.jpg",
+    ],
+
+    PM001: [
+      "images/PolovnaGarderoba/Majice/1. BelaMajicaMrezasta/BelaMajicaMrezasta.jpg",
+      "images/PolovnaGarderoba/Majice/1. BelaMajicaMrezasta/BelaMajicaMrezasta1.jpg",
+      "images/PolovnaGarderoba/Majice/1. BelaMajicaMrezasta/BelaMajicaMrezasta2.jpg",
+      "images/PolovnaGarderoba/Majice/1. BelaMajicaMrezasta/BelaMajicaMrezasta3.jpg",
+    ],
+    PM002: [
+      "images/PolovnaGarderoba/Majice/2. KorsetCrniPS/KorsetCrniPS.jpg",
+      "images/PolovnaGarderoba/Majice/2. KorsetCrniPS/KorsetCrniPS1.jpg",
+      "images/PolovnaGarderoba/Majice/2. KorsetCrniPS/KorsetCrniPS2.jpg",
+      "images/PolovnaGarderoba/Majice/2. KorsetCrniPS/KorsetCrniPS3.jpg",
+    ],
+  };
+
+  const modal = document.getElementById("gallery-modal");
+  const modalImg = document.getElementById("gallery-image");
+  const closeBtn = document.querySelector(".close-modal");
+  const nextBtn = document.getElementById("next-btn");
+  const prevBtn = document.getElementById("prev-btn");
+
+  let currentGallery = [];
+  let currentIndex = 0;
+
+  document.querySelectorAll(".offer-image").forEach((img) => {
+    img.addEventListener("click", () => {
+      const key = img.dataset.gallery;
+      currentGallery = galleries[key];
+      currentIndex = 0;
+      modalImg.src = currentGallery[0];
+      modal.classList.add("active");
+    });
+  });
+
+  nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % currentGallery.length;
+    modalImg.src = currentGallery[currentIndex];
+  });
+
+  prevBtn.addEventListener("click", () => {
+    currentIndex =
+      (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+    modalImg.src = currentGallery[currentIndex];
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.classList.remove("active");
+  });
+});

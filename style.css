@@ -2950,6 +2950,61 @@ textarea.w-select,
   z-index: 2;
 }
 
+#gallery-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#gallery-modal.active {
+  display: flex;
+}
+
+#gallery-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-nav {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.modal-nav button {
+  font-size: 32px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.offer-image {
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.offer-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+}
+
 /* ==========================================================================
       Start of custom Webflow CSS
       ========================================================================== */
@@ -2992,16 +3047,6 @@ textarea.w-select,
   100% {
     opacity: 0;
   }
-
-  /* naslov statičan */
-  /*from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }*/
 }
 
 @keyframes heroSlider {
