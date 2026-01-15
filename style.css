@@ -2993,11 +2993,16 @@ textarea.w-select,
   color: white;
   border: none;
   cursor: pointer;
+
+  touch-action: manipulation;
+  pointer-events: auto;
 }
 
 .offer-image {
   cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  touch-action: manipulation;
 }
 
 .offer-image:hover {
@@ -3005,6 +3010,17 @@ textarea.w-select,
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
 }
 
+.offer-image,
+.product-thumb {
+  pointer-events: auto;
+  touch-action: manipulation;
+}
+/*
+.price-overlay,
+.image-overlay {
+  pointer-events: none;
+}
+*/
 /* ==========================================================================
       Start of custom Webflow CSS
       ========================================================================== */
@@ -3680,6 +3696,13 @@ textarea.w-select,
   }
   .w-lightbox-control:hover {
     opacity: 1;
+  }
+  .modal-nav {
+    bottom: 15px;
+  }
+
+  .modal-nav button {
+    font-size: 28px;
   }
 }
 

@@ -12758,12 +12758,48 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextBtn = document.getElementById("next-btn");
   const prevBtn = document.getElementById("prev-btn");
 
+  function nextImage() {
+    if (!currentGallery.length) return;
+
+    currentIndex = (currentIndex + 1) % currentGallery.length;
+    modalImg.src = currentGallery[currentIndex];
+  }
+
+  function prevImage() {
+    if (!currentGallery.length) return;
+
+    currentIndex =
+      (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+    modalImg.src = currentGallery[currentIndex];
+  }
+
+  nextBtn.addEventListener("pointerup", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    nextImage();
+  });
+
+  prevBtn.addEventListener("pointerup", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    prevImage();
+  });
+
+  closeBtn.addEventListener("pointerup", (e) => {
+    e.preventDefault();
+    modal.classList.remove("active");
+  });
+
   let currentGallery = [];
   let currentIndex = 0;
 
   document.querySelectorAll(".offer-image").forEach((img) => {
-    img.addEventListener("click", () => {
+    img.addEventListener("pointerup", (e) => {
+      e.stopPropagation();
+
       const key = img.dataset.gallery;
+      if (!galleries[key]) return;
+
       currentGallery = galleries[key];
       currentIndex = 0;
       modalImg.src = currentGallery[0];
@@ -12785,4 +12821,10 @@ document.addEventListener("DOMContentLoaded", () => {
   closeBtn.addEventListener("click", () => {
     modal.classList.remove("active");
   });
+});
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.remove("active");
+  }
 });
