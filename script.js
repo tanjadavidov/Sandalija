@@ -12717,10 +12717,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Pantalone/2. CrnePantaloneSaUckurom/CrnePantaloneSaUckurom3.jpg",
     ],
     PP003: [
-      "images/PolovnaGarderoba/Pantalone/3. FarmerkeIscepaneTeget/IscepaneFarmerkeTeget.jpg",
-      "images/PolovnaGarderoba/Pantalone/3. FarmerkeIscepaneTeget/IscepaneFarmerkeTeget1.jpg",
-      "images/PolovnaGarderoba/Pantalone/3. FarmerkeIscepaneTeget/IscepaneFarmerkeTeget2.jpg",
-      "images/PolovnaGarderoba/Pantalone/3. FarmerkeIscepaneTeget/IscepaneFarmerkeTeget4.jpg",
+      "images/PolovnaGarderoba/Pantalone/3. IscepaneFarmerkeTeget/IscepaneFarmerkeTeget.jpg",
+      "images/PolovnaGarderoba/Pantalone/3. IscepaneFarmerkeTeget/IscepaneFarmerkeTeget1.jpg",
+      "images/PolovnaGarderoba/Pantalone/3. IscepaneFarmerkeTeget/IscepaneFarmerkeTeget2.jpg",
+      "images/PolovnaGarderoba/Pantalone/3. IscepaneFarmerkeTeget/IscepaneFarmerkeTeget3.jpg",
     ],
     PP004: [
       "images/PolovnaGarderoba/Pantalone/4. CrnePantaloneTegljiveZersejSirokeDole/CrnePantaloneTegljiveZersejSirokeDole.jpg",
