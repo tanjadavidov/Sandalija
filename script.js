@@ -12717,10 +12717,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Pantalone/2. CrnePantaloneSaUckurom/CrnePantaloneSaUckurom3.jpg",
     ],
     PP003: [
-      "images/PolovnaGarderoba/Pantalone/3. IscepaneFarmerkeTeget/IscepaneFarmerkeTeget.jpg",
-      "images/PolovnaGarderoba/Pantalone/3. IscepaneFarmerkeTeget/IscepaneFarmerkeTeget1.jpg",
-      "images/PolovnaGarderoba/Pantalone/3. IscepaneFarmerkeTeget/IscepaneFarmerkeTeget2.jpg",
-      "images/PolovnaGarderoba/Pantalone/3. IscepaneFarmerkeTeget/IscepaneFarmerkeTeget3.jpg",
+      "images/PolovnaGarderoba/Pantalone/3.iscepanefarmerketeget/iscepanefarmerketeget.jpg",
+      "images/PolovnaGarderoba/Pantalone/3.iscepanefarmerketeget/iscepanefarmerketeget1.jpg",
+      "images/PolovnaGarderoba/Pantalone/3.iscepanefarmerketeget/iscepanefarmerketeget2.jpg",
+      "images/PolovnaGarderoba/Pantalone/3.iscepanefarmerketeget/iscepanefarmerketeget3.jpg",
     ],
     PP004: [
       "images/PolovnaGarderoba/Pantalone/4. CrnePantaloneTegljiveZersejSirokeDole/CrnePantaloneTegljiveZersejSirokeDole.jpg",
@@ -12848,4 +12848,12 @@ modal.addEventListener("click", (e) => {
   if (e.target === modal) {
     modal.classList.remove("active");
   }
+});
+
+/*da vidimo koje se slike učitavaju*/
+PP002.forEach((src) => {
+  const img = new Image();
+  img.onload = () => console.log("OK:", src);
+  img.onerror = () => console.error("FAIL:", src);
+  img.src = src;
 });
