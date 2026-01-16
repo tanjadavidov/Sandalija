@@ -12615,6 +12615,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Jakne/1. BelaPamucnaJakna/BelaPamucnaJakna1.jpg",
       "images/PolovnaGarderoba/Jakne/1. BelaPamucnaJakna/BelaPamucnaJakna2.jpg",
       "images/PolovnaGarderoba/Jakne/1. BelaPamucnaJakna/BelaPamucnaJakna3.jpg",
+      "images/PolovnaGarderoba/Jakne/1. BelaPamucnaJakna/BelaPamucnaJakna4.jpg",
     ],
     PJ003: [
       "images/PolovnaGarderoba/Jakne/3. BraonSakoFlanel/BraonSakoFlanel.jpg",
@@ -12624,6 +12625,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Jakne/3. BraonSakoFlanel/BraonSakoFlanel4.jpg",
       "images/PolovnaGarderoba/Jakne/3. BraonSakoFlanel/BraonSakoFlanel5.jpg",
       "images/PolovnaGarderoba/Jakne/3. BraonSakoFlanel/BraonSakoFlanel6.jpg",
+      "images/PolovnaGarderoba/Jakne/3. BraonSakoFlanel/BraonSakoFlanel7.jpg",
     ],
 
     PJ004: [
@@ -12634,6 +12636,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Jakne/4. BraonSiviSomotSako/BraonSomotSako4.jpg",
       "images/PolovnaGarderoba/Jakne/4. BraonSiviSomotSako/BraonSomotSako5.jpg",
       "images/PolovnaGarderoba/Jakne/4. BraonSiviSomotSako/BraonSomotSako6.jpg",
+      "images/PolovnaGarderoba/Jakne/4. BraonSiviSomotSako/BraonSomotSako7.jpg",
     ],
 
     PJ005: [
@@ -12647,6 +12650,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Jakne/5. LjubicMantil/LjubicastiMantilPS7.jpg",
       "images/PolovnaGarderoba/Jakne/5. LjubicMantil/LjubicastiMantilPS8.jpg",
       "images/PolovnaGarderoba/Jakne/5. LjubicMantil/LjubicastiMantilPS9.jpg",
+      "images/PolovnaGarderoba/Jakne/5. LjubicMantil/LjubicastiMantilPS10.jpg",
+      "images/PolovnaGarderoba/Jakne/5. LjubicMantil/LjubicastiMantilPS11.jpg",
     ],
 
     PJ006: [
@@ -12655,6 +12660,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Jakne/6. ZelenaJakna/ZelenaJakna2.jpg",
       "images/PolovnaGarderoba/Jakne/6. ZelenaJakna/ZelenaJakna3.jpg",
       "images/PolovnaGarderoba/Jakne/6. ZelenaJakna/ZelenaJakna4.jpg",
+      "images/PolovnaGarderoba/Jakne/6. ZelenaJakna/ZelenaJakna5.jpg",
     ],
     PH001: [
       "images/PolovnaGarderoba/Haljine/1. BordoDebelaHaljina/BordoHaljinaBezRukava.jpg",
@@ -12662,12 +12668,14 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Haljine/1. BordoDebelaHaljina/BordoHaljinaBezRukava2.jpg",
       "images/PolovnaGarderoba/Haljine/1. BordoDebelaHaljina/BordoHaljinaBezRukava3.jpg",
       "images/PolovnaGarderoba/Haljine/1. BordoDebelaHaljina/BordoHaljinaBezRukava4.jpg",
+      "images/PolovnaGarderoba/Haljine/1. BordoDebelaHaljina/BordoHaljinaBezRukava5.jpg",
     ],
     PH002: [
       "images/PolovnaGarderoba/Haljine/2. CrnaHaljinaBezRukavaLegend/CrnaHaljinaLegend.jpg",
       "images/PolovnaGarderoba/Haljine/2. CrnaHaljinaBezRukavaLegend/CrnaHaljinaLegend1.jpg",
       "images/PolovnaGarderoba/Haljine/2. CrnaHaljinaBezRukavaLegend/CrnaHaljinaLegend2.jpg",
       "images/PolovnaGarderoba/Haljine/2. CrnaHaljinaBezRukavaLegend/CrnaHaljinaLegend3.jpg",
+      "images/PolovnaGarderoba/Haljine/2. CrnaHaljinaBezRukavaLegend/CrnaHaljinaLegend34jpg",
     ],
     PH003: [
       "images/PolovnaGarderoba/Haljine/3. CrnaHaljinaSaCipkomGore/CrnaHaljinaBezRukavaSaCipkomGore.jpg",
@@ -12679,6 +12687,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Haljine/3. CrnaHaljinaSaCipkomGore/CrnaHaljinaBezRukavaSaCipkomGore6.jpg",
       "images/PolovnaGarderoba/Haljine/3. CrnaHaljinaSaCipkomGore/CrnaHaljinaBezRukavaSaCipkomGore7.jpg",
       "images/PolovnaGarderoba/Haljine/3. CrnaHaljinaSaCipkomGore/CrnaHaljinaBezRukavaSaCipkomGore8.jpg",
+      "images/PolovnaGarderoba/Haljine/3. CrnaHaljinaSaCipkomGore/CrnaHaljinaBezRukavaSaCipkomGore9.jpg",
     ],
     PH004: [
       "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava.jpg",
@@ -12692,6 +12701,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava8.jpg",
       "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava9.jpg",
       "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava10.jpg",
+      "images/PolovnaGarderoba/Haljine/4. NarandzHalj/NarandzastaHaljinaDugihRukava11.jpg",
     ],
 
     PP001: [
@@ -12701,34 +12711,40 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Pantalone/1. FarmerkeIscepanePlave/FarmerkeIscepanePlave3.jpg",
       "images/PolovnaGarderoba/Pantalone/1. FarmerkeIscepanePlave/FarmerkeIscepanePlave4.jpg",
       "images/PolovnaGarderoba/Pantalone/1. FarmerkeIscepanePlave/FarmerkeIscepanePlave5.jpg",
+      "images/PolovnaGarderoba/Pantalone/1. FarmerkeIscepanePlave/FarmerkeIscepanePlave6.jpg",
     ],
     PP002: [
       "images/PolovnaGarderoba/Pantalone/2. CrnePantaloneSaUckurom/CrnePantaloneSaUckurom.jpg",
       "images/PolovnaGarderoba/Pantalone/2. CrnePantaloneSaUckurom/CrnePantaloneSaUckurom1.jpg",
       "images/PolovnaGarderoba/Pantalone/2. CrnePantaloneSaUckurom/CrnePantaloneSaUckurom2.jpg",
+      "images/PolovnaGarderoba/Pantalone/2. CrnePantaloneSaUckurom/CrnePantaloneSaUckurom4.jpg",
     ],
     PP003: [
       "images/PolovnaGarderoba/Pantalone/3. FarmerkeIscepaneTeget/IscepaneFarmerkeTeget.jpg",
       "images/PolovnaGarderoba/Pantalone/3. FarmerkeIscepaneTeget/IscepaneFarmerkeTeget1.jpg",
       "images/PolovnaGarderoba/Pantalone/3. FarmerkeIscepaneTeget/IscepaneFarmerkeTeget2.jpg",
+      "images/PolovnaGarderoba/Pantalone/3. FarmerkeIscepaneTeget/IscepaneFarmerkeTeget4.jpg",
     ],
     PP004: [
       "images/PolovnaGarderoba/Pantalone/4. CrnePantaloneTegljiveZersejSirokeDole/CrnePantaloneTegljiveZersejSirokeDole.jpg",
       "images/PolovnaGarderoba/Pantalone/4. CrnePantaloneTegljiveZersejSirokeDole/CrnePantaloneTegljiveZersejSirokeDole1.jpg",
       "images/PolovnaGarderoba/Pantalone/4. CrnePantaloneTegljiveZersejSirokeDole/CrnePantaloneTegljiveZersejSirokeDole2.jpg",
       "images/PolovnaGarderoba/Pantalone/4. CrnePantaloneTegljiveZersejSirokeDole/CrnePantaloneTegljiveZersejSirokeDole3.jpg",
+      "images/PolovnaGarderoba/Pantalone/4. CrnePantaloneTegljiveZersejSirokeDole/CrnePantaloneTegljiveZersejSirokeDole4.jpg",
     ],
     PP005: [
       "images/PolovnaGarderoba/Pantalone/5. CrneZersejPantaloneSaDzepovimaNazadIDugmicima/CrneZersejPantaloneSaDzepovimaNazadIDugmicima.jpg",
       "images/PolovnaGarderoba/Pantalone/5. CrneZersejPantaloneSaDzepovimaNazadIDugmicima/CrneZersejPantaloneSaDzepovimaNazadIDugmicima1.jpg",
       "images/PolovnaGarderoba/Pantalone/5. CrneZersejPantaloneSaDzepovimaNazadIDugmicima/CrneZersejPantaloneSaDzepovimaNazadIDugmicima2.jpg",
       "images/PolovnaGarderoba/Pantalone/5. CrneZersejPantaloneSaDzepovimaNazadIDugmicima/CrneZersejPantaloneSaDzepovimaNazadIDugmicima3.jpg",
+      "images/PolovnaGarderoba/Pantalone/5. CrneZersejPantaloneSaDzepovimaNazadIDugmicima/CrneZersejPantaloneSaDzepovimaNazadIDugmicima4.jpg",
     ],
     PP006: [
       "images/PolovnaGarderoba/Pantalone/6. FarmerkeNaGumu/FarmerkeNaGumu.jpg",
       "images/PolovnaGarderoba/Pantalone/6. FarmerkeNaGumu/FarmerkeNaGumu1.jpg",
       "images/PolovnaGarderoba/Pantalone/6. FarmerkeNaGumu/FarmerkeNaGumu2.jpg",
       "images/PolovnaGarderoba/Pantalone/6. FarmerkeNaGumu/FarmerkeNaGumu3.jpg",
+      "images/PolovnaGarderoba/Pantalone/6. FarmerkeNaGumu/FarmerkeNaGumu4.jpg",
     ],
 
     PP007: [
@@ -12736,6 +12752,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Pantalone/7. BraonZersejTankePantaloneSirokeDole/BraonZersejTankePantaloneSirokeDole1.jpg",
       "images/PolovnaGarderoba/Pantalone/7. BraonZersejTankePantaloneSirokeDole/BraonZersejTankePantaloneSirokeDole2.jpg",
       "images/PolovnaGarderoba/Pantalone/7. BraonZersejTankePantaloneSirokeDole/BraonZersejTankePantaloneSirokeDole3.jpg",
+      "images/PolovnaGarderoba/Pantalone/7. BraonZersejTankePantaloneSirokeDole/BraonZersejTankePantaloneSirokeDole4.jpg",
     ],
 
     PM001: [
@@ -12743,12 +12760,21 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Majice/1. BelaMajicaMrezasta/BelaMajicaMrezasta1.jpg",
       "images/PolovnaGarderoba/Majice/1. BelaMajicaMrezasta/BelaMajicaMrezasta2.jpg",
       "images/PolovnaGarderoba/Majice/1. BelaMajicaMrezasta/BelaMajicaMrezasta3.jpg",
+      "images/PolovnaGarderoba/Majice/1. BelaMajicaMrezasta/BelaMajicaMrezasta4.jpg",
     ],
     PM002: [
       "images/PolovnaGarderoba/Majice/2. KorsetCrniPS/KorsetCrniPS.jpg",
       "images/PolovnaGarderoba/Majice/2. KorsetCrniPS/KorsetCrniPS1.jpg",
       "images/PolovnaGarderoba/Majice/2. KorsetCrniPS/KorsetCrniPS2.jpg",
       "images/PolovnaGarderoba/Majice/2. KorsetCrniPS/KorsetCrniPS3.jpg",
+      "images/PolovnaGarderoba/Majice/2. KorsetCrniPS/KorsetCrniPS4.jpg",
+    ],
+    PPI001: [
+      "images/PolovnaGarderoba/Pidzame/1. LetnjePidzameGornjiDeoNaBrtele/PidzamaNaTregereGornjiDeo.jpg",
+      "images/PolovnaGarderoba/Pidzame/1. LetnjePidzameGornjiDeoNaBrtele/PidzamaNaTregereGornjiDeo1.jpg",
+      "images/PolovnaGarderoba/Pidzame/1. LetnjePidzameGornjiDeoNaBrtele/PidzamaNaTregereGornjiDeo2.jpg",
+      "images/PolovnaGarderoba/Pidzame/1. LetnjePidzameGornjiDeoNaBrtele/PidzamaNaTregereGornjiDeo3.jpg",
+      "images/PolovnaGarderoba/Pidzame/1. LetnjePidzameGornjiDeoNaBrtele/PidzamaNaTregereGornjiDeo4.jpg",
     ],
   };
 
