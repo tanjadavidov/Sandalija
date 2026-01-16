@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Sun Feb 26 2023 17:32:39 GMT+0000 (Coordinated Universal Time) -->
 <html
   data-wf-domain="tanja-first-project-d58d49.webflow.io"
@@ -60,10 +60,10 @@
       !(function (o, c) {
         var n = c.documentElement,
           t = " w-mod-";
-        (n.className += t + "js"),
+        ((n.className += t + "js"),
           ("ontouchstart" in o ||
             (o.DocumentTouch && c instanceof DocumentTouch)) &&
-            (n.className += t + "touch");
+            (n.className += t + "touch"));
       })(window, document);
     </script>
 
@@ -742,22 +742,21 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="script.js?v=2.1" type="text/javascript"></script>
-
+    <!-- <script src="script.js?v=2.1" type="text/javascript"></script> -->
+    <script src="script.js" type="text/javascript"></script>
     <!--[if lte IE 9
       ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
     ><![endif]-->
 
-    <script>
-      /*tanja */
+    <!-- <script>    
       function zoomImage(e) {
-        let imgElement = e; //document.getElementById('e');
+        let imgElement = e; 
         if (imgElement.classList.contains("zoomed")) {
           imgElement.classList.remove("zoomed"); // Zoom out
         } else {
           imgElement.classList.add("zoomed"); // Zoom in
         }
       }
-    </script>
+    </script> -->
   </body>
 </html>

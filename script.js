@@ -6,8 +6,14 @@
  *   Webflow.push(readyFunction);
  *
  */
-console.log("JS loaded");
+/*
+console.log("JS radi");
 
+window.onerror = function (msg, src, line, col, err) {
+  console.error("JS ERROR:", msg);
+  console.error("Source:", src, "Line:", line);
+};
+*/
 !(function (t) {
   var e = {};
   function n(r) {
@@ -12871,13 +12877,3 @@ modal.addEventListener("click", (e) => {
     modal.classList.remove("active");
   }
 });
-
-/*da vidimo koje se slike učitavaju*/
-/*
-PP002.forEach((src) => {
-  const img = new Image();
-  img.onload = () => console.log("OK:", src);
-  img.onerror = () => console.error("FAIL:", src);
-  img.src = src;
-});
-*/
