@@ -12615,7 +12615,6 @@ const observer = new IntersectionObserver(
 
 animatedImages.forEach((img) => observer.observe(img));
 
-/*  */
 document.querySelectorAll("#offer .slider-div-wrapper").forEach((card) => {
   card.addEventListener("click", () => {
     card.classList.toggle("active");
@@ -12874,9 +12873,11 @@ modal.addEventListener("click", (e) => {
 });
 
 /*da vidimo koje se slike učitavaju*/
+/*
 PP002.forEach((src) => {
   const img = new Image();
   img.onload = () => console.log("OK:", src);
   img.onerror = () => console.error("FAIL:", src);
   img.src = src;
 });
+*/
