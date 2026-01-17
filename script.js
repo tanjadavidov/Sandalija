@@ -6,14 +6,7 @@
  *   Webflow.push(readyFunction);
  *
  */
-/*
-console.log("JS radi");
 
-window.onerror = function (msg, src, line, col, err) {
-  console.error("JS ERROR:", msg);
-  console.error("Source:", src, "Line:", line);
-};
-*/
 !(function (t) {
   var e = {};
   function n(r) {
@@ -47,7 +40,7 @@ window.onerror = function (msg, src, line, col, err) {
             i,
             function (e) {
               return t[e];
-            }.bind(null, i)
+            }.bind(null, i),
           );
       return r;
     }),
@@ -222,7 +215,7 @@ window.onerror = function (msg, src, line, col, err) {
     ((r.resize = O(c, T)),
       (r.scroll = O(
         c,
-        "scroll.webflow resize.webflow orientationchange.webflow load.webflow"
+        "scroll.webflow resize.webflow orientationchange.webflow load.webflow",
       )),
       (r.redraw = O()),
       (r.location = function (t) {
@@ -684,7 +677,7 @@ window.onerror = function (msg, src, line, col, err) {
                         : {},
                     n,
                     r,
-                    i + 1
+                    i + 1,
                   );
             return y(e, a, o);
           })(t, e, n, 0)
@@ -732,7 +725,7 @@ window.onerror = function (msg, src, line, col, err) {
         e,
         f.length
           ? s.call.apply(s, [null, !1, !1, u, n, r, i, o, a].concat(f))
-          : s(!1, !1, u, n, r, i, o, a)
+          : s(!1, !1, u, n, r, i, o, a),
       );
     }
     function A(t, e) {
@@ -926,7 +919,7 @@ window.onerror = function (msg, src, line, col, err) {
       c = r(
         (function () {
           return arguments;
-        })()
+        })(),
       )
         ? r
         : function (t) {
@@ -1082,11 +1075,11 @@ window.onerror = function (msg, src, line, col, err) {
       function E(t) {
         if (!Object(r.default)(t))
           throw new Error(
-            "Actions must be plain objects. Use custom middleware for async actions."
+            "Actions must be plain objects. Use custom middleware for async actions.",
           );
         if (void 0 === t.type)
           throw new Error(
-            'Actions may not have an undefined "type" property. Have you misspelled a constant?'
+            'Actions may not have an undefined "type" property. Have you misspelled a constant?',
           );
         if (d) throw new Error("Reducers may not dispatch actions.");
         try {
@@ -1148,7 +1141,7 @@ window.onerror = function (msg, src, line, col, err) {
           function (t, e) {
             return e(t);
           },
-          r.apply(void 0, arguments)
+          r.apply(void 0, arguments),
         );
       };
     }
@@ -1187,7 +1180,7 @@ window.onerror = function (msg, src, line, col, err) {
         ],
         function (t) {
           return t in Element.prototype;
-        }
+        },
       );
     });
     e.ELEMENT_MATCHES = u;
@@ -2028,7 +2021,7 @@ window.onerror = function (msg, src, line, col, err) {
                   },
                   function (t) {
                     "wait" in t && (s = c(t.wait, 0));
-                  }
+                  },
                 ),
                   d.call(this),
                   s > 0 &&
@@ -2165,7 +2158,7 @@ window.onerror = function (msg, src, line, col, err) {
                 ? (this.queue.push({ options: t, args: arguments }),
                   void (this.timer.complete = a))
                 : s(
-                    "No active transition timer. Use start() or wait() before then()."
+                    "No active transition timer. Use start() or wait() before then().",
                   );
             }),
             y("next", a),
@@ -2215,7 +2208,7 @@ window.onerror = function (msg, src, line, col, err) {
             var e = /rgba?\((\d+),\s*(\d+),\s*(\d+)/.exec(t);
             return (e ? o(e[1], e[2], e[3]) : t).replace(
               /#(\w)(\w)(\w)$/,
-              "#$1$1$2$2$3$3"
+              "#$1$1$2$2$3$3",
             );
           }
           var i = 500,
@@ -2340,7 +2333,7 @@ window.onerror = function (msg, src, line, col, err) {
                       "] Got: [" +
                       (0, r.default)(e) +
                       "] " +
-                      e
+                      e,
                   );
                 })(i, t),
                 t
@@ -2507,7 +2500,7 @@ window.onerror = function (msg, src, line, col, err) {
                         return o(
                           t[0] + n * (e[0] - t[0]),
                           t[1] + n * (e[1] - t[1]),
-                          t[2] + n * (e[2] - t[2])
+                          t[2] + n * (e[2] - t[2]),
                         );
                       })(this.startRGB, this.endRGB, r)
                     : (function (t) {
@@ -2580,7 +2573,7 @@ window.onerror = function (msg, src, line, col, err) {
                       delay: t.delay,
                       ease: t.ease,
                       autoplay: !1,
-                    })
+                    }),
                   ));
             this.play();
           }),
@@ -2996,7 +2989,7 @@ window.onerror = function (msg, src, line, col, err) {
               throw new Error(
                 'Reducer "' +
                   e +
-                  '" returned undefined during initialization. If the state passed to the reducer is undefined, you must explicitly return the initial state. The initial state may not be undefined.'
+                  '" returned undefined during initialization. If the state passed to the reducer is undefined, you must explicitly return the initial state. The initial state may not be undefined.',
               );
             if (
               void 0 ===
@@ -3011,7 +3004,7 @@ window.onerror = function (msg, src, line, col, err) {
                   e +
                   "\" returned undefined when probed with a random type. Don't try to handle " +
                   r.ActionTypes.INIT +
-                  ' or other actions in "redux/*" namespace. They are considered private. Instead, you must return the current state for any unknown actions, unless it is undefined, in which case you must return the initial state, regardless of the action type. The initial state may not be undefined.'
+                  ' or other actions in "redux/*" namespace. They are considered private. Instead, you must return the current state for any unknown actions, unless it is undefined, in which case you must return the initial state, regardless of the action type. The initial state may not be undefined.',
               );
           });
         })(n);
@@ -3068,7 +3061,7 @@ window.onerror = function (msg, src, line, col, err) {
         throw new Error(
           "bindActionCreators expected an object or a function, instead received " +
             (null === t ? "null" : typeof t) +
-            '. Did you write "import ActionCreators from" instead of "import * as ActionCreators from"?'
+            '. Did you write "import ActionCreators from" instead of "import * as ActionCreators from"?',
         );
       for (var n = Object.keys(t), i = {}, o = 0; o < n.length; o++) {
         var a = n[o],
@@ -3916,7 +3909,10 @@ window.onerror = function (msg, src, line, col, err) {
         f &&
           p &&
           e.dispatch(
-            (0, m.actionListPlaybackChanged)({ actionListId: r, isPlaying: !u })
+            (0, m.actionListPlaybackChanged)({
+              actionListId: r,
+              isPlaying: !u,
+            }),
           );
       }
     }
@@ -3942,7 +3938,7 @@ window.onerror = function (msg, src, line, col, err) {
               reducedMotion:
                 document.body.hasAttribute("data-wf-ix-vacation") &&
                 window.matchMedia("(prefers-reduced-motion)").matches,
-            })
+            }),
           ),
           o &&
             ((function (t) {
@@ -4006,7 +4002,7 @@ window.onerror = function (msg, src, line, col, err) {
                                   o = (0, s.default)(
                                     l,
                                     "".concat(v, ".continuousParameterGroups"),
-                                    []
+                                    [],
                                   ),
                                   a = (0, c.default)(o, function (t) {
                                     var e = t.id;
@@ -4109,7 +4105,7 @@ window.onerror = function (msg, src, line, col, err) {
                                             a = (0, s.default)(
                                               i,
                                               "[0].actionItems[0]",
-                                              {}
+                                              {},
                                             ),
                                             c = a.actionTypeId,
                                             d = Q(c) ? q(c)(n, a) : null,
@@ -4119,7 +4115,7 @@ window.onerror = function (msg, src, line, col, err) {
                                                 actionItem: a,
                                                 elementApi: y,
                                               },
-                                              d
+                                              d,
                                             );
                                           mt({
                                             store: e,
@@ -4180,11 +4176,11 @@ window.onerror = function (msg, src, line, col, err) {
                                           nativeEvent: t,
                                           eventStateKey: c,
                                         },
-                                        f
+                                        f,
                                       );
                                     Y(i, f) ||
                                       n.dispatch(
-                                        (0, m.eventStateChanged)(c, i)
+                                        (0, m.eventStateChanged)(c, i),
                                       );
                                   };
                                   if (
@@ -4211,7 +4207,7 @@ window.onerror = function (msg, src, line, col, err) {
                                   var e = o ? g : p;
                                   (r.addEventListener(t, e),
                                     n.dispatch(
-                                      (0, m.eventListenerAdded)(r, [t, e])
+                                      (0, m.eventListenerAdded)(r, [t, e]),
                                     ));
                                 });
                             };
@@ -4368,7 +4364,7 @@ window.onerror = function (msg, src, line, col, err) {
                 (0, m.actionListPlaybackChanged)({
                   actionListId: n,
                   isPlaying: !1,
-                })
+                }),
               ));
         }
       });
@@ -4394,7 +4390,7 @@ window.onerror = function (msg, src, line, col, err) {
                 (0, m.actionListPlaybackChanged)({
                   actionListId: o,
                   isPlaying: !1,
-                })
+                }),
               ));
         }
       });
@@ -4524,9 +4520,9 @@ window.onerror = function (msg, src, line, col, err) {
               skipMotion: S,
               skipToValue: n,
             },
-            o
-          )
-        )
+            o,
+          ),
+        ),
       ),
         _t(document.body, "ix2-animation-started", g),
         f
@@ -4613,7 +4609,7 @@ window.onerror = function (msg, src, line, col, err) {
                 (0, m.actionListPlaybackChanged)({
                   actionListId: v,
                   isPlaying: !1,
-                })
+                }),
               );
           }
           yt(t, e);
@@ -4908,7 +4904,7 @@ window.onerror = function (msg, src, line, col, err) {
                 (n.interpolate || E).source,
                 (n.evaluate || E).source,
               ].join("|") + "|$",
-              "g"
+              "g",
             ),
             o = 0,
             a = "__p+='";
@@ -5028,7 +5024,7 @@ window.onerror = function (msg, src, line, col, err) {
         function p(e, n) {
           t.ajax({ type: "GET", url: e, dataType: "script", cache: !0 }).then(
             n,
-            v
+            v,
           );
         }
         function v(t, e, n) {
@@ -5055,7 +5051,7 @@ window.onerror = function (msg, src, line, col, err) {
               : o.on(c, l).triggerHandler(c),
           {}
         );
-      })
+      }),
     );
   },
   function (t, e, n) {
@@ -5131,7 +5127,7 @@ window.onerror = function (msg, src, line, col, err) {
                 n.ctrlKey ||
                 (o(t.activeElement) && a(t.activeElement), (e = !0));
             },
-            !0
+            !0,
           ),
             document.addEventListener("mousedown", u, !0),
             document.addEventListener("pointerdown", u, !0),
@@ -5141,7 +5137,7 @@ window.onerror = function (msg, src, line, col, err) {
               function () {
                 "hidden" === document.visibilityState && (n && (e = !0), c());
               },
-              !0
+              !0,
             ),
             c(),
             t.addEventListener(
@@ -5157,7 +5153,7 @@ window.onerror = function (msg, src, line, col, err) {
                       n.isContentEditable)) &&
                   a(t.target);
               },
-              !0
+              !0,
             ),
             t.addEventListener(
               "blur",
@@ -5173,7 +5169,7 @@ window.onerror = function (msg, src, line, col, err) {
                   (e = t.target).getAttribute("data-wf-focus-visible") &&
                     e.removeAttribute("data-wf-focus-visible"));
               },
-              !0
+              !0,
             ));
         }
         return {
@@ -5186,7 +5182,7 @@ window.onerror = function (msg, src, line, col, err) {
               }
           },
         };
-      })
+      }),
     );
   },
   function (t, e, n) {
@@ -5240,7 +5236,7 @@ window.onerror = function (msg, src, line, col, err) {
             var r;
           },
         };
-      })
+      }),
     );
   },
   function (t, e, n) {
@@ -5292,7 +5288,7 @@ window.onerror = function (msg, src, line, col, err) {
               document.addEventListener("click", n, !0));
           },
         };
-      })
+      }),
     );
   },
   function (t, e, n) {
@@ -5343,7 +5339,7 @@ window.onerror = function (msg, src, line, col, err) {
         "ix2",
         (t.exports = function () {
           return i;
-        })
+        }),
       ));
   },
   function (t, e, n) {
@@ -5395,7 +5391,7 @@ window.onerror = function (msg, src, line, col, err) {
         includes: function (t) {
           return i(this, t, arguments.length > 1 ? arguments[1] : void 0);
         },
-      }
+      },
     ),
       o("includes"));
   },
@@ -6354,7 +6350,7 @@ window.onerror = function (msg, src, line, col, err) {
         (0, i.default)(r, l, { value: "playback" }),
         (0, i.default)(r, d, { value: "stop" }),
         (0, i.default)(r, p, { value: "clear" }),
-        r)
+        r),
       );
     e.ixRequest = function () {
       var t =
@@ -6594,9 +6590,9 @@ window.onerror = function (msg, src, line, col, err) {
             .replace(/[\\^$.*+?()[\]{}|]/g, "\\$&")
             .replace(
               /hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g,
-              "$1.*?"
+              "$1.*?",
             ) +
-          "$"
+          "$",
       );
     t.exports = function (t) {
       return !(!o(t) || i(t)) && (r(t) ? d : u).test(a(t));
@@ -7434,7 +7430,7 @@ window.onerror = function (msg, src, line, col, err) {
               var n = e.eventTypeId;
               return (t[n] || (t[n] = {}), (t[n][e.id] = e), t);
             },
-            {}
+            {},
           ),
           o = r && r.mediaQueries,
           a = [];
@@ -7721,7 +7717,7 @@ window.onerror = function (msg, src, line, col, err) {
                             .concat(e)
                             .concat(Nt(r, n), ")");
                         },
-                        ""
+                        "",
                       ),
                       o = r.setStyle;
                     (Pt(t, C, r), o(t, C, i));
@@ -7734,7 +7730,7 @@ window.onerror = function (msg, src, line, col, err) {
                         function (t, e, n) {
                           return (t.push('"'.concat(n, '" ').concat(e)), t);
                         },
-                        []
+                        [],
                       ).join(", "),
                       o = r.setStyle;
                     (Pt(t, L, r), o(t, L, i));
@@ -7758,7 +7754,7 @@ window.onerror = function (msg, src, line, col, err) {
                             .concat(E, ",")
                             .concat(g, ",")
                             .concat(m, ",")
-                            .concat(y, ")")
+                            .concat(y, ")"),
                     ));
                   break;
                 default:
@@ -7866,7 +7862,7 @@ window.onerror = function (msg, src, line, col, err) {
             (0, c.default)({}, e.id, {
               id: e.id,
               actionItemGroups: [{ actionItems: a }],
-            })
+            }),
           )
         );
       }),
@@ -7968,7 +7964,7 @@ window.onerror = function (msg, src, line, col, err) {
         (0, c.default)(r, ut, M),
         (0, c.default)(r, ct, j),
         (0, c.default)(r, st, F),
-        r)
+        r),
       ),
       vt = Object.freeze(
         ((i = {}),
@@ -7979,7 +7975,7 @@ window.onerror = function (msg, src, line, col, err) {
         (0, c.default)(i, D, D),
         (0, c.default)(i, P, P),
         (0, c.default)(i, L, L),
-        i)
+        i),
       ),
       ht = {},
       Et = 1;
@@ -8022,7 +8018,7 @@ window.onerror = function (msg, src, line, col, err) {
               eventTarget: a,
               elementRoot: u,
               elementApi: c,
-            })
+            }),
           );
         }, []);
       var f = c.getValidDocument,
@@ -8161,17 +8157,17 @@ window.onerror = function (msg, src, line, col, err) {
         (0, c.default)(
           o,
           J,
-          Object.freeze({ xValue: 0, yValue: 0, zValue: 0 })
+          Object.freeze({ xValue: 0, yValue: 0, zValue: 0 }),
         ),
         (0, c.default)(
           o,
           tt,
-          Object.freeze({ xValue: 1, yValue: 1, zValue: 1 })
+          Object.freeze({ xValue: 1, yValue: 1, zValue: 1 }),
         ),
         (0, c.default)(
           o,
           et,
-          Object.freeze({ xValue: 0, yValue: 0, zValue: 0 })
+          Object.freeze({ xValue: 0, yValue: 0, zValue: 0 }),
         ),
         (0, c.default)(o, nt, Object.freeze({ xValue: 0, yValue: 0 })),
         o),
@@ -8235,7 +8231,7 @@ window.onerror = function (msg, src, line, col, err) {
                 .filter(function (t) {
                   return t !== r;
                 })
-                .join(H)
+                .join(H),
             );
         }
       }
@@ -8758,7 +8754,7 @@ window.onerror = function (msg, src, line, col, err) {
   },
   function (t, e) {
     var n = RegExp(
-      "[\\u200d\\ud800-\\udfff\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff\\ufe0e\\ufe0f]"
+      "[\\u200d\\ud800-\\udfff\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff\\ufe0e\\ufe0f]",
     );
     t.exports = function (t) {
       return n.test(t);
@@ -9057,7 +9053,7 @@ window.onerror = function (msg, src, line, col, err) {
           (function (t) {
             var n = e - (t - v);
             return g ? c(n, l - (t - h)) : n;
-          })(t)
+          })(t),
         );
       }
       function b(t) {
@@ -9139,7 +9135,7 @@ window.onerror = function (msg, src, line, col, err) {
       }),
       (e.queryDocument = function (t, e) {
         return Array.prototype.slice.call(
-          document.querySelectorAll(e ? t + " " + e : t)
+          document.querySelectorAll(e ? t + " " + e : t),
         );
       }),
       (e.elementContains = function (t, e) {
@@ -9345,7 +9341,7 @@ window.onerror = function (msg, src, line, col, err) {
             stiffScrollTop: (0, v.default)(
               c ? window.pageYOffset : s.scrollTop,
               0,
-              s.scrollHeight - window.innerHeight
+              s.scrollHeight - window.innerHeight,
             ),
             scrollWidth: s.scrollWidth,
             scrollHeight: s.scrollHeight,
@@ -9458,7 +9454,7 @@ window.onerror = function (msg, src, line, col, err) {
             t ? Z : q,
             ft(function (t, e) {
               return e.isActive ? nt.handler(t, e) : e;
-            })
+            }),
           ),
         });
       },
@@ -9470,7 +9466,7 @@ window.onerror = function (msg, src, line, col, err) {
             t ? Z : q,
             ft(function (t, e) {
               return e.isActive ? e : nt.handler(t, e);
-            })
+            }),
           ),
         });
       },
@@ -9526,7 +9522,7 @@ window.onerror = function (msg, src, line, col, err) {
               ((r = (n = t).store),
                 (i = n.event.action.config.autoStopEventId),
                 Boolean(J(r, i)) ? 1 === o && tt(t) : tt(t));
-            })
+            }),
           ),
         }),
         (0, o.default)(r, I, {
@@ -9535,7 +9531,7 @@ window.onerror = function (msg, src, line, col, err) {
             Z,
             pt(function (t, e) {
               2 === e.clickCount && tt(t);
-            })
+            }),
           ),
         }),
         (0, o.default)(r, b, (0, l.default)({}, nt, { types: "mousedown" })),
@@ -9546,7 +9542,7 @@ window.onerror = function (msg, src, line, col, err) {
             Z,
             lt(function (t, e) {
               e.elementHovered && tt(t);
-            })
+            }),
           ),
         }),
         (0, o.default)(r, w, {
@@ -9555,7 +9551,7 @@ window.onerror = function (msg, src, line, col, err) {
             Z,
             lt(function (t, e) {
               e.elementHovered || tt(t);
-            })
+            }),
           ),
         }),
         (0, o.default)(r, P, {
@@ -9710,7 +9706,7 @@ window.onerror = function (msg, src, line, col, err) {
             handler: dt(function (t, e) {
               e.scrollingDown && tt(t);
             }),
-          })
+          }),
         ),
         (0, o.default)(
           r,
@@ -9719,7 +9715,7 @@ window.onerror = function (msg, src, line, col, err) {
             handler: dt(function (t, e) {
               e.scrollingDown || tt(t);
             }),
-          })
+          }),
         ),
         (0, o.default)(r, X, {
           types: "readystatechange IX2_PAGE_UPDATE",
@@ -9730,7 +9726,7 @@ window.onerror = function (msg, src, line, col, err) {
                 var r = { finished: "complete" === document.readyState };
                 return (!r.finished || (n && n.finshed) || t(e), r);
               };
-            })(tt)
+            })(tt),
           ),
         }),
         (0, o.default)(r, W, {
@@ -9741,7 +9737,7 @@ window.onerror = function (msg, src, line, col, err) {
               return function (e, n) {
                 return (n || t(e), { started: !0 });
               };
-            })(tt)
+            })(tt),
           ),
         }),
         r);
@@ -10069,7 +10065,7 @@ window.onerror = function (msg, src, line, col, err) {
               }),
           a
         );
-      })
+      }),
     );
   },
   function (t, e, n) {
@@ -10114,8 +10110,8 @@ window.onerror = function (msg, src, line, col, err) {
           p = document.createElement("style");
         p.appendChild(
           document.createTextNode(
-            '.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}'
-          )
+            '.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}',
+          ),
         );
         var v = /^#[a-zA-Z0-9][\w:.-]*$/;
         var h =
@@ -10188,7 +10184,7 @@ window.onerror = function (msg, src, line, col, err) {
                           if (
                             "none" ===
                               document.body.getAttribute(
-                                "data-wf-scroll-motion"
+                                "data-wf-scroll-motion",
                               ) ||
                             h.matches
                           )
@@ -10197,7 +10193,7 @@ window.onerror = function (msg, src, line, col, err) {
                           return (
                             u.add(t).each(function (t, e) {
                               var n = parseFloat(
-                                e.getAttribute("data-scroll-time")
+                                e.getAttribute("data-scroll-time"),
                               );
                               !isNaN(n) && n >= 0 && (r = n);
                             }),
@@ -10220,7 +10216,7 @@ window.onerror = function (msg, src, line, col, err) {
                                       : (i - 1) * (2 * i - 2) * (2 * i - 2) +
                                         1);
                             var i;
-                          })(r, i, e, a)
+                          })(r, i, e, a),
                         ),
                           e <= a ? c(t) : "function" == typeof n && n());
                       });
@@ -10230,7 +10226,7 @@ window.onerror = function (msg, src, line, col, err) {
                         E(d, "remove"));
                     });
                   },
-                  e ? 0 : 300
+                  e ? 0 : 300,
                 ));
             }
           }
@@ -10246,7 +10242,7 @@ window.onerror = function (msg, src, line, col, err) {
               document.head.insertBefore(p, document.head.firstChild));
           },
         };
-      })
+      }),
     );
   },
   function (t, e, n) {
@@ -10329,7 +10325,7 @@ window.onerror = function (msg, src, line, col, err) {
           (e.instance = e.init(document)),
           e
         );
-      })
+      }),
     );
   },
   function (t, e, n) {
@@ -10356,7 +10352,7 @@ window.onerror = function (msg, src, line, col, err) {
           m = /list-manage[1-9]?.com/i,
           y = e.debounce(function () {
             E(
-              "Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue."
+              "Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue.",
             );
           }, 100);
         function _(e, n) {
@@ -10600,7 +10596,7 @@ window.onerror = function (msg, src, line, col, err) {
                     u.indexOf("https://webflow.com") >= 0 &&
                     (u = u.replace(
                       "https://webflow.com",
-                      "https://formdata.webflow.com"
+                      "https://formdata.webflow.com",
                     )));
                 if (
                   ((c = "".concat(u, "/signFile")),
@@ -10628,7 +10624,7 @@ window.onerror = function (msg, src, line, col, err) {
                         t(e.target)
                           .siblings(".w-checkbox-input")
                           .toggleClass("w--redirected-checked");
-                      }
+                      },
                     ),
                       f.on(
                         "change",
@@ -10637,7 +10633,7 @@ window.onerror = function (msg, src, line, col, err) {
                           t(
                             'input[name="'
                               .concat(e.target.name, '"]:not(')
-                              .concat(".w-checkbox-input", ")")
+                              .concat(".w-checkbox-input", ")"),
                           ).map(function (e, n) {
                             return t(n)
                               .siblings(".w-radio-input")
@@ -10648,7 +10644,7 @@ window.onerror = function (msg, src, line, col, err) {
                             n
                               .siblings(".w-radio-input")
                               .addClass("w--redirected-checked");
-                        }
+                        },
                       ),
                       e.forEach(function (e) {
                         var n = (0, r.default)(e, 2),
@@ -10666,11 +10662,11 @@ window.onerror = function (msg, src, line, col, err) {
                               .addClass("w--redirected-focus"),
                               t(e.target)
                                 .filter(
-                                  ":focus-visible, [data-wf-focus-visible]"
+                                  ":focus-visible, [data-wf-focus-visible]",
                                 )
                                 .siblings(o)
                                 .addClass("w--redirected-focus-visible"));
-                          }
+                          },
                         ),
                           f.on(
                             "blur",
@@ -10684,9 +10680,9 @@ window.onerror = function (msg, src, line, col, err) {
                                 .removeClass(
                                   ""
                                     .concat("w--redirected-focus", " ")
-                                    .concat("w--redirected-focus-visible")
+                                    .concat("w--redirected-focus-visible"),
                                 );
-                            }
+                            },
                           ));
                       }));
                   })());
@@ -10702,11 +10698,11 @@ window.onerror = function (msg, src, line, col, err) {
               fields: {},
               fileUploads: {},
               dolphin: /pass[\s-_]?(word|code)|secret|login|credentials/i.test(
-                n.html()
+                n.html(),
               ),
               trackingCookies: document.cookie.split("; ").reduce(function (
                 t,
-                e
+                e,
               ) {
                 var n = e.split("="),
                   r = n[0];
@@ -10809,7 +10805,7 @@ window.onerror = function (msg, src, line, col, err) {
           (t.evt && t.evt.preventDefault(), (t.evt = null));
         }
         return s;
-      })
+      }),
     );
   },
   function (t, e, n) {
@@ -10852,7 +10848,7 @@ window.onerror = function (msg, src, line, col, err) {
   function (t, e) {
     t.exports = function () {
       throw new TypeError(
-        "Invalid attempt to destructure non-iterable instance"
+        "Invalid attempt to destructure non-iterable instance",
       );
     };
   },
@@ -10958,7 +10954,7 @@ window.onerror = function (msg, src, line, col, err) {
                             i !== l.width() && C(t);
                           }));
                     };
-                  })(a)
+                  })(a),
                 ))
               : (!(function (e) {
                   if (e.overlay) return;
@@ -11001,7 +10997,7 @@ window.onerror = function (msg, src, line, col, err) {
                             : (e.preventDefault(), e.stopPropagation());
                       }
                     };
-                  })(a)
+                  })(a),
                 ),
                 a.el.on(
                   "keydown" + E,
@@ -11010,7 +11006,7 @@ window.onerror = function (msg, src, line, col, err) {
                       if (t.open)
                         switch (
                           ((t.selectedIdx = t.links.index(
-                            document.activeElement
+                            document.activeElement,
                           )),
                           e.keyCode)
                         ) {
@@ -11044,7 +11040,7 @@ window.onerror = function (msg, src, line, col, err) {
                             return (
                               (t.selectedIdx = Math.min(
                                 t.links.length - 1,
-                                t.selectedIdx + 1
+                                t.selectedIdx + 1,
                               )),
                               N(t),
                               e.preventDefault(),
@@ -11052,7 +11048,7 @@ window.onerror = function (msg, src, line, col, err) {
                             );
                         }
                     };
-                  })(a)
+                  })(a),
                 )),
             M(n, r));
         }
@@ -11249,7 +11245,7 @@ window.onerror = function (msg, src, line, col, err) {
           }
         }
         return s;
-      })
+      }),
     );
   },
   function (t, e, n) {
@@ -11570,7 +11566,7 @@ window.onerror = function (msg, src, line, col, err) {
             if (
               (u ||
                 e.ariaLiveLabel.text(
-                  "Slide ".concat(o + 1, " of ").concat(i.length, ".")
+                  "Slide ".concat(o + 1, " of ").concat(i.length, "."),
                 ),
               "cross" === y)
             ) {
@@ -11719,7 +11715,7 @@ window.onerror = function (msg, src, line, col, err) {
           (s.destroy = _),
           s
         );
-      })
+      }),
     );
   },
 ]);
@@ -12596,14 +12592,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.3 }
+    { threshold: 0.3 },
   );
 
   images.forEach((img) => observer.observe(img));
 });
 
 const animatedImages = document.querySelectorAll(
-  ".from-left, .from-right, .from-top"
+  ".from-left, .from-right, .from-top",
 );
 
 const observer = new IntersectionObserver(
@@ -12616,7 +12612,7 @@ const observer = new IntersectionObserver(
   },
   {
     threshold: 0.3,
-  }
+  },
 );
 
 animatedImages.forEach((img) => observer.observe(img));
@@ -12632,7 +12628,7 @@ document.querySelectorAll("#sale video").forEach((video) => {
   const frame = video.closest(".video-frame");
   frame.style.setProperty(
     "--video-bg",
-    `url('${video.querySelector("source").src}')`
+    `url('${video.querySelector("source").src}')`,
   );
 });
 
@@ -12811,7 +12807,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!currentGallery.length) return;
 
     currentIndex = (currentIndex + 1) % currentGallery.length;
-    modalImg.src = currentGallery[currentIndex];
+    // modalImg.src = currentGallery[currentIndex];
+    showImage(currentIndex);
   }
 
   function prevImage() {
@@ -12819,7 +12816,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     currentIndex =
       (currentIndex - 1 + currentGallery.length) % currentGallery.length;
-    modalImg.src = currentGallery[currentIndex];
+    // modalImg.src = currentGallery[currentIndex];
+    showImage(currentIndex);
   }
 
   nextBtn.addEventListener("pointerup", (e) => {
@@ -12838,42 +12836,58 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     modal.classList.remove("active");
   });
+  /*tanja */
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.remove("active");
+    }
+  });
 
   let currentGallery = [];
   let currentIndex = 0;
+
+  function showImage(index) {
+    const src = currentGallery[index];
+    modalImg.src = src;
+
+    modalImg.onload = () => {
+      console.log("✅ Slika učitana:", src);
+    };
+
+    modalImg.onerror = () => {
+      console.error("❌ Slika NE POSTOJI ili se ne učitava:", src);
+    };
+  }
 
   document.querySelectorAll(".offer-image").forEach((img) => {
     img.addEventListener("pointerup", (e) => {
       e.stopPropagation();
 
-      const key = img.dataset.gallery;
+      const key = img.dataset.gallery?.trim();
       if (!galleries[key]) return;
 
       currentGallery = galleries[key];
       currentIndex = 0;
-      modalImg.src = currentGallery[0];
+      // modalImg.src = currentGallery[0];
+      showImage(currentIndex);
       modal.classList.add("active");
     });
   });
 
   nextBtn.addEventListener("click", () => {
     currentIndex = (currentIndex + 1) % currentGallery.length;
-    modalImg.src = currentGallery[currentIndex];
+    // modalImg.src = currentGallery[currentIndex];
+    showImage(currentIndex);
   });
 
   prevBtn.addEventListener("click", () => {
     currentIndex =
       (currentIndex - 1 + currentGallery.length) % currentGallery.length;
-    modalImg.src = currentGallery[currentIndex];
+    // modalImg.src = currentGallery[currentIndex];
+    showImage(currentIndex);
   });
 
   closeBtn.addEventListener("click", () => {
     modal.classList.remove("active");
   });
-});
-
-modal.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.classList.remove("active");
-  }
 });
