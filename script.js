@@ -12617,11 +12617,20 @@ const observer = new IntersectionObserver(
 
 animatedImages.forEach((img) => observer.observe(img));
 
-document.querySelectorAll("#offer .slider-div-wrapper").forEach((card) => {
-  card.addEventListener("click", () => {
-    card.classList.toggle("active");
+// document.querySelectorAll("#offer .slider-div-wrapper").forEach((card) => {
+//   card.addEventListener("click", () => {
+//     card.classList.toggle("active");
+//   });
+// });
+const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+if (!isMobile) {
+  document.querySelectorAll("#offer .slider-div-wrapper").forEach((card) => {
+    card.addEventListener("click", () => {
+      card.classList.toggle("active");
+    });
   });
-});
+}
 
 /*video*/
 document.querySelectorAll("#sale video").forEach((video) => {
@@ -12634,6 +12643,7 @@ document.querySelectorAll("#sale video").forEach((video) => {
 
 /*gallery modal*/
 document.addEventListener("DOMContentLoaded", () => {
+  const isMobile = window.matchMedia("(max-width: 767px)").matches;
   const galleries = {
     PJ001: [
       "images/PolovnaGarderoba/Jakne/1_BelaPamucnaJakna/BelaPamucnaJakna.jpg",
@@ -12866,8 +12876,25 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
+  // document.querySelectorAll(".offer-image").forEach((img) => {
+  //   img.addEventListener("pointerup", (e) => {
+  //     e.stopPropagation();
+
+  //     const key = img.dataset.gallery?.trim();
+  //     if (!galleries[key]) return;
+
+  //     currentGallery = galleries[key];
+  //     currentIndex = 0;
+  //     showImage(currentIndex);
+  //     modal.classList.add("active");
+  //   });
+  // });
+
   document.querySelectorAll(".offer-image").forEach((img) => {
-    img.addEventListener("pointerup", (e) => {
+    const eventType = isMobile ? "click" : "pointerup";
+
+    img.addEventListener(eventType, (e) => {
+      e.preventDefault();
       e.stopPropagation();
 
       const key = img.dataset.gallery?.trim();
