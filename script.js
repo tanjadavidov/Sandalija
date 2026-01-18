@@ -12836,7 +12836,7 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     modal.classList.remove("active");
   });
-  /*tanja */
+
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.remove("active");
@@ -12874,20 +12874,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  nextBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % currentGallery.length;
-    // modalImg.src = currentGallery[currentIndex];
-    showImage(currentIndex);
-  });
+  document.querySelectorAll("#offer .offer-image").forEach((img) => {
+    const title = img.dataset.title;
+    if (!title) return;
 
-  prevBtn.addEventListener("click", () => {
-    currentIndex =
-      (currentIndex - 1 + currentGallery.length) % currentGallery.length;
-    // modalImg.src = currentGallery[currentIndex];
-    showImage(currentIndex);
-  });
-
-  closeBtn.addEventListener("click", () => {
-    modal.classList.remove("active");
+    const titleEl = img.parentElement.querySelector(".image-title");
+    if (titleEl) {
+      titleEl.textContent = title;
+    }
   });
 });

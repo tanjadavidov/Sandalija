@@ -282,7 +282,7 @@ html.w-mod-touch * {
 .dugme1 {
   display: inline-block;
   padding: 9px 15px;
-  background-color: #3898ec; /* #71e785;  tanjaovde*/
+  background-color: #3898ec;
   color: white;
   border: 0;
   line-height: inherit;
@@ -382,7 +382,9 @@ html[data-w-dynpage] [data-w-cloak] {
   height: auto !important;
   overflow: visible !important;
   white-space: nowrap;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 .w-webflow-badge > img {
@@ -1050,7 +1052,9 @@ textarea.w-select,
   background-color: rgba(255, 255, 255, 0.4);
   cursor: pointer;
   margin: 0 3px 0.5em;
-  transition: background-color 100ms, color 100ms;
+  transition:
+    background-color 100ms,
+    color 100ms;
 }
 .w-slider-dot.w-active {
   background-color: #fff;
@@ -1214,8 +1218,8 @@ textarea.w-select,
   bottom: 0;
   left: 0;
   color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Ubuntu, "Segoe UI", Verdana,
-    sans-serif;
+  font-family:
+    "Helvetica Neue", Helvetica, Ubuntu, "Segoe UI", Verdana, sans-serif;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 300;
@@ -1948,8 +1952,12 @@ textarea.w-select,
   border-width: 1px;
   border-color: #fff;
   background-color: rgba(0, 201, 174, 0);
-  -webkit-transition: all 300ms ease, all 300ms ease;
-  transition: all 300ms ease, all 300ms ease;
+  -webkit-transition:
+    all 300ms ease,
+    all 300ms ease;
+  transition:
+    all 300ms ease,
+    all 300ms ease;
 }
 
 .main-btn.transparent-btn:hover {
@@ -1960,8 +1968,12 @@ textarea.w-select,
 .main-btn2.transparent-btn2 {
   margin-left: 40px;
   background-color: rgba(0, 201, 174, 0);
-  -webkit-transition: all 300ms ease, all 300ms ease;
-  transition: all 300ms ease, all 300ms ease;
+  -webkit-transition:
+    all 300ms ease,
+    all 300ms ease;
+  transition:
+    all 300ms ease,
+    all 300ms ease;
   color: rgba(109, 108, 108, 0.9);
 }
 
@@ -2798,7 +2810,9 @@ textarea.w-select,
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease;
   font-size: 14px;
   line-height: 1.4;
 }
@@ -2857,12 +2871,42 @@ textarea.w-select,
 }
 
 /* Slika uvek pokriva slajd */
+/* WRAPPER */
 #offer .product-image {
   position: relative;
   flex: 1;
   width: 100%;
   height: 100%;
   overflow: hidden;
+
+  cursor: pointer;
+}
+
+/* NASLOV */
+#offer .image-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.05));
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+
+  pointer-events: none;
+}
+
+/* HOVER (desktop) */
+#offer .product-image:hover .image-title {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #offer .product-image img {
@@ -2891,6 +2935,10 @@ textarea.w-select,
   max-height: 80px; /* kontrolišeš koliko može da se otvori */
   opacity: 1;
   /*overflow-y: auto;*/
+}
+
+#offer .offer-image {
+  cursor: pointer;
 }
 
 /* SALE video gallery layout */
@@ -3000,7 +3048,9 @@ textarea.w-select,
 
 .offer-image {
   cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 
   touch-action: manipulation;
 }
@@ -3015,12 +3065,7 @@ textarea.w-select,
   pointer-events: auto;
   touch-action: manipulation;
 }
-/*
-.price-overlay,
-.image-overlay {
-  pointer-events: none;
-}
-*/
+
 /* ==========================================================================
       Start of custom Webflow CSS
       ========================================================================== */
@@ -3703,6 +3748,12 @@ textarea.w-select,
 
   .modal-nav button {
     font-size: 28px;
+  }
+
+  #offer .image-title {
+    opacity: 1;
+    transform: none;
+    font-size: 13px;
   }
 }
 
