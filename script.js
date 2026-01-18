@@ -12795,6 +12795,13 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Pidzame/1_LetnjePidzameGornjiDeoNaBrtele/PidzamaNaTregereGornjiDeo3.jpg",
       "images/PolovnaGarderoba/Pidzame/1_LetnjePidzameGornjiDeoNaBrtele/PidzamaNaTregereGornjiDeo4.jpg",
     ],
+    PS001: [
+      "images/PolovnaGarderoba/Suknje/1_BraonSomotSuknja/BraonSomotSuknja.jpg",
+      "images/PolovnaGarderoba/Suknje/1_BraonSomotSuknja/BraonSomotSuknja1.jpg",
+      // "images/PolovnaGarderoba/Suknje/1_BraonSomotSuknja/BraonSomotSuknja2.jpg",
+      // "images/PolovnaGarderoba/Suknje/1_BraonSomotSuknja/BraonSomotSuknja3.jpg",
+      // "images/PolovnaGarderoba/Suknje/1_BraonSomotSuknja/BraonSomotSuknja4.jpg",
+    ],
   };
 
   const modal = document.getElementById("gallery-modal");
