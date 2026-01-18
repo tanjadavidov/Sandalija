@@ -2885,9 +2885,9 @@ textarea.w-select,
 /* NASLOV */
 #offer .image-title {
   position: absolute;
-  left: 0;
+  left: 12px;
   right: 0;
-  bottom: 0;
+  bottom: 55px;
 
   padding: 10px 12px;
   font-size: 14px;
@@ -2901,6 +2901,7 @@ textarea.w-select,
   transition: all 0.3s ease;
 
   pointer-events: none;
+  z-index: 2;
 }
 
 /* HOVER (desktop) */
@@ -2923,12 +2924,13 @@ textarea.w-select,
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 20px 12px;
+  padding: 10px 12px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   color: white;
-  z-index: 2;
+  z-index: 1;
   text-align: center;
   pointer-events: none;
+  width: 100%;
 }
 
 #offer .slide-item:hover .product-desc {
