@@ -3068,6 +3068,11 @@ textarea.w-select,
   touch-action: manipulation;
 }
 
+#offer .price-overlay,
+#offer .image-title {
+  pointer-events: none;
+}
+
 /* ==========================================================================
       Start of custom Webflow CSS
       ========================================================================== */
@@ -3709,6 +3714,25 @@ textarea.w-select,
   #actual .w-col:nth-child(3) .image {
     transition-delay: 0.4s;
   }
+
+  #offer .image-title {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* .modal-nav {
+    bottom: 15px;
+    position: fixed;
+
+    position: absolute; 
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+
+  .modal-nav button {
+    font-size: 28px;
+  } */
 }
 
 @media (min-width: 768px) {
@@ -3743,19 +3767,6 @@ textarea.w-select,
   }
   .w-lightbox-control:hover {
     opacity: 1;
-  }
-  .modal-nav {
-    bottom: 15px;
-  }
-
-  .modal-nav button {
-    font-size: 28px;
-  }
-
-  #offer .image-title {
-    opacity: 1;
-    transform: none;
-    font-size: 13px;
   }
 }
 
