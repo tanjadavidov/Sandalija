@@ -12875,7 +12875,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       currentGallery = galleries[key];
       currentIndex = 0;
-      // modalImg.src = currentGallery[0];
       showImage(currentIndex);
       modal.classList.add("active");
     });
