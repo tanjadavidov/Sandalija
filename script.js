@@ -12808,9 +12808,6 @@ document.addEventListener("DOMContentLoaded", () => {
     PS001: [
       "images/PolovnaGarderoba/Suknje/1_BraonSomotSuknja/BraonSomotSuknja.jpg",
       "images/PolovnaGarderoba/Suknje/1_BraonSomotSuknja/BraonSomotSuknja1.jpg",
-      // "images/PolovnaGarderoba/Suknje/1_BraonSomotSuknja/BraonSomotSuknja2.jpg",
-      // "images/PolovnaGarderoba/Suknje/1_BraonSomotSuknja/BraonSomotSuknja3.jpg",
-      // "images/PolovnaGarderoba/Suknje/1_BraonSomotSuknja/BraonSomotSuknja4.jpg",
     ],
   };
 
@@ -12849,10 +12846,22 @@ document.addEventListener("DOMContentLoaded", () => {
     prevImage();
   });
 
+  // closeBtn.addEventListener("pointerup", (e) => {
+  //   e.preventDefault();
+  //   e.stopPropagation(); // ⬅ KLJUČNO
+  //   modal.classList.remove("active");
+  // });
+
   closeBtn.addEventListener("pointerup", (e) => {
     e.preventDefault();
-    e.stopPropagation(); // ⬅ KLJUČNO
+    e.stopPropagation();
+
     modal.classList.remove("active");
+
+    // ⏳ sačekaj da se mobile tap ciklus završi
+    setTimeout(() => {
+      document.body.classList.remove("modal-open");
+    }, 80);
   });
 
   modal.addEventListener("click", (e) => {
@@ -12889,6 +12898,8 @@ document.addEventListener("DOMContentLoaded", () => {
       currentIndex = 0;
       showImage(currentIndex);
       modal.classList.add("active");
+      // 🔒 zaključava hamburger / meni dok je galerija otvorena
+      document.body.classList.add("modal-open");
     };
 
     /* MOBILE – najpouzdanije */

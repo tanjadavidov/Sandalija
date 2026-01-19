@@ -3090,6 +3090,11 @@ body.modal-open header {
   pointer-events: none;
 }
 
+body.modal-open header,
+body.modal-open .w-nav,
+body.modal-open .w-nav-button {
+  pointer-events: none !important;
+}
 /*tanjakraj*/
 /* ==========================================================================
       Start of custom Webflow CSS
