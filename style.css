@@ -3329,17 +3329,16 @@ body.modal-open {
   #offer .w-slider,
   #offer .w-slider-mask,
   #offer .w-slide {
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    height: auto !important;
+    min-height: unset !important;
   }
 
   #offer .slider-div-wrapper {
     position: relative;
-    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
-    /* overflow: hidden; */
     height: 100%;
   }
 
