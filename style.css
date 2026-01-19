@@ -3382,7 +3382,7 @@ textarea.w-select,
     position: absolute;
     top: 12px;
     left: 12px;
-    z-index: 5;
+    z-index: 10; /* 10 tanjaovde */
     color: #fff;
     text-align: center;
 
@@ -3415,9 +3415,10 @@ textarea.w-select,
       rgba(0, 0, 0, 0.25),
       rgba(0, 0, 0, 0.6)
     );
-
     display: none;
-    /* inset: -1px; */
+
+    z-index: 1;
+    pointer-events: none;
   }
 
   #offer .w-slide {
@@ -3446,6 +3447,12 @@ textarea.w-select,
 
   #offer .slider-div-wrapper.active .product-desc {
     transform: translateY(0);
+  }
+
+  #offer .product-image,
+  #offer .product-desc {
+    position: relative;
+    z-index: 2;
   }
 
   /*1 video po ekranu (fullscreen feel)*/
