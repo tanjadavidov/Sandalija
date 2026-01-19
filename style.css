@@ -3009,17 +3009,21 @@ textarea.w-select,
   justify-content: center;
   z-index: 9999;
 
-  pointer-events: auto;
+  pointer-events: none;
 }
 
 #gallery-modal.active {
   display: flex;
 
-  pointer-events: all;
+  pointer-events: auto;
 }
 
 body.modal-open {
   overflow: hidden;
+}
+
+body.modal-open header {
+  pointer-events: none;
 }
 
 .navbar,
