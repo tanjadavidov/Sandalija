@@ -3008,10 +3008,23 @@ textarea.w-select,
   align-items: center;
   justify-content: center;
   z-index: 9999;
+
+  pointer-events: auto;
 }
 
 #gallery-modal.active {
   display: flex;
+
+  pointer-events: all;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.navbar,
+.hamburger-menu {
+  z-index: 1000;
 }
 
 #gallery-image {
@@ -3321,12 +3334,28 @@ textarea.w-select,
 
   #offer .slider-div-wrapper {
     position: relative;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
     /* overflow: hidden; */
+    height: 100%;
+  }
+
+  #offer .slider-div-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.6)
+    );
+    display: none;
+
+    z-index: 1;
+    pointer-events: none;
   }
 
   #offer .slider-div-wrapper img {
@@ -3341,9 +3370,12 @@ textarea.w-select,
   /* okvir slike uzima ceo slajd */
   #offer .product-image {
     flex: 1;
+    height: auto;
+
+    /* flex: 1; */
     position: relative;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3359,16 +3391,18 @@ textarea.w-select,
 
     backface-visibility: hidden;
     transform: translateZ(0);
+
+    /* height: auto !important; */
+    aspect-ratio: auto; /* ili 4 / 5 – po želji */
   }
 
-  /* 1️⃣ JEDAN SLAJD = CELO EKRAN */
-  /* Jedan slajd zauzima ceo/pola ekrana */
+  /* slajd da se prilagodi sadržaju */
   #offer .w-slide {
-    /* height: auto !important;*/
+    height: auto !important;
+    min-height: unset;
+
     width: 100% !important;
     float: none;
-    min-height: 65vh;
-
     height: 65vh !important;
   }
 
@@ -3406,28 +3440,13 @@ textarea.w-select,
     margin-top: 4px;
   }
 
-  #offer .slider-div-wrapper::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.6)
-    );
-    display: none;
-
-    z-index: 1;
-    pointer-events: none;
-  }
-
   #offer .w-slide {
     width: 100%;
   }
 
   #offer .product-desc {
     display: block;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     left: 0;
     right: 0;
@@ -3436,13 +3455,17 @@ textarea.w-select,
     padding: 15px;
     font-size: 14px;
     line-height: 1.4;
-    transform: translateY(100%);
+    transform: translateY(0); /* uvek vidljiv */
     transition: transform 0.3s ease;
     overflow-y: auto;
     max-height: none !important;
     opacity: 1 !important;
     overflow: visible !important;
     pointer-events: none;
+
+    position: relative;
+    transform: none;
+    margin-top: 0;
   }
 
   #offer .slider-div-wrapper.active .product-desc {

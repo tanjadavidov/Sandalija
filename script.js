@@ -12851,6 +12851,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   closeBtn.addEventListener("pointerup", (e) => {
     e.preventDefault();
+    e.stopPropagation(); // ⬅ KLJUČNO
     modal.classList.remove("active");
   });
 
