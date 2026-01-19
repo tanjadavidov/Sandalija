@@ -12876,24 +12876,8 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
-  // document.querySelectorAll(".offer-image").forEach((img) => {
-  //   img.addEventListener("pointerup", (e) => {
-  //     e.stopPropagation();
-
-  //     const key = img.dataset.gallery?.trim();
-  //     if (!galleries[key]) return;
-
-  //     currentGallery = galleries[key];
-  //     currentIndex = 0;
-  //     showImage(currentIndex);
-  //     modal.classList.add("active");
-  //   });
-  // });
-
   document.querySelectorAll(".offer-image").forEach((img) => {
-    const eventType = isMobile ? "click" : "pointerup";
-
-    img.addEventListener(eventType, (e) => {
+    const openGallery = (e) => {
       e.preventDefault();
       e.stopPropagation();
 
@@ -12904,7 +12888,13 @@ document.addEventListener("DOMContentLoaded", () => {
       currentIndex = 0;
       showImage(currentIndex);
       modal.classList.add("active");
-    });
+    };
+
+    /* MOBILE – najpouzdanije */
+    img.addEventListener("pointerdown", openGallery);
+
+    /* DESKTOP – fallback */
+    img.addEventListener("pointerup", openGallery);
   });
 
   document.querySelectorAll("#offer .offer-image").forEach((img) => {
