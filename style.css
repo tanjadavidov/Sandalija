@@ -2413,6 +2413,10 @@ textarea.w-select,
   background-size: auto 100% !important;
 }
 
+.pslide1 {
+  opacity: 1 !important;
+}
+
 /* slike */
 .slide1 {
   background-image: url("images/SandalijaCover2.jpg");
@@ -2535,6 +2539,27 @@ textarea.w-select,
 
 .slider-div-wrapper:hover img {
   transform: scale(1.05);
+}
+
+/* wrapper */
+.back-link-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 10px;
+}
+
+/* sam link */
+.back-link {
+  font-size: 16px;
+  color: #777;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+/* hover / tap */
+.back-link:hover {
+  color: #d7cb48; /* ista zlatna nijansa kao cene */
 }
 
 /* Stil za slike u sekciji #actual */
@@ -2910,12 +2935,18 @@ textarea.w-select,
   transform: translateY(0);
 }
 
+#offer .product-image * {
+  pointer-events: none;
+}
+
 #offer .product-image img {
   width: 100%;
   height: auto;
   object-fit: contain;
   object-position: center;
   display: block;
+
+  pointer-events: auto;
 }
 
 /* Tamni gradient za čitljivost */
@@ -3009,7 +3040,7 @@ textarea.w-select,
   justify-content: center;
   z-index: 9999;
 
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 #gallery-modal.active {
@@ -3020,6 +3051,7 @@ textarea.w-select,
 
 body.modal-open {
   overflow: hidden;
+  touch-action: none;
 }
 
 body.modal-open header {
@@ -3095,6 +3127,12 @@ body.modal-open .w-nav,
 body.modal-open .w-nav-button {
   pointer-events: none !important;
 }
+
+body.modal-open header,
+body.modal-open .w-nav {
+  pointer-events: none;
+}
+
 /*tanjakraj*/
 /* ==========================================================================
       Start of custom Webflow CSS

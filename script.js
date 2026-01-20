@@ -12627,6 +12627,7 @@ const isMobile = window.matchMedia("(max-width: 767px)").matches;
 if (!isMobile) {
   document.querySelectorAll("#offer .slider-div-wrapper").forEach((card) => {
     card.addEventListener("click", () => {
+      if (e.target.closest(".offer-image")) return;
       card.classList.toggle("active");
     });
   });
@@ -12834,6 +12835,18 @@ document.addEventListener("DOMContentLoaded", () => {
     showImage(currentIndex);
   }
 
+  function closeModal(e) {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+
+    modal.classList.remove("active");
+
+    // ⬅ KLJUČNO: uvek otključaj skrol
+    document.body.classList.remove("modal-open");
+  }
+
   nextBtn.addEventListener("pointerup", (e) => {
     e.preventDefault();
     e.stopPropagation();
@@ -12848,27 +12861,66 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // closeBtn.addEventListener("pointerup", (e) => {
   //   e.preventDefault();
-  //   e.stopPropagation(); // ⬅ KLJUČNO
+  //   e.stopPropagation();
+
   //   modal.classList.remove("active");
+
+  //   // ⏳ sačekaj da se mobile tap ciklus završi
+  //   setTimeout(() => {
+  //     document.body.classList.remove("modal-open");
+  //   }, 80);
   // });
+
+  // X dugme
+  // closeBtn.addEventListener("pointerup", closeModal);
+  closeBtn.addEventListener("pointerdown", (e) => {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+  });
 
   closeBtn.addEventListener("pointerup", (e) => {
     e.preventDefault();
-    e.stopPropagation();
+    e.stopImmediatePropagation();
 
     modal.classList.remove("active");
 
-    // ⏳ sačekaj da se mobile tap ciklus završi
+    // ⬅ kratko kašnjenje da "pojede" tap
     setTimeout(() => {
       document.body.classList.remove("modal-open");
-    }, 80);
+    }, 150);
   });
 
-  modal.addEventListener("click", (e) => {
+  // Tap na tamnu pozadinu
+  // modal.addEventListener("pointerup", (e) => {
+  //   if (e.target === modal) {
+  //     closeModal(e);
+  //   }
+  // });
+  modal.addEventListener("pointerdown", (e) => {
     if (e.target === modal) {
-      modal.classList.remove("active");
+      e.preventDefault();
+      e.stopImmediatePropagation();
     }
   });
+
+  modal.addEventListener("pointerup", (e) => {
+    if (e.target === modal) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+
+      modal.classList.remove("active");
+
+      setTimeout(() => {
+        document.body.classList.remove("modal-open");
+      }, 150);
+    }
+  });
+
+  // modal.addEventListener("click", (e) => {
+  //   if (e.target === modal) {
+  //     modal.classList.remove("active");
+  //   }
+  // });
 
   let currentGallery = [];
   let currentIndex = 0;
@@ -12902,11 +12954,35 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.add("modal-open");
     };
 
-    /* MOBILE – najpouzdanije */
-    img.addEventListener("pointerdown", openGallery);
+    // if (isMobile) {
+    //   // 📱 telefon – tvoj postojeći sistem (radi dobro)
+    //   img.addEventListener("pointerdown", openGallery);
+    // }
+    if (isMobile) {
+      let startY = 0;
+      let startX = 0;
 
-    /* DESKTOP – fallback */
-    img.addEventListener("pointerup", openGallery);
+      img.addEventListener("touchstart", (e) => {
+        startY = e.touches[0].clientY;
+        startX = e.touches[0].clientX;
+      });
+
+      img.addEventListener("touchend", (e) => {
+        const endY = e.changedTouches[0].clientY;
+        const endX = e.changedTouches[0].clientX;
+
+        const diffY = Math.abs(endY - startY);
+        const diffX = Math.abs(endX - startX);
+
+        // ✔ samo pravi TAP (bez skrola)
+        if (diffY < 10 && diffX < 10) {
+          openGallery(e);
+        }
+      });
+    } else {
+      // 🖥 desktop ostaje kako jeste
+      img.addEventListener("click", openGallery);
+    }
   });
 
   document.querySelectorAll("#offer .offer-image").forEach((img) => {
