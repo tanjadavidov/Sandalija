@@ -12963,3 +12963,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.querySelectorAll("#sale video").forEach((video) => {
+  const frame = video.closest(".video-frame");
+
+  video.addEventListener("play", () => {
+    frame.classList.add("is-playing");
+  });
+
+  video.addEventListener("pause", () => {
+    frame.classList.remove("is-playing");
+  });
+
+  video.addEventListener("ended", () => {
+    frame.classList.remove("is-playing");
+  });
+});

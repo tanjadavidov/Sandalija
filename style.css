@@ -3008,6 +3008,14 @@ textarea.w-select,
   height: 100%;
   background: black;
   overflow: hidden;
+
+  transition: all 0.4s ease;
+}
+
+#sale .video-frame.is-playing {
+  transform: scale(1.05);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  z-index: 5;
 }
 
 /* Blur pozadina */
@@ -3028,7 +3036,11 @@ textarea.w-select,
   width: 100%;
   height: 100%;
   object-fit: contain;
+
   z-index: 2;
+  transition:
+    transform 0.4s ease,
+    object-fit 0.4s ease;
 }
 
 #gallery-modal {
@@ -3526,16 +3538,40 @@ body.modal-open .w-nav {
 
   /*1 video po ekranu (fullscreen feel)*/
   #sale .w-slide {
-    flex: 0 0 100%;
+    height: 75svh !important;
+    width: 100% !important;
   }
 
   #sale .slider-div-wrapper {
     aspect-ratio: 9 / 16;
-    height: 75vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
   }
 
-  #sale .slider-div-wrapper {
-    height: 80vh; /* umesto 75vh */
+  /* okvir za video */
+  #sale .video-frame {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* sam video */
+  #sale .gallery-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* popuni ceo slajd */
+    display: block;
+  }
+
+  #sale .w-slider,
+  #sale .w-slider-mask {
+    height: auto;
   }
 
   .hero-cta {
