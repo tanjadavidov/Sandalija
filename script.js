@@ -12818,6 +12818,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextBtn = document.getElementById("next-btn");
   const prevBtn = document.getElementById("prev-btn");
 
+  /* 📱 SWIPE ZA GALERIJU – SAMO MOBILNI */
+  if (isMobile && modalImg) {
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    modalImg.addEventListener(
+      "touchstart",
+      (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      },
+      { passive: true },
+    );
+
+    modalImg.addEventListener("touchend", (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    });
+
+    function handleSwipe() {
+      const diff = touchStartX - touchEndX;
+
+      if (Math.abs(diff) < 40) return; // mali pomeraj = tap / scroll
+
+      if (diff > 0) {
+        nextImage(); // 👉 swipe levo
+      } else {
+        prevImage(); // 👈 swipe desno
+      }
+    }
+  }
+
   function nextImage() {
     if (!currentGallery.length) return;
 

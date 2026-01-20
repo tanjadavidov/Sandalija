@@ -3129,6 +3129,15 @@ body.modal-open header {
   touch-action: manipulation;
 }
 
+.gallery-modal {
+  touch-action: pan-x;
+}
+
+.gallery-modal img {
+  touch-action: pan-x;
+  user-select: none;
+}
+
 #offer .price-overlay,
 #offer .image-title {
   pointer-events: none;
@@ -3380,6 +3389,18 @@ body.modal-open .w-nav {
     opacity: 1;
     transform: translateY(0);
   }
+
+  #offer .back-link {
+    display: inline-block;
+
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  /* #offer .back-link-wrapper {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  } */
 
   #offer {
     padding: 0;
