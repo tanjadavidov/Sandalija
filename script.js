@@ -12822,7 +12822,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!currentGallery.length) return;
 
     currentIndex = (currentIndex + 1) % currentGallery.length;
-    // modalImg.src = currentGallery[currentIndex];
     showImage(currentIndex);
   }
 
@@ -12831,7 +12830,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     currentIndex =
       (currentIndex - 1 + currentGallery.length) % currentGallery.length;
-    // modalImg.src = currentGallery[currentIndex];
     showImage(currentIndex);
   }
 
@@ -12859,20 +12857,6 @@ document.addEventListener("DOMContentLoaded", () => {
     prevImage();
   });
 
-  // closeBtn.addEventListener("pointerup", (e) => {
-  //   e.preventDefault();
-  //   e.stopPropagation();
-
-  //   modal.classList.remove("active");
-
-  //   // ⏳ sačekaj da se mobile tap ciklus završi
-  //   setTimeout(() => {
-  //     document.body.classList.remove("modal-open");
-  //   }, 80);
-  // });
-
-  // X dugme
-  // closeBtn.addEventListener("pointerup", closeModal);
   closeBtn.addEventListener("pointerdown", (e) => {
     e.preventDefault();
     e.stopImmediatePropagation();
@@ -12890,12 +12874,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 150);
   });
 
-  // Tap na tamnu pozadinu
-  // modal.addEventListener("pointerup", (e) => {
-  //   if (e.target === modal) {
-  //     closeModal(e);
-  //   }
-  // });
   modal.addEventListener("pointerdown", (e) => {
     if (e.target === modal) {
       e.preventDefault();
@@ -12915,12 +12893,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 150);
     }
   });
-
-  // modal.addEventListener("click", (e) => {
-  //   if (e.target === modal) {
-  //     modal.classList.remove("active");
-  //   }
-  // });
 
   let currentGallery = [];
   let currentIndex = 0;
@@ -12954,10 +12926,6 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.add("modal-open");
     };
 
-    // if (isMobile) {
-    //   // 📱 telefon – tvoj postojeći sistem (radi dobro)
-    //   img.addEventListener("pointerdown", openGallery);
-    // }
     if (isMobile) {
       let startY = 0;
       let startX = 0;
