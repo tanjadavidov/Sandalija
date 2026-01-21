@@ -85,21 +85,25 @@
             
           <p>
             <!-- <a href="#" class="brand w-nav-brand"> -->
-             
-                <a href="/index.html" class="category-card">
-                 ‹‹ home     
+              <div class="back-link-wrapper">
+              <a href="/index.html" class="back-link">‹‹ home      
+                <!-- <a href="/index.html" class="category-card">
+                 ‹‹ home      -->
               <img
                  src="images/SandalijaLogo.jpg" 
                 loading="lazy"
                 alt="Sandalija logo"
                 class="image-4"
               /> 
-              </a>            
+              </a> 
+              </div>
+              
+
               <h4>
-                <div style="margin-left: 10px">
-                  <b style="font-size: 20px"
-                    >Dobrodošli. &nbsp; Sandalija !
-                  </b>
+                <div style="margin-left: 10px;" class="back-link back-link-wrapper">
+                  
+                    Dobrodošli na web stranu Sandalija
+                  
                 </div>
               </h4>
             </a>
@@ -113,10 +117,19 @@
             <a href="#actual" class="nav-link w-inline-block"
               ><div>Aktuelno</div></a
             >
-            <a href="#offer" class="nav-link w-inline-block"
-              ><div>Ponuda</div></a
-            >
-            <!-- <a href="#sale" class="nav-link w-inline-block"><div>Uživo</div></a> -->
+                  <!-- Ponuda sa podmenijem -->
+          <div class="nav-link w-inline-block dropdown">
+              <div>Ponuda</div>
+              <div class="dropdown-content">
+                  <a href="#haljine">Haljine</a>
+                  <a href="#jakne">Jakne</a>
+                  <a href="#pantalone">Pantalone</a>
+                  <a href="#majice">Majice</a>
+                  <a href="#suknje">Suknje</a>
+                  <a href="#ostalo">Ostalo</a>
+              </div>
+          </div>
+                
             <a href="#contact" class="nav-link w-inline-block"><div>Poruči</div></a
             >
           </nav>

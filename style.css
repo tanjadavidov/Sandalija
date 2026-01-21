@@ -1170,21 +1170,60 @@ textarea.w-select,
   margin-right: 20px;
   width: 1em;
   height: 1em;
+  border-color: #fff;
+  color: #fff;
 }
+
+.w-dropdown-toggle:hover .w-icon-dropdown-toggle {
+  color: #81bf5b;
+}
+
+/* Animacija za otvaranje */
+.w-dropdown-list.w--open {
+  opacity: 0;
+  transform: translateY(-10px);
+  display: block;
+  animation: dropdownFade 0.3s forwards;
+}
+
 .w-dropdown-list {
-  position: absolute;
+  /* position: absolute;
   background: #dddddd;
   display: none;
-  min-width: 100%;
+  min-width: 100%; */
+  background-color: #3d5e29; /* tamnozelena kao kod dugmeta */
+  border-radius: 6px; /* zaobljeni uglovi */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* blaga senka za luksuzan izgled */
+  padding: 10px 0;
+  min-width: 180px; /* širina dropdown-a */
+  transition: all 0.3s ease;
 }
 .w-dropdown-list.w--open {
   display: block;
 }
+
+/* Usklađivanje sa fontovima glavnog menija */
 .w-dropdown-link {
-  padding: 10px 20px;
-  display: block;
-  color: #222222;
+  font-family: "Lato", sans-serif;
 }
+
+.w-dropdown-link {
+  /* padding: 10px 20px;
+  display: block;
+  color: #222222; */
+  color: #fff; /* bela boja teksta */
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.w-dropdown-link:hover {
+  background-color: #81bf5b; /* svetlija zelena na hover */
+  color: #000; /* tekst kontrast */
+  border-radius: 4px; /* blago zaobljenje na hover */
+}
+
 .w-dropdown-link.w--current {
   color: #0082f3;
 }
@@ -3173,6 +3212,40 @@ body.modal-open .w-nav {
   pointer-events: none;
 }
 
+/*podmenu*/
+/* Osnovni dropdown stil */
+.nav-link.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-link.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 5px 0;
+}
+
+.nav-link.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-link.dropdown .dropdown-content a {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link.dropdown .dropdown-content a:hover {
+  background-color: #f2f2f2;
+}
+
 /*tanjakraj*/
 /* ==========================================================================
       Start of custom Webflow CSS
@@ -3260,6 +3333,14 @@ body.modal-open .w-nav {
   }
   100% {
     opacity: 0.5;
+  }
+}
+
+/*drop down menu*/
+@keyframes dropdownFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
