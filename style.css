@@ -2910,18 +2910,14 @@ textarea.w-select,
   left: 12px;
   right: 0;
   bottom: 55px;
-
   padding: 10px 12px;
   font-size: 14px;
   font-weight: 600;
   color: #fff;
-
   background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.05));
-
   opacity: 0;
   transform: translateY(10px);
   transition: all 0.3s ease;
-
   pointer-events: none;
   z-index: 2;
 }
@@ -3403,6 +3399,11 @@ body.modal-open .w-nav {
     padding: 0;
   }
 
+  #offer .slider {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   #offer .w-slider,
   #offer .w-slider-mask,
   #offer .w-slide {
@@ -3476,6 +3477,8 @@ body.modal-open .w-nav {
   #offer .w-slider-mask {
     display: block;
     height: auto !important;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   /* 4️⃣ ŠIFRA – GORE PREKO SLIKE */
@@ -3541,6 +3544,24 @@ body.modal-open .w-nav {
   #offer .product-desc {
     position: relative;
     z-index: 2;
+  }
+
+  #offer .w-slider-arrow-left {
+    left: 4px;
+  }
+
+  #offer .w-slider-arrow-right {
+    right: 4px;
+  }
+
+  #offer .w-slider-arrow-left,
+  #offer .w-slider-arrow-right {
+    width: 36px; /* bilo je ~80px */
+  }
+
+  #offer .w-icon-slider-left,
+  #offer .w-icon-slider-right {
+    font-size: 22px; /* smanji strelice */
   }
 
   /*1 video po ekranu (fullscreen feel)*/
