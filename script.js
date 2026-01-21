@@ -12809,6 +12809,22 @@ document.addEventListener("DOMContentLoaded", () => {
     PS001: [
       "images/PolovnaGarderoba/Suknje/1_BraonSomotSuknja/BraonSomotSuknja.jpg",
       "images/PolovnaGarderoba/Suknje/1_BraonSomotSuknja/BraonSomotSuknja1.jpg",
+      "images/PolovnaGarderoba/Suknje/1_BraonSomotSuknja/BraonSomotSuknja2.jpg",
+      "images/PolovnaGarderoba/Suknje/1_BraonSomotSuknja/BraonSomotSuknja3.jpg",
+      "images/PolovnaGarderoba/Suknje/1_BraonSomotSuknja/BraonSomotSuknja4.jpg",
+    ],
+    PO001: [
+      "images/PolovnaGarderoba/Ostalo/1_CrvenaFantomka/CrvenaFantomka.jpg",
+      "images/PolovnaGarderoba/Ostalo/1_CrvenaFantomka/CrvenaFantomka1.jpg",
+    ],
+    PO002: [
+      "images/PolovnaGarderoba/Ostalo/2_ZeleniGrejaci/ZeleniGrejaci.jpg",
+      "images/PolovnaGarderoba/Ostalo/2_ZeleniGrejaci/ZeleniGrejaci1.jpg",
+      "images/PolovnaGarderoba/Ostalo/2_ZeleniGrejaci/ZeleniGrejaci2.jpg",
+      "images/PolovnaGarderoba/Ostalo/2_ZeleniGrejaci/ZeleniGrejaci3.jpg",
+    ],
+    PO003: [
+      "images/PolovnaGarderoba/Ostalo/3_MaskaZaSpavanje/MaskaZaSpavanje.jpg",
     ],
   };
 

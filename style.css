@@ -3468,10 +3468,9 @@ body.modal-open .w-nav {
   #offer .w-slide {
     height: auto !important;
     min-height: unset;
-
     width: 100% !important;
     float: none;
-    height: 65vh !important;
+    height: 70vh !important;
   }
 
   #offer .w-slider-mask {
@@ -3487,7 +3486,6 @@ body.modal-open .w-nav {
     z-index: 10; /* 10 tanjaovde */
     color: #fff;
     text-align: center;
-
     font-size: 12px;
     opacity: 0.7;
   }
@@ -3530,7 +3528,6 @@ body.modal-open .w-nav {
     opacity: 1 !important;
     overflow: visible !important;
     pointer-events: none;
-
     position: relative;
     transform: none;
     margin-top: 0;
@@ -3548,7 +3545,7 @@ body.modal-open .w-nav {
 
   /*1 video po ekranu (fullscreen feel)*/
   #sale .w-slide {
-    height: 75svh !important;
+    height: 70svh !important;
     width: 100% !important;
   }
 
@@ -3558,7 +3555,6 @@ body.modal-open .w-nav {
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 0;
   }
 
