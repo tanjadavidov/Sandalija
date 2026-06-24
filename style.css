@@ -2449,17 +2449,17 @@ textarea.w-select,
 
 /* slike */
 .slide1 {
-  background-image: url("images/SandalijaCover2.jpg");
+  background-image: url("images/corset1.jpg");
   animation-delay: 0s;
 }
 
 .slide2 {
-  background-image: url("images/Coco1.jpeg");
+  background-image: url("images/Mantil.jpg");
   animation-delay: 6s;
 }
 
 .slide3 {
-  background-image: url("images/Libre1.jpeg");
+  background-image: url("images/CrnaHaljina.jpg");
   animation-delay: 12s;
 }
 
