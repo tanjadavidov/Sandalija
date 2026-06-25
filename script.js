@@ -12797,7 +12797,6 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Majice/2_KorsetCrniPS/2.jpg",
       "images/PolovnaGarderoba/Majice/2_KorsetCrniPS/3.jpg",
       "images/PolovnaGarderoba/Majice/2_KorsetCrniPS/4.jpg",
-      "images/PolovnaGarderoba/Majice/2_KorsetCrniPS/5.jpg",
       "images/PolovnaGarderoba/Majice/2_KorsetCrniPS/KorsetCrniPS.jpg",
       "images/PolovnaGarderoba/Majice/2_KorsetCrniPS/KorsetCrniPS1.jpg",
       "images/PolovnaGarderoba/Majice/2_KorsetCrniPS/KorsetCrniPS2.jpg",
