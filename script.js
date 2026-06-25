@@ -12657,7 +12657,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Jakne/1_BelaPamucnaJakna/BelaPamucnaJakna4.jpg",
     ],
     PJ003: [
-       "images/PolovnaGarderoba/Jakne/3_BraonSakoFlanel/1.jpg",
+       "images/PolovnaGarderoba/Jakne/3_BraonSakoFlanel/BraonSakoFlanel0.jpg",
        "images/PolovnaGarderoba/Jakne/3_BraonSakoFlanel/2.jpg",
        "images/PolovnaGarderoba/Jakne/3_BraonSakoFlanel/3.jpg",
       "images/PolovnaGarderoba/Jakne/3_BraonSakoFlanel/BraonSakoFlanel.jpg",
@@ -12670,6 +12670,11 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Jakne/3_BraonSakoFlanel/BraonSakoFlanel7.jpg",
     ],
     PJ004: [
+      "images/PolovnaGarderoba/Jakne/4_BraonSiviSomotSako/BraonSomotSako0.jpg",
+      "images/PolovnaGarderoba/Jakne/4_BraonSiviSomotSako/2.jpg",
+      "images/PolovnaGarderoba/Jakne/4_BraonSiviSomotSako/3.jpg",
+      "images/PolovnaGarderoba/Jakne/4_BraonSiviSomotSako/4.jpg",
+      "images/PolovnaGarderoba/Jakne/4_BraonSiviSomotSako/5.jpg",
       "images/PolovnaGarderoba/Jakne/4_BraonSiviSomotSako/BraonSomotSako.jpg",
       "images/PolovnaGarderoba/Jakne/4_BraonSiviSomotSako/BraonSomotSako1.jpg",
       "images/PolovnaGarderoba/Jakne/4_BraonSiviSomotSako/BraonSomotSako2.jpg",
