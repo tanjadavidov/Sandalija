@@ -12647,7 +12647,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const isMobile = window.matchMedia("(max-width: 767px)").matches;
   const galleries = {
     PJ001: [
-      "images/PolovnaGarderoba/Jakne/1_BelaPamucnaJakna/1.jpg",
+      "images/PolovnaGarderoba/Jakne/1_BelaPamucnaJakna/BelaPamucnaJakna0.jpg",
       "images/PolovnaGarderoba/Jakne/1_BelaPamucnaJakna/2.jpg",
       "images/PolovnaGarderoba/Jakne/1_BelaPamucnaJakna/3.jpg",
       "images/PolovnaGarderoba/Jakne/1_BelaPamucnaJakna/BelaPamucnaJakna.jpg",
