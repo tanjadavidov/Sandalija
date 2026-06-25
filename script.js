@@ -12657,6 +12657,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Jakne/1_BelaPamucnaJakna/BelaPamucnaJakna4.jpg",
     ],
     PJ003: [
+       "images/PolovnaGarderoba/Jakne/3_BraonSakoFlanel/1.jpg",
+       "images/PolovnaGarderoba/Jakne/3_BraonSakoFlanel/2.jpg",
+       "images/PolovnaGarderoba/Jakne/3_BraonSakoFlanel/3.jpg",
       "images/PolovnaGarderoba/Jakne/3_BraonSakoFlanel/BraonSakoFlanel.jpg",
       "images/PolovnaGarderoba/Jakne/3_BraonSakoFlanel/BraonSakoFlanel1.jpg",
       "images/PolovnaGarderoba/Jakne/3_BraonSakoFlanel/BraonSakoFlanel2.jpg",
