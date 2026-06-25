@@ -12798,6 +12798,11 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Majice/2_KorsetCrniPS/KorsetCrniPS2.jpg",
       "images/PolovnaGarderoba/Majice/2_KorsetCrniPS/KorsetCrniPS3.jpg",
       "images/PolovnaGarderoba/Majice/2_KorsetCrniPS/KorsetCrniPS4.jpg",
+      "images/PolovnaGarderoba/Majice/2_KorsetCrniPS/1.jpg",
+      "images/PolovnaGarderoba/Majice/2_KorsetCrniPS/2.jpg",
+      "images/PolovnaGarderoba/Majice/2_KorsetCrniPS/3.jpg",
+      "images/PolovnaGarderoba/Majice/2_KorsetCrniPS/4.jpg",
+      "images/PolovnaGarderoba/Majice/2_KorsetCrniPS/5.jpg",
     ],
      PM003: [
       "images/PolovnaGarderoba/Majice/3_MajicaKosaBojeKajsije/MajicaKosaBojeKajsije.jpg",
