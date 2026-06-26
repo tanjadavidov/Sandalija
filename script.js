@@ -12684,7 +12684,13 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Jakne/4_BraonSiviSomotSako/BraonSomotSako6.jpg",
       "images/PolovnaGarderoba/Jakne/4_BraonSiviSomotSako/BraonSomotSako7.jpg",
     ],
-    PJ005: [
+    PJ005: [     
+      "images/PolovnaGarderoba/Jakne/5_LjubicMantil/1.jpg",
+      "images/PolovnaGarderoba/Jakne/5_LjubicMantil/2.jpg",
+      "images/PolovnaGarderoba/Jakne/5_LjubicMantil/3.jpg",
+      "images/PolovnaGarderoba/Jakne/5_LjubicMantil/4.jpg",
+      "images/PolovnaGarderoba/Jakne/5_LjubicMantil/5.jpg",
+      "images/PolovnaGarderoba/Jakne/5_LjubicMantil/6.jpg",
       "images/PolovnaGarderoba/Jakne/5_LjubicMantil/LjubicastiMantilPS.jpg",
       "images/PolovnaGarderoba/Jakne/5_LjubicMantil/LjubicastiMantilPS1.jpg",
       "images/PolovnaGarderoba/Jakne/5_LjubicMantil/LjubicastiMantilPS2.jpg",
@@ -12764,13 +12770,17 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Haljine/4_NarandzHalj/NarandzastaHaljinaDugihRukava11.jpg",
     ],
     PP001: [
-      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave/FarmerkeIscepanePlave.jpg",
-      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave/FarmerkeIscepanePlave1.jpg",
-      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave/FarmerkeIscepanePlave2.jpg",
-      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave/FarmerkeIscepanePlave3.jpg",
-      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave/FarmerkeIscepanePlave4.jpg",
-      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave/FarmerkeIscepanePlave5.jpg",
-      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave/FarmerkeIscepanePlave6.jpg",
+      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave2dug/FarmerkeIscepanePlave0.jpg",
+      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave2dug/1.jpg",
+      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave2dug/2.jpg",
+      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave2dug/3.jpg",
+      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave2dug/FarmerkeIscepanePlave.jpg",
+      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave2dug/FarmerkeIscepanePlave1.jpg",
+      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave2dug/FarmerkeIscepanePlave2.jpg",
+      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave2dug/FarmerkeIscepanePlave3.jpg",
+      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave2dug/FarmerkeIscepanePlave4.jpg",
+      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave2dug/FarmerkeIscepanePlave5.jpg",
+      "images/PolovnaGarderoba/Pantalone/1_FarmerkeIscepanePlave2dug/FarmerkeIscepanePlave6.jpg",
     ],
     PP002: [
       "images/PolovnaGarderoba/Pantalone/2_CrnePantaloneSaUckurom/CrnePantaloneSaUckurom.jpg",
@@ -12779,10 +12789,13 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/PolovnaGarderoba/Pantalone/2_CrnePantaloneSaUckurom/CrnePantaloneSaUckurom3.jpg",
     ],
     PP003: [
-      "images/PolovnaGarderoba/Pantalone/3_IscepaneFarmerkeTeget/IscepaneFarmerkeTeget.jpg",
-      "images/PolovnaGarderoba/Pantalone/3_IscepaneFarmerkeTeget/IscepaneFarmerkeTeget1.jpg",
-      "images/PolovnaGarderoba/Pantalone/3_IscepaneFarmerkeTeget/IscepaneFarmerkeTeget2.jpg",
-      "images/PolovnaGarderoba/Pantalone/3_IscepaneFarmerkeTeget/IscepaneFarmerkeTeget3.jpg",
+      "images/PolovnaGarderoba/Pantalone/3_IscepaneFarmerkeTeget3dug/farmerkeIscepane3Dugmeta0.jpg",
+      "images/PolovnaGarderoba/Pantalone/3_IscepaneFarmerkeTeget3dug/farmerkeIscepane3Dugmeta1.jpg",
+      "images/PolovnaGarderoba/Pantalone/3_IscepaneFarmerkeTeget3dug/farmerkeIscepane3Dugmeta2.jpg",
+        "images/PolovnaGarderoba/Pantalone/3_IscepaneFarmerkeTeget3dug/IscepaneFarmerkeTeget.jpg",
+      "images/PolovnaGarderoba/Pantalone/3_IscepaneFarmerkeTeget3dug/IscepaneFarmerkeTeget1.jpg",
+      "images/PolovnaGarderoba/Pantalone/3_IscepaneFarmerkeTeget3dug/IscepaneFarmerkeTeget2.jpg",
+      "images/PolovnaGarderoba/Pantalone/3_IscepaneFarmerkeTeget3dug/IscepaneFarmerkeTeget3.jpg",
     ],
     PP004: [
       "images/PolovnaGarderoba/Pantalone/4_CrnePantaloneTegljiveZersejSirokeDole/CrnePantaloneTegljiveZersejSirokeDole.jpg",
@@ -12862,6 +12875,17 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
     PO003: [
       "images/PolovnaGarderoba/Ostalo/3_MaskaZaSpavanje/MaskaZaSpavanje.jpg",
+    ],
+     NH001: [
+      "images/NovaGarderoba/Haljine/1_BelaSarenaHaljinaBezLedja/BelaSarenaHaljinaBezLedja5.jpg",
+      "images/NovaGarderoba/Haljine/1_BelaSarenaHaljinaBezLedja/BelaSarenaHaljinaBezLedja1.jpg",
+      "images/NovaGarderoba/Haljine/1_BelaSarenaHaljinaBezLedja/BelaSarenaHaljinaBezLedja2.jpg",
+      "images/NovaGarderoba/Haljine/1_BelaSarenaHaljinaBezLedja/BelaSarenaHaljinaBezLedja3.jpg",
+      "images/NovaGarderoba/Haljine/1_BelaSarenaHaljinaBezLedja/BelaSarenaHaljinaBezLedja4.jpg",
+    ],
+    NJ001: [
+      "images/NovaGarderoba/Jakne/1_KozniMantil/KozniMantil0.jpg",
+      "images/NovaGarderoba/Jakne/1_KozniMantil/KozniMantil.jpg",
     ],
   };
 

@@ -2480,6 +2480,23 @@ textarea.w-select,
   animation-delay: 12s;
 }
 
+/* nova garderoba slike slajdova */
+
+.nslide1 {
+  background-image: url("images/BelaSarenaHaljinaBezLedja0.jpg");
+  animation-delay: 0s;
+}
+
+.nslide2 {
+  background-image: url("images/BelaSarenaHaljinaBezLedja1.jpg");
+  animation-delay: 6s;
+}
+
+.nslide3 {
+  background-image: url("images/BelaSarenaHaljinaBezLedja2.jpg");
+  animation-delay: 12s;
+}
+
 /* naslov na webs strani */
 /* 1. slide – bela / neutralna */
 .title1 {
