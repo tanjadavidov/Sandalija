@@ -12883,9 +12883,18 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/NovaGarderoba/Haljine/1_BelaSarenaHaljinaBezLedja/BelaSarenaHaljinaBezLedja3.jpg",
       "images/NovaGarderoba/Haljine/1_BelaSarenaHaljinaBezLedja/BelaSarenaHaljinaBezLedja4.jpg",
     ],
+     NH002: [      
+      "images/NovaGarderoba/Haljine/2_BelaDugaHaljinaSaKorsetom/BelaDugaHaljinaSaKorsetom0.jpg",  
+      "images/NovaGarderoba/Haljine/2_BelaDugaHaljinaSaKorsetom/BelaDugaHaljinaSaKorsetom1.jpg",
+       "images/NovaGarderoba/Haljine/2_BelaDugaHaljinaSaKorsetom/BelaDugaHaljinaSaKorsetom2.jpg",        
+    ],
     NJ001: [
       "images/NovaGarderoba/Jakne/1_KozniMantil/KozniMantil0.jpg",
       "images/NovaGarderoba/Jakne/1_KozniMantil/KozniMantil.jpg",
+    ],
+     NO001: [
+      "images/NovaGarderoba/Ostalo/1_SpravaZaIztezanje/SpravaZaIztezanje1.jpg",
+      "images/NovaGarderoba/Ostalo/1_SpravaZaIztezanje/SpravaZaIztezanje.jpg",
     ],
   };
 
